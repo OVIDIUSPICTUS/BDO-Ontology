@@ -1,0 +1,1198 @@
+<http://bdovidiana.es/ontology/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://bdovidiana.es/ontology/> <http://www.w3.org/2002/07/owl#imports> <http://www.ontologydesignpatterns.org/cp/owl/agentrole.owl> .
+<http://bdovidiana.es/ontology/> <http://purl.org/dc/elements/1.1/contributor> "Fatima Díez-Platas\nhttps://scholar.google.es/citations?user=ffHzVkkAAAAJ&hl=es\nhttps://www.researchgate.net/profile/Fatima-Diez-Platas"@es .
+<http://bdovidiana.es/ontology/> <http://purl.org/dc/elements/1.1/date> "2022"@en .
+<http://bdovidiana.es/ontology/> <http://purl.org/dc/elements/1.1/description> "Esta ontología modela la información con la que se cuenta en la Biblioteca Digital Ovidiana. \nLa Biblioteca Digital Ovidiana es el resultado de una serie de proyectos de investigación del mismo título, financiados por los Ministerios de Ciencia y Tecnología, Ciencia e Innovación y Economía y Competitividad, que se llevan desarrollando en la Universidad de Santiago de Compostela desde el año 2007\nLa información se ha extraido del estudio pormenorizado de los ejemplares de las ediciones  ilustradas de Ovido desde el siglo XV hasta el XIX y que se encuantran custodiados en biblotecas españolas, tanto públicas como privadas.\nEn la ontología se modelan las distintas entidades, sus atributos y relaciones. \nUna característica importante es la integración de una serie de tesauros para representar los valores de determinadas propiedades y que se encuentran en proceso de elaboración.\nLa ontología se encuentra en desarrollo y está siendo sometida a sucesivos refinamientos."@es .
+<http://bdovidiana.es/ontology/> <http://purl.org/dc/elements/1.1/description> "This ontology models the information available in the Ovidian Digital Library. \nThe Ovidian Digital Library is the result of a series of research projects of the same title, funded by the Ministries of Science and Technology, Science and Innovation, and Economy and Competitiveness, which have been carried out at the University of Santiago de Compostela since 2007.\nThe information has been extracted from the detailed study of the copies of the illustrated editions of Ovid from the 15th to the 19th century, which are curated in Spanish libraries, both public and private.\nThe ontology models the different entities, their attributes and relationships. \nAn important feature is the integration of a series of thesauri to represent the values of certain properties and which are in the process of being developed.\nThe ontology is under development and undergoing successive refinements."@en .
+<http://bdovidiana.es/ontology/> <http://purl.org/dc/elements/1.1/title> "Ontology of the Ovid Digital Library"@en .
+<http://bdovidiana.es/ontology/> <http://purl.org/dc/elements/1.1/title> "Ontología de la Biblioteca Digital Ovidiana"@es .
+<http://bdovidiana.es/ontology/> <http://purl.org/dc/terms/creator> "M Luisa Díez-Platas\nhttps://orcid.org/0000-0002-9416-3147"@en .
+<http://bdovidiana.es/ontology/> <http://purl.org/dc/terms/creator> "Paloma Centenera Centenera"@en .
+<http://bdovidiana.es/ontology/> <http://purl.org/dc/terms/publisher> "Ovid Digital Library Projects. Principal Investigator: Fátima Díez-Platas\n\nPhase I (2007- 2010): \"Ovidian digital library: illustrated editions of Ovid, 15th-19th centuries (I): the libraries of Galicia and Catalonia\" (HUM2007- 60265/ARTE)\nPhase II (2011-2012): \"Ovidian digital library: illustrated editions of Ovid, 15th-19th centuries (II): the libraries of Catalonia\" (HAR2010-20015).\nPhase III (2012-2014): \"Ovidian digital library: illustrated editions of Ovid, 15th-19th centuries (III): the libraries of Castilla y León\" (HAR2011-25853).\nPhase IV (2015-2017): \"Ovidian digital library: illustrated editions of Ovid, 15th-19th centuries (IV): the libraries of the Community of Madrid\" (HAR2014-55617-P).\nPhase V (2018-2022): \"Ovidian digital library: illustrated editions of Ovid, 15th-19th centuries (V): the libraries of the Autonomous Communities of Andalusia, Extremadura, the Canary Islands, Ceuta and Melilla\" (HAR2017-86876-P).\nFunded by the Ministerios de Ciencia y Tecnología, Ciencia e Innovación y Economía y Competitividad. Spain."@en .
+<http://bdovidiana.es/ontology/> <http://purl.org/vocab/vann/preferredNamespacePrefix> "bdo"@en .
+<http://bdovidiana.es/ontology/> <http://www.w3.org/2002/07/owl#versionInfo> "V1.0"@en .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://iflastandards.info/ns/fr/frbr/frbroo/R10
+<http://iflastandards.info/ns/fr/frbr/frbroo/R10> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://iflastandards.info/ns/fr/frbr/frbroo/R10> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.cidoc-crm.org/cidoc-crm/P148_has_component> .
+<http://iflastandards.info/ns/fr/frbr/frbroo/R10> <http://www.w3.org/2000/01/rdf-schema#range> <http://iflastandards.info/ns/fr/frbr/frbroo/F1> .
+# 
+# http://iflastandards.info/ns/fr/frbr/frbroo/R14
+<http://iflastandards.info/ns/fr/frbr/frbroo/R14> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://iflastandards.info/ns/fr/frbr/frbroo/R14> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.cidoc-crm.org/cidoc-crm/P106_is_composed_of> .
+<http://iflastandards.info/ns/fr/frbr/frbroo/R14> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.cidoc-crm.org/cidoc-crm/P148_has_component> .
+<http://iflastandards.info/ns/fr/frbr/frbroo/R14> <http://www.w3.org/2000/01/rdf-schema#range> <http://iflastandards.info/ns/fr/frbr/frbroo/F2> .
+# 
+# http://iflastandards.info/ns/fr/frbr/frbroo/R15
+<http://iflastandards.info/ns/fr/frbr/frbroo/R15> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://iflastandards.info/ns/fr/frbr/frbroo/R15> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.cidoc-crm.org/cidoc-crm/P106_is_composed_of> .
+<http://iflastandards.info/ns/fr/frbr/frbroo/R15> <http://www.w3.org/2000/01/rdf-schema#range> <http://iflastandards.info/ns/fr/frbr/frbroo/F23> .
+# 
+# http://iflastandards.info/ns/fr/frbr/frbroo/R16
+<http://iflastandards.info/ns/fr/frbr/frbroo/R16> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://iflastandards.info/ns/fr/frbr/frbroo/R16> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.cidoc-crm.org/cidoc-crm/P94_has_created> .
+<http://iflastandards.info/ns/fr/frbr/frbroo/R16> <http://www.w3.org/2000/01/rdf-schema#range> <http://iflastandards.info/ns/fr/frbr/frbroo/F1> .
+# 
+# http://iflastandards.info/ns/fr/frbr/frbroo/R17
+<http://iflastandards.info/ns/fr/frbr/frbroo/R17> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://iflastandards.info/ns/fr/frbr/frbroo/R17> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.cidoc-crm.org/cidoc-crm/P94_has_created> .
+<http://iflastandards.info/ns/fr/frbr/frbroo/R17> <http://www.w3.org/2000/01/rdf-schema#range> <http://iflastandards.info/ns/fr/frbr/frbroo/F2> .
+# 
+# http://iflastandards.info/ns/fr/frbr/frbroo/R18
+<http://iflastandards.info/ns/fr/frbr/frbroo/R18> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://iflastandards.info/ns/fr/frbr/frbroo/R18> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.cidoc-crm.org/cidoc-crm/P108_has_produced> .
+<http://iflastandards.info/ns/fr/frbr/frbroo/R18> <http://www.w3.org/2000/01/rdf-schema#range> <http://iflastandards.info/ns/fr/frbr/frbroo/F4> .
+# 
+# http://iflastandards.info/ns/fr/frbr/frbroo/R19
+<http://iflastandards.info/ns/fr/frbr/frbroo/R19> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://iflastandards.info/ns/fr/frbr/frbroo/R19> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.cidoc-crm.org/cidoc-crm/P16_used_specific_object> .
+<http://iflastandards.info/ns/fr/frbr/frbroo/R19> <http://www.w3.org/2000/01/rdf-schema#range> <http://iflastandards.info/ns/fr/frbr/frbroo/F1> .
+# 
+# http://iflastandards.info/ns/fr/frbr/frbroo/R20
+<http://iflastandards.info/ns/fr/frbr/frbroo/R20> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://iflastandards.info/ns/fr/frbr/frbroo/R20> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.cidoc-crm.org/cidoc-crm/P15_was_influenced_by> .
+<http://iflastandards.info/ns/fr/frbr/frbroo/R20> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.cidoc-crm.org/cidoc-crm/E2_Temporal_Entity> .
+# 
+# http://iflastandards.info/ns/fr/frbr/frbroo/R25
+<http://iflastandards.info/ns/fr/frbr/frbroo/R25> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://iflastandards.info/ns/fr/frbr/frbroo/R25> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.cidoc-crm.org/cidoc-crm/P33_used_specific_technique> .
+<http://iflastandards.info/ns/fr/frbr/frbroo/R25> <http://www.w3.org/2000/01/rdf-schema#range> <http://iflastandards.info/ns/fr/frbr/frbroo/F25> .
+# 
+# http://iflastandards.info/ns/fr/frbr/frbroo/R27
+<http://iflastandards.info/ns/fr/frbr/frbroo/R27> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://iflastandards.info/ns/fr/frbr/frbroo/R27> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.cidoc-crm.org/cidoc-crm/P16_used_specific_object> .
+<http://iflastandards.info/ns/fr/frbr/frbroo/R27> <http://www.w3.org/2000/01/rdf-schema#range> <http://iflastandards.info/ns/fr/frbr/frbroo/F24> .
+# 
+# http://iflastandards.info/ns/fr/frbr/frbroo/R28
+<http://iflastandards.info/ns/fr/frbr/frbroo/R28> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://iflastandards.info/ns/fr/frbr/frbroo/R28> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.cidoc-crm.org/cidoc-crm/P108_has_produced> .
+<http://iflastandards.info/ns/fr/frbr/frbroo/R28> <http://www.w3.org/2000/01/rdf-schema#range> <http://iflastandards.info/ns/fr/frbr/frbroo/F5> .
+# 
+# http://iflastandards.info/ns/fr/frbr/frbroo/R29
+<http://iflastandards.info/ns/fr/frbr/frbroo/R29> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://iflastandards.info/ns/fr/frbr/frbroo/R29> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.cidoc-crm.org/cidoc-crm/P16_used_specific_object> .
+<http://iflastandards.info/ns/fr/frbr/frbroo/R29> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.cidoc-crm.org/cidoc-crm/E84_Information_Carrier> .
+# 
+# http://iflastandards.info/ns/fr/frbr/frbroo/R30
+<http://iflastandards.info/ns/fr/frbr/frbroo/R30> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://iflastandards.info/ns/fr/frbr/frbroo/R30> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.cidoc-crm.org/cidoc-crm/P108_has_produced> .
+<http://iflastandards.info/ns/fr/frbr/frbroo/R30> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.cidoc-crm.org/cidoc-crm/E84_Information_Carrier> .
+# 
+# http://iflastandards.info/ns/fr/frbr/frbroo/R33
+<http://iflastandards.info/ns/fr/frbr/frbroo/R33> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://iflastandards.info/ns/fr/frbr/frbroo/R33> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.cidoc-crm.org/cidoc-crm/P3_has_note> .
+<http://iflastandards.info/ns/fr/frbr/frbroo/R33> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://iflastandards.info/ns/fr/frbr/frbroo/R33> <http://www.w3.org/2000/01/rdf-schema#domain> <http://iflastandards.info/ns/fr/frbr/frbroo/F12> .
+# 
+# http://iflastandards.info/ns/fr/frbr/frbroo/R35
+<http://iflastandards.info/ns/fr/frbr/frbroo/R35> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://iflastandards.info/ns/fr/frbr/frbroo/R35> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.cidoc-crm.org/cidoc-crm/P148_has_component> .
+<http://iflastandards.info/ns/fr/frbr/frbroo/R35> <http://www.w3.org/2000/01/rdf-schema#range> <http://iflastandards.info/ns/fr/frbr/frbroo/F34> .
+# 
+# http://iflastandards.info/ns/fr/frbr/frbroo/R43
+<http://iflastandards.info/ns/fr/frbr/frbroo/R43> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://iflastandards.info/ns/fr/frbr/frbroo/R43> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by> .
+<http://iflastandards.info/ns/fr/frbr/frbroo/R43> <http://www.w3.org/2000/01/rdf-schema#range> <http://iflastandards.info/ns/fr/frbr/frbroo/F44> .
+# 
+# http://iflastandards.info/ns/fr/frbr/frbroo/R44
+<http://iflastandards.info/ns/fr/frbr/frbroo/R44> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://iflastandards.info/ns/fr/frbr/frbroo/R44> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by> .
+<http://iflastandards.info/ns/fr/frbr/frbroo/R44> <http://www.w3.org/2000/01/rdf-schema#range> <http://iflastandards.info/ns/fr/frbr/frbroo/F44> .
+# 
+# http://iflastandards.info/ns/fr/frbr/frbroo/R46
+<http://iflastandards.info/ns/fr/frbr/frbroo/R46> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://iflastandards.info/ns/fr/frbr/frbroo/R46> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.cidoc-crm.org/cidoc-crm/P37_assigned> .
+<http://iflastandards.info/ns/fr/frbr/frbroo/R46> <http://www.w3.org/2000/01/rdf-schema#range> <http://iflastandards.info/ns/fr/frbr/frbroo/F13> .
+# 
+# http://iflastandards.info/ns/fr/frbr/frbroo/R47
+<http://iflastandards.info/ns/fr/frbr/frbroo/R47> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://iflastandards.info/ns/fr/frbr/frbroo/R47> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.cidoc-crm.org/cidoc-crm/P16_used_specific_object> .
+<http://iflastandards.info/ns/fr/frbr/frbroo/R47> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.cidoc-crm.org/cidoc-crm/E90_Symbolic_Object> .
+# 
+# http://iflastandards.info/ns/fr/frbr/frbroo/R49
+<http://iflastandards.info/ns/fr/frbr/frbroo/R49> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://iflastandards.info/ns/fr/frbr/frbroo/R49> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.cidoc-crm.org/cidoc-crm/P141_assigned> .
+<http://iflastandards.info/ns/fr/frbr/frbroo/R49> <http://www.w3.org/2000/01/rdf-schema#range> <http://iflastandards.info/ns/fr/frbr/frbroo/F3> .
+# 
+# http://iflastandards.info/ns/fr/frbr/frbroo/R5
+<http://iflastandards.info/ns/fr/frbr/frbroo/R5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://iflastandards.info/ns/fr/frbr/frbroo/R5> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.cidoc-crm.org/cidoc-crm/P148_has_component> .
+<http://iflastandards.info/ns/fr/frbr/frbroo/R5> <http://www.w3.org/2000/01/rdf-schema#range> <http://iflastandards.info/ns/fr/frbr/frbroo/F22> .
+# 
+# http://iflastandards.info/ns/fr/frbr/frbroo/R51
+<http://iflastandards.info/ns/fr/frbr/frbroo/R51> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://iflastandards.info/ns/fr/frbr/frbroo/R51> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.cidoc-crm.org/cidoc-crm/P141_assigned> .
+<http://iflastandards.info/ns/fr/frbr/frbroo/R51> <http://www.w3.org/2000/01/rdf-schema#range> <http://iflastandards.info/ns/fr/frbr/frbroo/F2> .
+# 
+# http://iflastandards.info/ns/fr/frbr/frbroo/R52
+<http://iflastandards.info/ns/fr/frbr/frbroo/R52> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://iflastandards.info/ns/fr/frbr/frbroo/R52> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.cidoc-crm.org/cidoc-crm/P33_used_specific_technique> .
+<http://iflastandards.info/ns/fr/frbr/frbroo/R52> <http://www.w3.org/2000/01/rdf-schema#range> <http://iflastandards.info/ns/fr/frbr/frbroo/F43> .
+# 
+# http://iflastandards.info/ns/fr/frbr/frbroo/R53
+<http://iflastandards.info/ns/fr/frbr/frbroo/R53> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://iflastandards.info/ns/fr/frbr/frbroo/R53> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.cidoc-crm.org/cidoc-crm/P141_assigned> .
+<http://iflastandards.info/ns/fr/frbr/frbroo/R53> <http://www.w3.org/2000/01/rdf-schema#range> <http://iflastandards.info/ns/fr/frbr/frbroo/F4> .
+# 
+# http://iflastandards.info/ns/fr/frbr/frbroo/R56
+<http://iflastandards.info/ns/fr/frbr/frbroo/R56> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://iflastandards.info/ns/fr/frbr/frbroo/R56> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.cidoc-crm.org/cidoc-crm/P69_has_association_with> .
+<http://iflastandards.info/ns/fr/frbr/frbroo/R56> <http://www.w3.org/2000/01/rdf-schema#range> <http://iflastandards.info/ns/fr/frbr/frbroo/F35> .
+# 
+# http://iflastandards.info/ns/fr/frbr/frbroo/R64
+<http://iflastandards.info/ns/fr/frbr/frbroo/R64> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://iflastandards.info/ns/fr/frbr/frbroo/R64> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.cidoc-crm.org/cidoc-crm/P141_assigned> .
+<http://iflastandards.info/ns/fr/frbr/frbroo/R64> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.cidoc-crm.org/cidoc-crm/E41_Appellation> .
+# 
+# http://iflastandards.info/ns/fr/frbr/frbroo/R7i
+<http://iflastandards.info/ns/fr/frbr/frbroo/R7i> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://iflastandards.info/ns/fr/frbr/frbroo/R7i> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.cidoc-crm.org/cidoc-crm/P2i_is_type_of> .
+<http://iflastandards.info/ns/fr/frbr/frbroo/R7i> <http://www.w3.org/2000/01/rdf-schema#range> <http://iflastandards.info/ns/fr/frbr/frbroo/F5> .
+# 
+# http://iflastandards.info/ns/fr/frbr/frbroo/R8
+<http://iflastandards.info/ns/fr/frbr/frbroo/R8> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://iflastandards.info/ns/fr/frbr/frbroo/R8> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.cidoc-crm.org/cidoc-crm/P106_is_composed_of> .
+<http://iflastandards.info/ns/fr/frbr/frbroo/R8> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.cidoc-crm.org/cidoc-crm/E90_Symbolic_Object> .
+# 
+# http://metadataregistry.org/uri/profile/regap/name
+<http://metadataregistry.org/uri/profile/regap/name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://metadataregistry.org/uri/profile/regap/status
+<http://metadataregistry.org/uri/profile/regap/status> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/contributor
+<http://purl.org/dc/elements/1.1/contributor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/date
+<http://purl.org/dc/elements/1.1/date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/description
+<http://purl.org/dc/elements/1.1/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://purl.org/dc/elements/1.1/title> <http://www.w3.org/2000/01/rdf-schema#domain> <http://bdovidiana.es/ontology#Edition> .
+<http://purl.org/dc/elements/1.1/title> <http://www.w3.org/2000/01/rdf-schema#domain> <http://bdovidiana.es/ontology#Specimen> .
+# 
+# http://purl.org/dc/terms/created
+<http://purl.org/dc/terms/created> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/issued
+<http://purl.org/dc/terms/issued> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/publisher
+<http://purl.org/dc/terms/publisher> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/rightsHolder
+<http://purl.org/dc/terms/rightsHolder> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.cidoc-crm.org/cidoc-crm/P106_is_composed_of
+<http://www.cidoc-crm.org/cidoc-crm/P106_is_composed_of> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.cidoc-crm.org/cidoc-crm/P108_has_produced
+<http://www.cidoc-crm.org/cidoc-crm/P108_has_produced> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.cidoc-crm.org/cidoc-crm/P141_assigned
+<http://www.cidoc-crm.org/cidoc-crm/P141_assigned> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.cidoc-crm.org/cidoc-crm/P148_has_component
+<http://www.cidoc-crm.org/cidoc-crm/P148_has_component> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by
+<http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.cidoc-crm.org/cidoc-crm/P15_was_influenced_by
+<http://www.cidoc-crm.org/cidoc-crm/P15_was_influenced_by> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.cidoc-crm.org/cidoc-crm/P16_used_specific_object
+<http://www.cidoc-crm.org/cidoc-crm/P16_used_specific_object> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.cidoc-crm.org/cidoc-crm/P2i_is_type_of
+<http://www.cidoc-crm.org/cidoc-crm/P2i_is_type_of> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.cidoc-crm.org/cidoc-crm/P33_used_specific_technique
+<http://www.cidoc-crm.org/cidoc-crm/P33_used_specific_technique> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.cidoc-crm.org/cidoc-crm/P37_assigned
+<http://www.cidoc-crm.org/cidoc-crm/P37_assigned> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.cidoc-crm.org/cidoc-crm/P3_has_note
+<http://www.cidoc-crm.org/cidoc-crm/P3_has_note> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.cidoc-crm.org/cidoc-crm/P69_has_association_with
+<http://www.cidoc-crm.org/cidoc-crm/P69_has_association_with> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.cidoc-crm.org/cidoc-crm/P94_has_created
+<http://www.cidoc-crm.org/cidoc-crm/P94_has_created> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2004/02/skos/core#definition
+<http://www.w3.org/2004/02/skos/core#definition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2004/02/skos/core#note
+<http://www.w3.org/2004/02/skos/core#note> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2004/02/skos/core#prefLabel
+<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2004/02/skos/core#scopeNote
+<http://www.w3.org/2004/02/skos/core#scopeNote> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://xmlns.com/foaf/0.1/homepage
+<http://xmlns.com/foaf/0.1/homepage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://xmlns.com/foaf/0.1/maker
+<http://xmlns.com/foaf/0.1/maker> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Datatypes
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/2001/XMLSchema#date
+<http://www.w3.org/2001/XMLSchema#date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://bdovidiana.es/ontology/#areRepresentedIn
+<http://bdovidiana.es/ontology/#areRepresentedIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://bdovidiana.es/ontology/#areRepresentedIn> <http://www.w3.org/2002/07/owl#inverseOf> <http://bdovidiana.es/ontology/#representsThemes> .
+<http://bdovidiana.es/ontology/#areRepresentedIn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://bdovidiana.es/ontology/#ListOfThemes> .
+<http://bdovidiana.es/ontology/#areRepresentedIn> <http://www.w3.org/2000/01/rdf-schema#range> <http://bdovidiana.es/ontology/#Illustration> .
+# 
+# http://bdovidiana.es/ontology/#city
+<http://bdovidiana.es/ontology/#city> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://bdovidiana.es/ontology/#city> <http://www.w3.org/2000/01/rdf-schema#domain> <http://bdovidiana.es/ontology/#LibraryLocation> .
+<http://bdovidiana.es/ontology/#city> <http://www.w3.org/2000/01/rdf-schema#range> <http://bdovidiana.es/ontology/#City> .
+# 
+# http://bdovidiana.es/ontology/#community
+<http://bdovidiana.es/ontology/#community> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://bdovidiana.es/ontology/#community> <http://www.w3.org/2000/01/rdf-schema#domain> <http://bdovidiana.es/ontology/#LibraryLocation> .
+<http://bdovidiana.es/ontology/#community> <http://www.w3.org/2000/01/rdf-schema#range> <http://bdovidiana.es/ontology/#Community> .
+# 
+# http://bdovidiana.es/ontology/#contains
+<http://bdovidiana.es/ontology/#contains> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://bdovidiana.es/ontology/#contains> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/ontology/olo/core#slot> .
+<http://bdovidiana.es/ontology/#contains> <http://www.w3.org/2000/01/rdf-schema#domain> <http://bdovidiana.es/ontology/#Index> .
+<http://bdovidiana.es/ontology/#contains> <http://www.w3.org/2000/01/rdf-schema#range> <http://bdovidiana.es/ontology/#Section> .
+# 
+# http://bdovidiana.es/ontology/#correspondsTo
+<http://bdovidiana.es/ontology/#correspondsTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://bdovidiana.es/ontology/#correspondsTo> <http://www.w3.org/2000/01/rdf-schema#domain> <http://bdovidiana.es/ontology/#SpecimenIllustration> .
+<http://bdovidiana.es/ontology/#correspondsTo> <http://www.w3.org/2000/01/rdf-schema#range> <http://bdovidiana.es/ontology/#Illustration> .
+# 
+# http://bdovidiana.es/ontology/#geo
+<http://bdovidiana.es/ontology/#geo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://bdovidiana.es/ontology/#geo> <http://www.w3.org/2000/01/rdf-schema#domain> <http://schema.org/Place> .
+<http://bdovidiana.es/ontology/#geo> <http://www.w3.org/2000/01/rdf-schema#range> <http://schema.org/GeoCoordinates> .
+# 
+# http://bdovidiana.es/ontology/#hasEdition
+<http://bdovidiana.es/ontology/#hasEdition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://bdovidiana.es/ontology/#hasEdition> <http://www.w3.org/2000/01/rdf-schema#domain> <http://bdovidiana.es/ontology/#Opus> .
+<http://bdovidiana.es/ontology/#hasEdition> <http://www.w3.org/2000/01/rdf-schema#range> <http://bdovidiana.es/ontology/#Edition> .
+# 
+# http://bdovidiana.es/ontology/#hasFeatrures
+<http://bdovidiana.es/ontology/#hasFeatrures> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://bdovidiana.es/ontology/#hasFeatrures> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://bdovidiana.es/ontology/#hasFeatrures> <http://www.w3.org/2000/01/rdf-schema#domain> <http://bdovidiana.es/ontology/#Edition> .
+<http://bdovidiana.es/ontology/#hasFeatrures> <http://www.w3.org/2000/01/rdf-schema#range> <http://bdovidiana.es/ontology/#EditionFeatures> .
+# 
+# http://bdovidiana.es/ontology/#hasIllustration
+<http://bdovidiana.es/ontology/#hasIllustration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://bdovidiana.es/ontology/#hasIllustration> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/ontology/olo/core#slot> .
+<http://bdovidiana.es/ontology/#hasIllustration> <http://www.w3.org/2000/01/rdf-schema#domain> <http://bdovidiana.es/ontology/#ListOfEditionIllustrations> .
+<http://bdovidiana.es/ontology/#hasIllustration> <http://www.w3.org/2000/01/rdf-schema#range> <http://bdovidiana.es/ontology/#Illustration> .
+# 
+# http://bdovidiana.es/ontology/#hasIllustrations
+<http://bdovidiana.es/ontology/#hasIllustrations> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://bdovidiana.es/ontology/#hasIllustrations> <http://www.w3.org/2000/01/rdf-schema#domain> <http://bdovidiana.es/ontology/#Edition> .
+<http://bdovidiana.es/ontology/#hasIllustrations> <http://www.w3.org/2000/01/rdf-schema#range> <http://bdovidiana.es/ontology/#ListOfEditionIllustrations> .
+# 
+# http://bdovidiana.es/ontology/#hasIllustrator
+<http://bdovidiana.es/ontology/#hasIllustrator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://bdovidiana.es/ontology/#hasIllustrator> <http://www.w3.org/2000/01/rdf-schema#domain> <http://bdovidiana.es/ontology/#Edition> .
+<http://bdovidiana.es/ontology/#hasIllustrator> <http://www.w3.org/2000/01/rdf-schema#range> <http://bdovidiana.es/ontology/#Illustrator> .
+# 
+# http://bdovidiana.es/ontology/#hasImpresor
+<http://bdovidiana.es/ontology/#hasImpresor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://bdovidiana.es/ontology/#hasImpresor> <http://www.w3.org/2000/01/rdf-schema#domain> <http://bdovidiana.es/ontology/#Edition> .
+<http://bdovidiana.es/ontology/#hasImpresor> <http://www.w3.org/2000/01/rdf-schema#range> <http://bdovidiana.es/ontology/#Printer> .
+# 
+# http://bdovidiana.es/ontology/#hasIndex
+<http://bdovidiana.es/ontology/#hasIndex> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://bdovidiana.es/ontology/#hasIndex> <http://www.w3.org/2000/01/rdf-schema#domain> <http://bdovidiana.es/ontology/#Edition> .
+<http://bdovidiana.es/ontology/#hasIndex> <http://www.w3.org/2000/01/rdf-schema#range> <http://bdovidiana.es/ontology/#Index> .
+# 
+# http://bdovidiana.es/ontology/#hasRelatedThemes
+<http://bdovidiana.es/ontology/#hasRelatedThemes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://bdovidiana.es/ontology/#hasRelatedThemes> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/ontology/olo/core#slot> .
+<http://bdovidiana.es/ontology/#hasRelatedThemes> <http://www.w3.org/2000/01/rdf-schema#domain> <http://bdovidiana.es/ontology/#ListOfThemes> .
+<http://bdovidiana.es/ontology/#hasRelatedThemes> <http://www.w3.org/2000/01/rdf-schema#range> <http://bdovidiana.es/ontology/#Theme> .
+<http://bdovidiana.es/ontology/#hasRelatedThemes> <http://www.w3.org/2000/01/rdf-schema#range> _:genid1 .
+_:genid1 <http://www.w3.org/2002/07/owl#hasValue> <http://bdovidiana.es/ontology/#Theme> .
+_:genid1 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2004/02/skos/core#inScheme> .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+# 
+# http://bdovidiana.es/ontology/#hasSpecimen
+<http://bdovidiana.es/ontology/#hasSpecimen> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://bdovidiana.es/ontology/#hasSpecimen> <http://www.w3.org/2002/07/owl#inverseOf> <http://bdovidiana.es/ontology/#isSpecimenOf> .
+<http://bdovidiana.es/ontology/#hasSpecimen> <http://www.w3.org/2000/01/rdf-schema#domain> <http://bdovidiana.es/ontology/#Edition> .
+<http://bdovidiana.es/ontology/#hasSpecimen> <http://www.w3.org/2000/01/rdf-schema#range> <http://bdovidiana.es/ontology/#Specimen> .
+# 
+# http://bdovidiana.es/ontology/#hasSpecimenIllustration
+<http://bdovidiana.es/ontology/#hasSpecimenIllustration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://bdovidiana.es/ontology/#hasSpecimenIllustration> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://bdovidiana.es/ontology/#hasIllustrations> .
+<http://bdovidiana.es/ontology/#hasSpecimenIllustration> <http://www.w3.org/2000/01/rdf-schema#domain> <http://bdovidiana.es/ontology/#Specimen> .
+<http://bdovidiana.es/ontology/#hasSpecimenIllustration> <http://www.w3.org/2000/01/rdf-schema#range> <http://bdovidiana.es/ontology/#ListOfSpecimenIllustrations> .
+# 
+# http://bdovidiana.es/ontology/#isEdition
+<http://bdovidiana.es/ontology/#isEdition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://bdovidiana.es/ontology/#isEdition> <http://www.w3.org/2000/01/rdf-schema#domain> <http://bdovidiana.es/ontology/#Edition> .
+<http://bdovidiana.es/ontology/#isEdition> <http://www.w3.org/2000/01/rdf-schema#range> <http://bdovidiana.es/ontology/#Opus> .
+# 
+# http://bdovidiana.es/ontology/#isIllustratorOf
+<http://bdovidiana.es/ontology/#isIllustratorOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://bdovidiana.es/ontology/#isIllustratorOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://bdovidiana.es/ontology/#Illustrator> .
+<http://bdovidiana.es/ontology/#isIllustratorOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://bdovidiana.es/ontology/#Edition> .
+# 
+# http://bdovidiana.es/ontology/#isInIllustrationList
+<http://bdovidiana.es/ontology/#isInIllustrationList> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://bdovidiana.es/ontology/#isInIllustrationList> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/ontology/olo/core#ordered_list> .
+<http://bdovidiana.es/ontology/#isInIllustrationList> <http://www.w3.org/2000/01/rdf-schema#domain> <http://bdovidiana.es/ontology/#Illustration> .
+<http://bdovidiana.es/ontology/#isInIllustrationList> <http://www.w3.org/2000/01/rdf-schema#range> <http://bdovidiana.es/ontology/#ListOfEditionIllustrations> .
+# 
+# http://bdovidiana.es/ontology/#isInIndex
+<http://bdovidiana.es/ontology/#isInIndex> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://bdovidiana.es/ontology/#isInIndex> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/ontology/olo/core#ordered_list> .
+<http://bdovidiana.es/ontology/#isInIndex> <http://www.w3.org/2000/01/rdf-schema#domain> <http://bdovidiana.es/ontology/#Section> .
+<http://bdovidiana.es/ontology/#isInIndex> <http://www.w3.org/2000/01/rdf-schema#range> <http://bdovidiana.es/ontology/#Index> .
+# 
+# http://bdovidiana.es/ontology/#isInSubjectList
+<http://bdovidiana.es/ontology/#isInSubjectList> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://bdovidiana.es/ontology/#isInSubjectList> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/ontology/olo/core#ordered_list> .
+<http://bdovidiana.es/ontology/#isInSubjectList> <http://www.w3.org/2000/01/rdf-schema#domain> <http://bdovidiana.es/ontology/#Theme> .
+<http://bdovidiana.es/ontology/#isInSubjectList> <http://www.w3.org/2000/01/rdf-schema#range> <http://bdovidiana.es/ontology/#ListOfThemes> .
+# 
+# http://bdovidiana.es/ontology/#isListIllustrationOfSpecimen
+<http://bdovidiana.es/ontology/#isListIllustrationOfSpecimen> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://bdovidiana.es/ontology/#isListIllustrationOfSpecimen> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://bdovidiana.es/ontology/#isListIllustrationsOf> .
+<http://bdovidiana.es/ontology/#isListIllustrationOfSpecimen> <http://www.w3.org/2000/01/rdf-schema#domain> <http://bdovidiana.es/ontology/#ListOfSpecimenIllustrations> .
+<http://bdovidiana.es/ontology/#isListIllustrationOfSpecimen> <http://www.w3.org/2000/01/rdf-schema#range> <http://bdovidiana.es/ontology/#Specimen> .
+# 
+# http://bdovidiana.es/ontology/#isListIllustrationsOf
+<http://bdovidiana.es/ontology/#isListIllustrationsOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://bdovidiana.es/ontology/#isListIllustrationsOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://bdovidiana.es/ontology/#ListOfEditionIllustrations> .
+<http://bdovidiana.es/ontology/#isListIllustrationsOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://bdovidiana.es/ontology/#Edition> .
+# 
+# http://bdovidiana.es/ontology/#isLocatedIn
+<http://bdovidiana.es/ontology/#isLocatedIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://bdovidiana.es/ontology/#isLocatedIn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://bdovidiana.es/ontology/#Library> .
+<http://bdovidiana.es/ontology/#isLocatedIn> <http://www.w3.org/2000/01/rdf-schema#range> <http://bdovidiana.es/ontology/#LibraryLocation> .
+# 
+# http://bdovidiana.es/ontology/#isSpecimenOf
+<http://bdovidiana.es/ontology/#isSpecimenOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://bdovidiana.es/ontology/#isSpecimenOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://bdovidiana.es/ontology/#Specimen> .
+<http://bdovidiana.es/ontology/#isSpecimenOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://bdovidiana.es/ontology/#Edition> .
+# 
+# http://bdovidiana.es/ontology/#locatedIn
+<http://bdovidiana.es/ontology/#locatedIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://bdovidiana.es/ontology/#locatedIn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://bdovidiana.es/ontology/#Specimen> .
+<http://bdovidiana.es/ontology/#locatedIn> <http://www.w3.org/2000/01/rdf-schema#range> <http://bdovidiana.es/ontology/#Library> .
+# 
+# http://bdovidiana.es/ontology/#province
+<http://bdovidiana.es/ontology/#province> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://bdovidiana.es/ontology/#province> <http://www.w3.org/2000/01/rdf-schema#domain> <http://bdovidiana.es/ontology/#LibraryLocation> .
+<http://bdovidiana.es/ontology/#province> <http://www.w3.org/2000/01/rdf-schema#range> <http://bdovidiana.es/ontology/#Province> .
+# 
+# http://bdovidiana.es/ontology/#publicationDate
+<http://bdovidiana.es/ontology/#publicationDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://bdovidiana.es/ontology/#publicationDate> <http://www.w3.org/2000/01/rdf-schema#domain> <http://bdovidiana.es/ontology/#Edition> .
+<http://bdovidiana.es/ontology/#publicationDate> <http://www.w3.org/2000/01/rdf-schema#range> <http://bdovidiana.es/ontology/#Date> .
+# 
+# http://bdovidiana.es/ontology/#publishedIn
+<http://bdovidiana.es/ontology/#publishedIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://bdovidiana.es/ontology/#publishedIn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://bdovidiana.es/ontology/#Edition> .
+<http://bdovidiana.es/ontology/#publishedIn> <http://www.w3.org/2000/01/rdf-schema#range> <http://bdovidiana.es/ontology/#PublicationPlace> .
+# 
+# http://bdovidiana.es/ontology/#representsThemes
+<http://bdovidiana.es/ontology/#representsThemes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://bdovidiana.es/ontology/#representsThemes> <http://www.w3.org/2000/01/rdf-schema#domain> <http://bdovidiana.es/ontology/#Illustration> .
+<http://bdovidiana.es/ontology/#representsThemes> <http://www.w3.org/2000/01/rdf-schema#range> <http://bdovidiana.es/ontology/#ListOfThemes> .
+<http://bdovidiana.es/ontology/#representsThemes> <http://www.w3.org/2000/01/rdf-schema#range> <http://bdovidiana.es/ontology/#PublicationPlace> .
+# 
+# http://purl.org/ontology/olo/core#ordered_list
+<http://purl.org/ontology/olo/core#ordered_list> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://purl.org/ontology/olo/core#slot
+<http://purl.org/ontology/olo/core#slot> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://www.w3.org/2004/02/skos/core#inScheme
+<http://www.w3.org/2004/02/skos/core#inScheme> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://bdovidiana.es/ontology/#approximateDateExpression
+<http://bdovidiana.es/ontology/#approximateDateExpression> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://bdovidiana.es/ontology/#approximateDateExpression> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://bdovidiana.es/ontology/#dateExpression> .
+<http://bdovidiana.es/ontology/#approximateDateExpression> <http://www.w3.org/2000/01/rdf-schema#domain> <http://bdovidiana.es/ontology/#ApproximateDate> .
+<http://bdovidiana.es/ontology/#approximateDateExpression> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://bdovidiana.es/ontology/#approximateDateExpression> <http://www.w3.org/2000/01/rdf-schema#label> "Approximation of date if not known exactly."@en .
+# 
+# http://bdovidiana.es/ontology/#bibliography
+<http://bdovidiana.es/ontology/#bibliography> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://bdovidiana.es/ontology/#bibliography> <http://www.w3.org/2000/01/rdf-schema#domain> <http://bdovidiana.es/ontology/#Edition> .
+<http://bdovidiana.es/ontology/#bibliography> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://bdovidiana.es/ontology/#code
+<http://bdovidiana.es/ontology/#code> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://bdovidiana.es/ontology/#code> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://bdovidiana.es/ontology/#dateExpression
+<http://bdovidiana.es/ontology/#dateExpression> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# http://bdovidiana.es/ontology/#descripcionIlustracion
+<http://bdovidiana.es/ontology/#descripcionIlustracion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://bdovidiana.es/ontology/#descripcionIlustracion> <http://www.w3.org/2000/01/rdf-schema#domain> <http://bdovidiana.es/ontology/#EditionFeatures> .
+<http://bdovidiana.es/ontology/#descripcionIlustracion> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://bdovidiana.es/ontology/#editionCode
+<http://bdovidiana.es/ontology/#editionCode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://bdovidiana.es/ontology/#editionCode> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://bdovidiana.es/ontology/#code> .
+<http://bdovidiana.es/ontology/#editionCode> <http://www.w3.org/2000/01/rdf-schema#domain> <http://bdovidiana.es/ontology/#Edition> .
+<http://bdovidiana.es/ontology/#editionCode> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://bdovidiana.es/ontology/#editionCode> <http://www.w3.org/2000/01/rdf-schema#comment> "Edition representation code.\nThe code consists of the work, followed by the name of the editor/translator/commentator of the work (if it is an annotated or translated edition), then the name of the printer, the place of printing and the date:\n\n Metamorphosis.Anguillara.Giunta.Venice.1584.\n\ncorresponds to the well-known translation of the Metamorphoses by the Italian humanist Giovanni Andrea dell'Anguillara and printed in Venice in 1584 by Bernardo Giunta."@en .
+<http://bdovidiana.es/ontology/#editionCode> <http://www.w3.org/2000/01/rdf-schema#label> "Cödigo Edición"@es .
+<http://bdovidiana.es/ontology/#editionCode> <http://www.w3.org/2000/01/rdf-schema#label> "Edition Code"@en .
+# 
+# http://bdovidiana.es/ontology/#exactDateExpression
+<http://bdovidiana.es/ontology/#exactDateExpression> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://bdovidiana.es/ontology/#exactDateExpression> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://bdovidiana.es/ontology/#dateExpression> .
+<http://bdovidiana.es/ontology/#exactDateExpression> <http://www.w3.org/2000/01/rdf-schema#domain> <http://bdovidiana.es/ontology/#ExactDate> .
+<http://bdovidiana.es/ontology/#exactDateExpression> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
+# 
+# http://bdovidiana.es/ontology/#historial
+<http://bdovidiana.es/ontology/#historial> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://bdovidiana.es/ontology/#historial> <http://www.w3.org/2000/01/rdf-schema#domain> <http://bdovidiana.es/ontology/#Specimen> .
+<http://bdovidiana.es/ontology/#historial> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://bdovidiana.es/ontology/#libraryCode
+<http://bdovidiana.es/ontology/#libraryCode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://bdovidiana.es/ontology/#libraryCode> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://bdovidiana.es/ontology/#code> .
+<http://bdovidiana.es/ontology/#libraryCode> <http://www.w3.org/2000/01/rdf-schema#domain> <http://bdovidiana.es/ontology/#Library> .
+<http://bdovidiana.es/ontology/#libraryCode> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://bdovidiana.es/ontology/#libraryCode> <http://www.w3.org/2000/01/rdf-schema#comment> "Library codes are represented by the acronym of their name. The acronym of the Biblioteca Xeral Universitaria de la Universidad de Santiago is BXU."@en .
+<http://bdovidiana.es/ontology/#libraryCode> <http://www.w3.org/2000/01/rdf-schema#label> "Código biblioteca"@es .
+<http://bdovidiana.es/ontology/#libraryCode> <http://www.w3.org/2000/01/rdf-schema#label> "Library cide"@en .
+# 
+# http://bdovidiana.es/ontology/#locationOfIllustration
+<http://bdovidiana.es/ontology/#locationOfIllustration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://bdovidiana.es/ontology/#locationOfIllustration> <http://www.w3.org/2000/01/rdf-schema#domain> <http://bdovidiana.es/ontology/#Illustration> .
+<http://bdovidiana.es/ontology/#locationOfIllustration> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://bdovidiana.es/ontology/#name
+<http://bdovidiana.es/ontology/#name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# http://bdovidiana.es/ontology/#notes
+<http://bdovidiana.es/ontology/#notes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://bdovidiana.es/ontology/#notes> <http://www.w3.org/2000/01/rdf-schema#domain> <http://bdovidiana.es/ontology/#Specimen> .
+<http://bdovidiana.es/ontology/#notes> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://bdovidiana.es/ontology/#originalTitle
+<http://bdovidiana.es/ontology/#originalTitle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://bdovidiana.es/ontology/#originalTitle> <http://www.w3.org/2000/01/rdf-schema#domain> <http://bdovidiana.es/ontology/#Opus> .
+<http://bdovidiana.es/ontology/#originalTitle> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://bdovidiana.es/ontology/#physicalDescription
+<http://bdovidiana.es/ontology/#physicalDescription> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://bdovidiana.es/ontology/#physicalDescription> <http://www.w3.org/2000/01/rdf-schema#domain> <http://bdovidiana.es/ontology/#Specimen> .
+<http://bdovidiana.es/ontology/#physicalDescription> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://bdovidiana.es/ontology/#references
+<http://bdovidiana.es/ontology/#references> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# http://bdovidiana.es/ontology/#sectionCode
+<http://bdovidiana.es/ontology/#sectionCode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://bdovidiana.es/ontology/#sectionCode> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://bdovidiana.es/ontology/#code> .
+<http://bdovidiana.es/ontology/#sectionCode> <http://www.w3.org/2000/01/rdf-schema#domain> <http://bdovidiana.es/ontology/#Section> .
+<http://bdovidiana.es/ontology/#sectionCode> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://bdovidiana.es/ontology/#shortCode
+<http://bdovidiana.es/ontology/#shortCode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://bdovidiana.es/ontology/#shortCode> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://bdovidiana.es/ontology/#code> .
+<http://bdovidiana.es/ontology/#shortCode> <http://www.w3.org/2000/01/rdf-schema#domain> <http://bdovidiana.es/ontology/#Edition> .
+<http://bdovidiana.es/ontology/#shortCode> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://bdovidiana.es/ontology/#shortCode> <http://www.w3.org/2000/01/rdf-schema#comment> "Code that includes the abbreviation of the work, the name of the printer, the abbreviated place and the date (M.Benalius.Ven.[1493]). This abridged version serves to give quick and pertinent information on the purely editorial aspect, leaving aside the information on the edited text."@en .
+<http://bdovidiana.es/ontology/#shortCode> <http://www.w3.org/2000/01/rdf-schema#label> "Código breve"@es .
+<http://bdovidiana.es/ontology/#shortCode> <http://www.w3.org/2000/01/rdf-schema#label> "Short code"@en .
+# 
+# http://bdovidiana.es/ontology/#signature
+<http://bdovidiana.es/ontology/#signature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://bdovidiana.es/ontology/#signature> <http://www.w3.org/2000/01/rdf-schema#domain> <http://bdovidiana.es/ontology/#Specimen> .
+<http://bdovidiana.es/ontology/#signature> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://bdovidiana.es/ontology/#specimenCode
+<http://bdovidiana.es/ontology/#specimenCode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://bdovidiana.es/ontology/#specimenCode> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://bdovidiana.es/ontology/#code> .
+<http://bdovidiana.es/ontology/#specimenCode> <http://www.w3.org/2000/01/rdf-schema#domain> <http://bdovidiana.es/ontology/#Specimen> .
+<http://bdovidiana.es/ontology/#specimenCode> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://bdovidiana.es/ontology/#specimenCode> <http://www.w3.org/2000/01/rdf-schema#comment> "In addition to the edition identification code, the BDO has developed a second library-specific copy identification code. The specimen is each of the actual copies in the libraries.\nThe specimen code is composed of the abbreviation of the work, the acronym of the library, the abbreviation of the place of publication, and the date. The acronym of the Biblioteca Xeral Universitaria de la Universidad de Santiago is BXU. Thus, this incunabulum has the code M.BXU.Ven.[1493]."@en .
+# 
+# http://bdovidiana.es/ontology/#specimenNumber
+<http://bdovidiana.es/ontology/#specimenNumber> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://bdovidiana.es/ontology/#specimenNumber> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<http://bdovidiana.es/ontology/#specimenNumber> <http://www.w3.org/2000/01/rdf-schema#domain> <http://bdovidiana.es/ontology/#Library> .
+<http://bdovidiana.es/ontology/#specimenNumber> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+# 
+# http://bdovidiana.es/ontology/#structure
+<http://bdovidiana.es/ontology/#structure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://bdovidiana.es/ontology/#structure> <http://www.w3.org/2000/01/rdf-schema#domain> <http://bdovidiana.es/ontology/#EditionFeatures> .
+<http://bdovidiana.es/ontology/#structure> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://bdovidiana.es/ontology/#text
+<http://bdovidiana.es/ontology/#text> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://bdovidiana.es/ontology/#text> <http://www.w3.org/2000/01/rdf-schema#domain> <http://bdovidiana.es/ontology/#EditionFeatures> .
+<http://bdovidiana.es/ontology/#text> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://bdovidiana.es/ontology/#url
+<http://bdovidiana.es/ontology/#url> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://bdovidiana.es/ontology/#url> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#anyURI> .
+# 
+# http://bdovidiana.es/ontology/#viafCode
+<http://bdovidiana.es/ontology/#viafCode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://bdovidiana.es/ontology/#viafCode> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://bdovidiana.es/ontology/#code> .
+<http://bdovidiana.es/ontology/#viafCode> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#anyURI> .
+# 
+# http://dbpedia.org/ontology/file
+<http://dbpedia.org/ontology/file> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://dbpedia.org/ontology/file> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://bdovidiana.es/ontology/#locationOfIllustration> .
+<http://dbpedia.org/ontology/file> <http://www.w3.org/2000/01/rdf-schema#domain> <http://bdovidiana.es/ontology/#SpecimenIllustration> .
+<http://dbpedia.org/ontology/file> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#anyURI> .
+<http://dbpedia.org/ontology/file> <http://www.w3.org/2000/01/rdf-schema#comment> "File of specimen illustration"@en .
+<http://dbpedia.org/ontology/file> <http://www.w3.org/2000/01/rdf-schema#label> "Archivo imagen ilustración"@es .
+<http://dbpedia.org/ontology/file> <http://www.w3.org/2000/01/rdf-schema#label> "Specimen illustration file"@en .
+# 
+# http://purl.org/dc/elements/1.1/description
+<http://purl.org/dc/elements/1.1/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/dc/elements/1.1/description> <http://www.w3.org/2000/01/rdf-schema#domain> <http://bdovidiana.es/ontology/#Opus> .
+<http://purl.org/dc/elements/1.1/description> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# http://schema.org/address
+<http://schema.org/address> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://schema.org/address> <http://www.w3.org/2000/01/rdf-schema#domain> <http://schema.org/GeoCoordinates> .
+<http://schema.org/address> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://schema.org/addressCountry
+<http://schema.org/addressCountry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://schema.org/addressCountry> <http://www.w3.org/2000/01/rdf-schema#domain> <http://schema.org/GeoCoordinates> .
+<http://schema.org/addressCountry> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://schema.org/latitude
+<http://schema.org/latitude> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://schema.org/latitude> <http://www.w3.org/2000/01/rdf-schema#domain> <http://schema.org/GeoCoordinates> .
+# 
+# http://schema.org/longitude
+<http://schema.org/longitude> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://schema.org/longitude> <http://www.w3.org/2000/01/rdf-schema#domain> <http://schema.org/GeoCoordinates> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://bdovidiana.es/ontology/#ApproximateDate
+<http://bdovidiana.es/ontology/#ApproximateDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://bdovidiana.es/ontology/#ApproximateDate> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bdovidiana.es/ontology/#Date> .
+# 
+# http://bdovidiana.es/ontology/#Category
+<http://bdovidiana.es/ontology/#Category> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://bdovidiana.es/ontology/#City
+<http://bdovidiana.es/ontology/#City> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://bdovidiana.es/ontology/#City> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iflastandards.info/ns/fr/frbr/frbroo/F9> .
+<http://bdovidiana.es/ontology/#City> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://schema.org/Place> .
+# 
+# http://bdovidiana.es/ontology/#Community
+<http://bdovidiana.es/ontology/#Community> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://bdovidiana.es/ontology/#Community> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iflastandards.info/ns/fr/frbr/frbroo/F9> .
+<http://bdovidiana.es/ontology/#Community> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://schema.org/Place> .
+# 
+# http://bdovidiana.es/ontology/#Date
+<http://bdovidiana.es/ontology/#Date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://bdovidiana.es/ontology/#Date> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.cidoc-crm.org/cidoc-crm/E52_Time-Span> .
+# 
+# http://bdovidiana.es/ontology/#Edition
+<http://bdovidiana.es/ontology/#Edition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://bdovidiana.es/ontology/#Edition> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iflastandards.info/ns/fr/frbr/frbroo/F3_Manifestation_Product_Type> .
+<http://bdovidiana.es/ontology/#Edition> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept that represents a collection of specimens that have common characteristics, such as their format, the list of illustrations and others."@en .
+<http://bdovidiana.es/ontology/#Edition> <http://www.w3.org/2000/01/rdf-schema#label> "Edición"@es .
+<http://bdovidiana.es/ontology/#Edition> <http://www.w3.org/2000/01/rdf-schema#label> "Edition"@en .
+# 
+# http://bdovidiana.es/ontology/#EditionFeatures
+<http://bdovidiana.es/ontology/#EditionFeatures> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://bdovidiana.es/ontology/#ExactDate
+<http://bdovidiana.es/ontology/#ExactDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://bdovidiana.es/ontology/#ExactDate> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bdovidiana.es/ontology/#Date> .
+# 
+# http://bdovidiana.es/ontology/#Illustration
+<http://bdovidiana.es/ontology/#Illustration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://bdovidiana.es/ontology/#Illustration> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/ontology/olo/core#Slot> .
+<http://bdovidiana.es/ontology/#Illustration> <http://www.w3.org/2000/01/rdf-schema#comment> "Illustration that appears in an edition. Contains enumeration, position and thematic description."@en .
+<http://bdovidiana.es/ontology/#Illustration> <http://www.w3.org/2000/01/rdf-schema#label> "Illustration"@en .
+<http://bdovidiana.es/ontology/#Illustration> <http://www.w3.org/2000/01/rdf-schema#label> "Ilustración"@es .
+# 
+# http://bdovidiana.es/ontology/#Illustrator
+<http://bdovidiana.es/ontology/#Illustrator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://bdovidiana.es/ontology/#Illustrator> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#Role> .
+# 
+# http://bdovidiana.es/ontology/#Index
+<http://bdovidiana.es/ontology/#Index> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://bdovidiana.es/ontology/#Index> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/ontology/olo/core#OrderedList> .
+# 
+# http://bdovidiana.es/ontology/#Library
+<http://bdovidiana.es/ontology/#Library> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://bdovidiana.es/ontology/#Library> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iflastandards.info/ns/fr/frbr/frbroo/F11> .
+# 
+# http://bdovidiana.es/ontology/#LibraryLocation
+<http://bdovidiana.es/ontology/#LibraryLocation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://bdovidiana.es/ontology/#LibraryLocation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iflastandards.info/ns/fr/frbr/frbroo/F9> .
+<http://bdovidiana.es/ontology/#LibraryLocation> <http://www.w3.org/2000/01/rdf-schema#comment> "Location of the library by specifying the city, province and community to which it belongs. \nAt the moment it is not necessary the pias because all the libraries are located in the Spanish territory."@en .
+<http://bdovidiana.es/ontology/#LibraryLocation> <http://www.w3.org/2000/01/rdf-schema#label> "Library Location"@en .
+<http://bdovidiana.es/ontology/#LibraryLocation> <http://www.w3.org/2000/01/rdf-schema#label> "Ubicación Biblioteca"@es .
+# 
+# http://bdovidiana.es/ontology/#ListOfEditionIllustrations
+<http://bdovidiana.es/ontology/#ListOfEditionIllustrations> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://bdovidiana.es/ontology/#ListOfEditionIllustrations> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/ontology/olo/core#OrderedList> .
+# 
+# http://bdovidiana.es/ontology/#ListOfSpecimenIllustrations
+<http://bdovidiana.es/ontology/#ListOfSpecimenIllustrations> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://bdovidiana.es/ontology/#ListOfSpecimenIllustrations> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bdovidiana.es/ontology/#ListOfEditionIllustrations> .
+# 
+# http://bdovidiana.es/ontology/#ListOfThemes
+<http://bdovidiana.es/ontology/#ListOfThemes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://bdovidiana.es/ontology/#ListOfThemes> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/ontology/olo/core#OrderedList> .
+# 
+# http://bdovidiana.es/ontology/#Opus
+<http://bdovidiana.es/ontology/#Opus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://bdovidiana.es/ontology/#Opus> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iflastandards.info/ns/fr/frbr/frbroo/F1> .
+<http://bdovidiana.es/ontology/#Opus> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.europeana.eu/schemas/edm/ProvidedCHO> .
+<http://bdovidiana.es/ontology/#Opus> <http://www.w3.org/2000/01/rdf-schema#comment> "Cada una de las obras contenidas en el ejemplar"@es .
+# 
+# http://bdovidiana.es/ontology/#Printer
+<http://bdovidiana.es/ontology/#Printer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://bdovidiana.es/ontology/#Printer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#Role> .
+# 
+# http://bdovidiana.es/ontology/#Province
+<http://bdovidiana.es/ontology/#Province> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://bdovidiana.es/ontology/#Province> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iflastandards.info/ns/fr/frbr/frbroo/F9> .
+<http://bdovidiana.es/ontology/#Province> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://schema.org/Place> .
+# 
+# http://bdovidiana.es/ontology/#PublicationPlace
+<http://bdovidiana.es/ontology/#PublicationPlace> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://bdovidiana.es/ontology/#PublicationPlace> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iflastandards.info/ns/fr/frbr/frbroo/F9> .
+<http://bdovidiana.es/ontology/#PublicationPlace> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://schema.org/Place> .
+# 
+# http://bdovidiana.es/ontology/#Section
+<http://bdovidiana.es/ontology/#Section> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://bdovidiana.es/ontology/#Section> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/ontology/olo/core#Slot> .
+# 
+# http://bdovidiana.es/ontology/#Specimen
+<http://bdovidiana.es/ontology/#Specimen> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://bdovidiana.es/ontology/#Specimen> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iflastandards.info/ns/fr/frbr/frbroo/F5> .
+<http://bdovidiana.es/ontology/#Specimen> <http://www.w3.org/2000/01/rdf-schema#comment> "Each of the physical manifestations of an edition found in the libraries referenced in the Ovid Digital Library."@en .
+<http://bdovidiana.es/ontology/#Specimen> <http://www.w3.org/2000/01/rdf-schema#label> "Ejemplar"@es .
+<http://bdovidiana.es/ontology/#Specimen> <http://www.w3.org/2000/01/rdf-schema#label> "Specimen"@en .
+# 
+# http://bdovidiana.es/ontology/#SpecimenIllustration
+<http://bdovidiana.es/ontology/#SpecimenIllustration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://bdovidiana.es/ontology/#SpecimenIllustration> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bdovidiana.es/ontology/#Illustration> .
+<http://bdovidiana.es/ontology/#SpecimenIllustration> <http://www.w3.org/2000/01/rdf-schema#comment> "Illustration that appears in a specimen. \nThe characteristics and themes of the illustration are already specified in the edition corresponding to the issue. \nThis class reports specifically on aspects found in a specimen, such as possible censorship and others."@en .
+<http://bdovidiana.es/ontology/#SpecimenIllustration> <http://www.w3.org/2000/01/rdf-schema#label> "Illustration that appears in a specimen. \nThe characteristics and themes of the illustration are already specified in the edition corresponding to the issue. \nThis class reports specifically on aspects found in a copy, such as possible censorship and others."@en .
+<http://bdovidiana.es/ontology/#SpecimenIllustration> <http://www.w3.org/2000/01/rdf-schema#label> "Specimen Illustration"@en .
+# 
+# http://bdovidiana.es/ontology/#Theme
+<http://bdovidiana.es/ontology/#Theme> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://bdovidiana.es/ontology/#Theme> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/ontology/olo/core#Slot> .
+<http://bdovidiana.es/ontology/#Theme> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2004/02/skos/core#Concept> .
+# 
+# http://bdovidiana.es/ontology/#Translator
+<http://bdovidiana.es/ontology/#Translator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://bdovidiana.es/ontology/#Translator> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#Role> .
+# 
+# http://iflastandards.info/ns/fr/frbr/frbroo/F1
+<http://iflastandards.info/ns/fr/frbr/frbroo/F1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iflastandards.info/ns/fr/frbr/frbroo/F1> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.cidoc-crm.org/cidoc-crm/E89_Propositional_Object> .
+# 
+# http://iflastandards.info/ns/fr/frbr/frbroo/F10
+<http://iflastandards.info/ns/fr/frbr/frbroo/F10> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iflastandards.info/ns/fr/frbr/frbroo/F10> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.cidoc-crm.org/cidoc-crm/E21_Person> .
+<http://iflastandards.info/ns/fr/frbr/frbroo/F10> <http://metadataregistry.org/uri/profile/regap/name> "Person"@en .
+<http://iflastandards.info/ns/fr/frbr/frbroo/F10> <http://www.w3.org/2000/01/rdf-schema#comment> "This class comprises real persons who live or are assumed to have lived. Bibliographic identities or personae assumed by an individual or a group should be modelled as F12 Nomen and connected to the relevant person or group with an instance of F35 Nomen Use Statement, even if nothing more can be said about this person or group. In a bibliographic context, a name presented following the conventions usually employed for personal names will be assumed to correspond to an actual real person (F10 Person), unless evidence is available to indicate that this is not the case. The fact that a persona may erroneously be classified as an instance of F10 Person does not imply that the concept comprises personae."@en .
+<http://iflastandards.info/ns/fr/frbr/frbroo/F10> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://iflastandards.info/ns/fr/frbr/frbroo/> .
+<http://iflastandards.info/ns/fr/frbr/frbroo/F10> <http://www.w3.org/2000/01/rdf-schema#label> "Person"@en .
+<http://iflastandards.info/ns/fr/frbr/frbroo/F10> <http://www.w3.org/2004/02/skos/core#definition> "This class comprises real persons who live or are assumed to have lived."@en .
+<http://iflastandards.info/ns/fr/frbr/frbroo/F10> <http://www.w3.org/2004/02/skos/core#scopeNote> "Bibliographic identities or personae assumed by an individual or a group should be modelled as F12 Nomen and connected to the relevant person or group with an instance of F35 Nomen Use Statement, even if nothing more can be said about this person or group. In a bibliographic context, a name presented following the conventions usually employed for personal names will be assumed to correspond to an actual real person (F10 Person), unless evidence is available to indicate that this is not the case. The fact that a persona may erroneously be classified as an instance of F10 Person does not imply that the concept comprises personae."@en .
+# 
+# http://iflastandards.info/ns/fr/frbr/frbroo/F10_Person
+<http://iflastandards.info/ns/fr/frbr/frbroo/F10_Person> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iflastandards.info/ns/fr/frbr/frbroo/F10_Person> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.cidoc-crm.org/cidoc-crm/E21_Person> .
+# 
+# http://iflastandards.info/ns/fr/frbr/frbroo/F11
+<http://iflastandards.info/ns/fr/frbr/frbroo/F11> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iflastandards.info/ns/fr/frbr/frbroo/F11> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.cidoc-crm.org/cidoc-crm/E74_Group> .
+# 
+# http://iflastandards.info/ns/fr/frbr/frbroo/F11_Corporate_Body
+<http://iflastandards.info/ns/fr/frbr/frbroo/F11_Corporate_Body> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iflastandards.info/ns/fr/frbr/frbroo/F11_Corporate_Body> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.cidoc-crm.org/cidoc-crm/E74_Group> .
+# 
+# http://iflastandards.info/ns/fr/frbr/frbroo/F14
+<http://iflastandards.info/ns/fr/frbr/frbroo/F14> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iflastandards.info/ns/fr/frbr/frbroo/F14> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iflastandards.info/ns/fr/frbr/frbroo/F1> .
+<http://iflastandards.info/ns/fr/frbr/frbroo/F14> <http://metadataregistry.org/uri/profile/regap/name> "IndividualWork"@en .
+<http://iflastandards.info/ns/fr/frbr/frbroo/F14> <http://www.w3.org/2000/01/rdf-schema#comment> "This class comprises works that are realised by one and only one self-contained expression, i.e., works representing the concept as expressed by precisely this expression, and that do not have other works as parts. Inherent to the notion of work is the completion of recognisable outcomes of the work. These outcomes, i.e. the Self-Contained Expressions, are regarded as the symbolic equivalents of Individual Works, which form the atoms of a complex work. Normally creators would characterise an outcome of a work as finished. In other cases, one could recognise an outcome of a work as complete from the elaboration or logical coherence of its content, or if there is any historical knowledge about the creator deliberately or accidentally never finishing (completing) that particular expression. In all those cases, one would regard the corresponding expression as equivalent to one Individual Work."@en .
+<http://iflastandards.info/ns/fr/frbr/frbroo/F14> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://iflastandards.info/ns/fr/frbr/frbroo/> .
+<http://iflastandards.info/ns/fr/frbr/frbroo/F14> <http://www.w3.org/2000/01/rdf-schema#label> "Individual Work"@en .
+<http://iflastandards.info/ns/fr/frbr/frbroo/F14> <http://www.w3.org/2004/02/skos/core#definition> "This class comprises works that are realised by one and only one self-contained expression, i.e., works representing the concept as expressed by precisely this expression, and that do not have other works as parts."@en .
+<http://iflastandards.info/ns/fr/frbr/frbroo/F14> <http://www.w3.org/2004/02/skos/core#scopeNote> "Inherent to the notion of work is the completion of recognisable outcomes of the work. These outcomes, i.e. the Self-Contained Expressions, are regarded as the symbolic equivalents of Individual Works, which form the atoms of a complex work. Normally creators would characterise an outcome of a work as finished. In other cases, one could recognise an outcome of a work as complete from the elaboration or logical coherence of its content, or if there is any historical knowledge about the creator deliberately or accidentally never finishing (completing) that particular expression. In all those cases, one would regard the corresponding expression as equivalent to one Individual Work."@en .
+# 
+# http://iflastandards.info/ns/fr/frbr/frbroo/F14_Individual_Work
+<http://iflastandards.info/ns/fr/frbr/frbroo/F14_Individual_Work> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iflastandards.info/ns/fr/frbr/frbroo/F14_Individual_Work> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iflastandards.info/ns/fr/frbr/frbroo/F1_Work> .
+# 
+# http://iflastandards.info/ns/fr/frbr/frbroo/F15
+<http://iflastandards.info/ns/fr/frbr/frbroo/F15> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iflastandards.info/ns/fr/frbr/frbroo/F15> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iflastandards.info/ns/fr/frbr/frbroo/F1> .
+<http://iflastandards.info/ns/fr/frbr/frbroo/F15> <http://metadataregistry.org/uri/profile/regap/name> "ComplexWork"@en .
+<http://iflastandards.info/ns/fr/frbr/frbroo/F15> <http://www.w3.org/2000/01/rdf-schema#comment> "This class comprises works that have more than one work as members. The members of a Complex Work may constitute components of the overall concept or be alternatives to other members of the work. In practice, no clear line can be drawn between parallel and subsequent processes in the evolution of a work. One part may not be finished when another is already revised. An initially monolithic work may be taken up and evolve in pieces. The member relationship of Work is based on the conceptual relationship, and should not be confused with the internal structural parts of an individual expression. The fact that an expression may contain parts from other work(s) does not make the expressed work complex. For instance, an anthology for which only one version exists is not a complex work. The boundaries of a Complex Work have nothing to do with the value of the intellectual achievement but only with the dominance of a concept. Thus, derivations such as translations are regarded as belonging to the same Complex Work, even though in addition they constitute an Individual Work themselves. In contrast, a Work that significantly takes up and merges concepts of other works so that it is no longer dominated by the initial concept is regarded as a new work. In cataloguing practice, detailed rules are established prescribing which kinds of derivation should be regarded as crossing the boundaries of a complex work. Adaptation and derivation graphs allow the recognition of distinct sub-units, i.e. a complex work contained in a larger complex work. As a Complex Work can be taken up by any creator who acquires the spirit of its concept, it is never finished in an absolute sense."@en .
+<http://iflastandards.info/ns/fr/frbr/frbroo/F15> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://iflastandards.info/ns/fr/frbr/frbroo/> .
+<http://iflastandards.info/ns/fr/frbr/frbroo/F15> <http://www.w3.org/2000/01/rdf-schema#label> "Complex Work"@en .
+<http://iflastandards.info/ns/fr/frbr/frbroo/F15> <http://www.w3.org/2004/02/skos/core#definition> "This class comprises works that have more than one work as members."@en .
+<http://iflastandards.info/ns/fr/frbr/frbroo/F15> <http://www.w3.org/2004/02/skos/core#scopeNote> "The members of a Complex Work may constitute components of the overall concept or be alternatives to other members of the work. In practice, no clear line can be drawn between parallel and subsequent processes in the evolution of a work. One part may not be finished when another is already revised. An initially monolithic work may be taken up and evolve in pieces. The member relationship of Work is based on the conceptual relationship, and should not be confused with the internal structural parts of an individual expression. The fact that an expression may contain parts from other work(s) does not make the expressed work complex. For instance, an anthology for which only one version exists is not a complex work. The boundaries of a Complex Work have nothing to do with the value of the intellectual achievement but only with the dominance of a concept. Thus, derivations such as translations are regarded as belonging to the same Complex Work, even though in addition they constitute an Individual Work themselves. In contrast, a Work that significantly takes up and merges concepts of other works so that it is no longer dominated by the initial concept is regarded as a new work. In cataloguing practice, detailed rules are established prescribing which kinds of derivation should be regarded as crossing the boundaries of a complex work. Adaptation and derivation graphs allow the recognition of distinct sub-units, i.e. a complex work contained in a larger complex work. As a Complex Work can be taken up by any creator who acquires the spirit of its concept, it is never finished in an absolute sense."@en .
+# 
+# http://iflastandards.info/ns/fr/frbr/frbroo/F15_Complex_Work
+<http://iflastandards.info/ns/fr/frbr/frbroo/F15_Complex_Work> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iflastandards.info/ns/fr/frbr/frbroo/F15_Complex_Work> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iflastandards.info/ns/fr/frbr/frbroo/F1_Work> .
+# 
+# http://iflastandards.info/ns/fr/frbr/frbroo/F16
+<http://iflastandards.info/ns/fr/frbr/frbroo/F16> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iflastandards.info/ns/fr/frbr/frbroo/F16> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iflastandards.info/ns/fr/frbr/frbroo/F1> .
+# 
+# http://iflastandards.info/ns/fr/frbr/frbroo/F16_Container_Work
+<http://iflastandards.info/ns/fr/frbr/frbroo/F16_Container_Work> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iflastandards.info/ns/fr/frbr/frbroo/F16_Container_Work> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iflastandards.info/ns/fr/frbr/frbroo/F1_Work> .
+# 
+# http://iflastandards.info/ns/fr/frbr/frbroo/F17
+<http://iflastandards.info/ns/fr/frbr/frbroo/F17> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iflastandards.info/ns/fr/frbr/frbroo/F17> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iflastandards.info/ns/fr/frbr/frbroo/F14> .
+# 
+# http://iflastandards.info/ns/fr/frbr/frbroo/F17_Aggregation_Work
+<http://iflastandards.info/ns/fr/frbr/frbroo/F17_Aggregation_Work> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iflastandards.info/ns/fr/frbr/frbroo/F17_Aggregation_Work> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iflastandards.info/ns/fr/frbr/frbroo/F14_Individual_Work> .
+<http://iflastandards.info/ns/fr/frbr/frbroo/F17_Aggregation_Work> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iflastandards.info/ns/fr/frbr/frbroo/F16_Container_Work> .
+# 
+# http://iflastandards.info/ns/fr/frbr/frbroo/F18
+<http://iflastandards.info/ns/fr/frbr/frbroo/F18> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iflastandards.info/ns/fr/frbr/frbroo/F18> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iflastandards.info/ns/fr/frbr/frbroo/F15> .
+# 
+# http://iflastandards.info/ns/fr/frbr/frbroo/F18_Serial_Work
+<http://iflastandards.info/ns/fr/frbr/frbroo/F18_Serial_Work> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iflastandards.info/ns/fr/frbr/frbroo/F18_Serial_Work> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iflastandards.info/ns/fr/frbr/frbroo/F15_Complex_Work> .
+<http://iflastandards.info/ns/fr/frbr/frbroo/F18_Serial_Work> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iflastandards.info/ns/fr/frbr/frbroo/F19_Publication_Work> .
+# 
+# http://iflastandards.info/ns/fr/frbr/frbroo/F19
+<http://iflastandards.info/ns/fr/frbr/frbroo/F19> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iflastandards.info/ns/fr/frbr/frbroo/F19> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iflastandards.info/ns/fr/frbr/frbroo/F16> .
+# 
+# http://iflastandards.info/ns/fr/frbr/frbroo/F19_Publication_Work
+<http://iflastandards.info/ns/fr/frbr/frbroo/F19_Publication_Work> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iflastandards.info/ns/fr/frbr/frbroo/F19_Publication_Work> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iflastandards.info/ns/fr/frbr/frbroo/F16_Container_Work> .
+# 
+# http://iflastandards.info/ns/fr/frbr/frbroo/F1_Work
+<http://iflastandards.info/ns/fr/frbr/frbroo/F1_Work> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iflastandards.info/ns/fr/frbr/frbroo/F1_Work> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.cidoc-crm.org/cidoc-crm/E89_Propositional_Object> .
+# 
+# http://iflastandards.info/ns/fr/frbr/frbroo/F2
+<http://iflastandards.info/ns/fr/frbr/frbroo/F2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iflastandards.info/ns/fr/frbr/frbroo/F2> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object> .
+# 
+# http://iflastandards.info/ns/fr/frbr/frbroo/F20
+<http://iflastandards.info/ns/fr/frbr/frbroo/F20> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iflastandards.info/ns/fr/frbr/frbroo/F20> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iflastandards.info/ns/fr/frbr/frbroo/F16> .
+# 
+# http://iflastandards.info/ns/fr/frbr/frbroo/F20_Performance_Work
+<http://iflastandards.info/ns/fr/frbr/frbroo/F20_Performance_Work> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iflastandards.info/ns/fr/frbr/frbroo/F20_Performance_Work> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iflastandards.info/ns/fr/frbr/frbroo/F16_Container_Work> .
+# 
+# http://iflastandards.info/ns/fr/frbr/frbroo/F21
+<http://iflastandards.info/ns/fr/frbr/frbroo/F21> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iflastandards.info/ns/fr/frbr/frbroo/F21> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iflastandards.info/ns/fr/frbr/frbroo/F1> .
+# 
+# http://iflastandards.info/ns/fr/frbr/frbroo/F21_Recording_Work
+<http://iflastandards.info/ns/fr/frbr/frbroo/F21_Recording_Work> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iflastandards.info/ns/fr/frbr/frbroo/F21_Recording_Work> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iflastandards.info/ns/fr/frbr/frbroo/F1_Work> .
+# 
+# http://iflastandards.info/ns/fr/frbr/frbroo/F22
+<http://iflastandards.info/ns/fr/frbr/frbroo/F22> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iflastandards.info/ns/fr/frbr/frbroo/F22> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iflastandards.info/ns/fr/frbr/frbroo/F2> .
+# 
+# http://iflastandards.info/ns/fr/frbr/frbroo/F22_Self-Contained_Expression
+<http://iflastandards.info/ns/fr/frbr/frbroo/F22_Self-Contained_Expression> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iflastandards.info/ns/fr/frbr/frbroo/F22_Self-Contained_Expression> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iflastandards.info/ns/fr/frbr/frbroo/F2_Expression> .
+<http://iflastandards.info/ns/fr/frbr/frbroo/F22_Self-Contained_Expression> <http://www.w3.org/2000/01/rdf-schema#comment> "This class comprises the immaterial realisations of individual works at a particular time that are regarded as a complete whole. The quality of wholeness reflects the intention of its creator that this expression should convey the concept of the work. Such a whole can in turn be part of a larger whole.\nInherent to the notion of work is the completion of recognisable outcomes of the work. These outcomes, i.e. the Self-Contained Expressions, are regarded as the symbolic equivalents of Individual Works, which form the atoms of a complex work. A Self-Contained Expression may contain expressions or parts of expressions from other work, such as citations or items collected in anthologies. Even though they are incorporated in the Self-Contained Expression, they are not regarded as becoming members of the expressed container work by their inclusion in the expression, but are rather regarded as foreign or referred to elements.\nF22 Self-Contained Expression can be distinguished from F23 Expression Fragment in that an F23 Expression Fragment was not intended by its creator to make sense by itself. Normally creators would characterise an outcome of a work as finished. In other cases, one could recognise an outcome of a work as complete from the elaboration or logical coherence of its content, or if there is any historical knowledge about the creator deliberately or accidentally never finishing (completing) that particular expression. In all those cases, one would regard an expression as self-contained.\n"@en .
+<http://iflastandards.info/ns/fr/frbr/frbroo/F22_Self-Contained_Expression> <http://www.w3.org/2000/01/rdf-schema#label> "Self-Contained Expression"@en .
+# 
+# http://iflastandards.info/ns/fr/frbr/frbroo/F23
+<http://iflastandards.info/ns/fr/frbr/frbroo/F23> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iflastandards.info/ns/fr/frbr/frbroo/F23> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iflastandards.info/ns/fr/frbr/frbroo/F2> .
+# 
+# http://iflastandards.info/ns/fr/frbr/frbroo/F23_Expression_Fragment
+<http://iflastandards.info/ns/fr/frbr/frbroo/F23_Expression_Fragment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iflastandards.info/ns/fr/frbr/frbroo/F23_Expression_Fragment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iflastandards.info/ns/fr/frbr/frbroo/F2_Expression> .
+# 
+# http://iflastandards.info/ns/fr/frbr/frbroo/F24
+<http://iflastandards.info/ns/fr/frbr/frbroo/F24> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iflastandards.info/ns/fr/frbr/frbroo/F24> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iflastandards.info/ns/fr/frbr/frbroo/F22> .
+# 
+# http://iflastandards.info/ns/fr/frbr/frbroo/F24_Publication_Expression
+<http://iflastandards.info/ns/fr/frbr/frbroo/F24_Publication_Expression> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iflastandards.info/ns/fr/frbr/frbroo/F24_Publication_Expression> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iflastandards.info/ns/fr/frbr/frbroo/F22_Self-Contained_Expression> .
+# 
+# http://iflastandards.info/ns/fr/frbr/frbroo/F25
+<http://iflastandards.info/ns/fr/frbr/frbroo/F25> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iflastandards.info/ns/fr/frbr/frbroo/F25> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iflastandards.info/ns/fr/frbr/frbroo/F22> .
+# 
+# http://iflastandards.info/ns/fr/frbr/frbroo/F26
+<http://iflastandards.info/ns/fr/frbr/frbroo/F26> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iflastandards.info/ns/fr/frbr/frbroo/F26> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iflastandards.info/ns/fr/frbr/frbroo/F22> .
+# 
+# http://iflastandards.info/ns/fr/frbr/frbroo/F26_Recording
+<http://iflastandards.info/ns/fr/frbr/frbroo/F26_Recording> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iflastandards.info/ns/fr/frbr/frbroo/F26_Recording> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iflastandards.info/ns/fr/frbr/frbroo/F22_Self-Contained_Expression> .
+# 
+# http://iflastandards.info/ns/fr/frbr/frbroo/F27
+<http://iflastandards.info/ns/fr/frbr/frbroo/F27> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iflastandards.info/ns/fr/frbr/frbroo/F27> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.cidoc-crm.org/cidoc-crm/E65_Creation> .
+# 
+# http://iflastandards.info/ns/fr/frbr/frbroo/F27_Work_Conception
+<http://iflastandards.info/ns/fr/frbr/frbroo/F27_Work_Conception> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iflastandards.info/ns/fr/frbr/frbroo/F27_Work_Conception> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.cidoc-crm.org/cidoc-crm/E65_Creation> .
+# 
+# http://iflastandards.info/ns/fr/frbr/frbroo/F2_Expression
+<http://iflastandards.info/ns/fr/frbr/frbroo/F2_Expression> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iflastandards.info/ns/fr/frbr/frbroo/F2_Expression> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object> .
+# 
+# http://iflastandards.info/ns/fr/frbr/frbroo/F3
+<http://iflastandards.info/ns/fr/frbr/frbroo/F3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iflastandards.info/ns/fr/frbr/frbroo/F3> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.cidoc-crm.org/cidoc-crm/E55_Type> .
+<http://iflastandards.info/ns/fr/frbr/frbroo/F3> <http://metadataregistry.org/uri/profile/regap/name> "ManifestationProductType"@en .
+<http://iflastandards.info/ns/fr/frbr/frbroo/F3> <http://metadataregistry.org/uri/profile/regap/name> "http://www.cidoc-crm.org/cidoc-crm/E72_Legal_Object"@en .
+<http://iflastandards.info/ns/fr/frbr/frbroo/F3> <http://www.w3.org/2000/01/rdf-schema#comment> "This class comprises the definitions of publication products. An instance of F3 Manifestation Product Type is the \"species\", and all copies of a given object are \"specimens\" of it. An instance of F3 Manifestation Product Type defines all of the features or traits that instances of F5 Item normally display in order that they may be recognised as copies of a particular publication. However, due to production problems or subsequent events, one or more instances of F5 Item may not exhibit all these features or traits; yet such instances still retain their relationship to the same instance of F3 Manifestation Product Type. The features that characterise a given instance of F3 Manifestation Product Type include: one instance of F24 Publication Expression, containing one or more than one instance of F2 Expression, reflecting the authors’ content of the manifestation and all additional input by the publisher; and the appropriate types of physical features for that form of the object. For example, hardcover and paperback are two distinct publications (i.e. two distinct instances of F3 Manifestation Product Type) even though authorial and editorial content are otherwise identical in both publications. The activity of cataloguing aims at the most accurate listing of features or traits of an instance of F3 Manifestation Product Type that are sufficient to distinguish it from another instance of F3 Manifestation Product Type. In this sense, it may be said that a typical bibliographic record for a publication (not a manuscript) reflects the notion of F3 Manifestation Product Type."@en .
+<http://iflastandards.info/ns/fr/frbr/frbroo/F3> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://iflastandards.info/ns/fr/frbr/frbroo/> .
+<http://iflastandards.info/ns/fr/frbr/frbroo/F3> <http://www.w3.org/2000/01/rdf-schema#label> "Manifestation Product Type"@en .
+<http://iflastandards.info/ns/fr/frbr/frbroo/F3> <http://www.w3.org/2004/02/skos/core#definition> "This class comprises the definitions of publication products."@en .
+<http://iflastandards.info/ns/fr/frbr/frbroo/F3> <http://www.w3.org/2004/02/skos/core#scopeNote> "An instance of F3 Manifestation Product Type is the \"species\", and all copies of a given object are \"specimens\" of it. An instance of F3 Manifestation Product Type defines all of the features or traits that instances of F5 Item normally display in order that they may be recognised as copies of a particular publication. However, due to production problems or subsequent events, one or more instances of F5 Item may not exhibit all these features or traits; yet such instances still retain their relationship to the same instance of F3 Manifestation Product Type. The features that characterise a given instance of F3 Manifestation Product Type include: one instance of F24 Publication Expression, containing one or more than one instance of F2 Expression, reflecting the authors’ content of the manifestation and all additional input by the publisher; and the appropriate types of physical features for that form of the object. For example, hardcover and paperback are two distinct publications (i.e. two distinct instances of F3 Manifestation Product Type) even though authorial and editorial content are otherwise identical in both publications. The activity of cataloguing aims at the most accurate listing of features or traits of an instance of F3 Manifestation Product Type that are sufficient to distinguish it from another instance of F3 Manifestation Product Type. In this sense, it may be said that a typical bibliographic record for a publication (not a manuscript) reflects the notion of F3 Manifestation Product Type."@en .
+# 
+# http://iflastandards.info/ns/fr/frbr/frbroo/F34
+<http://iflastandards.info/ns/fr/frbr/frbroo/F34> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iflastandards.info/ns/fr/frbr/frbroo/F34> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iflastandards.info/ns/fr/frbr/frbroo/F2> .
+# 
+# http://iflastandards.info/ns/fr/frbr/frbroo/F35
+<http://iflastandards.info/ns/fr/frbr/frbroo/F35> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iflastandards.info/ns/fr/frbr/frbroo/F35> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iflastandards.info/ns/fr/frbr/frbroo/F2> .
+# 
+# http://iflastandards.info/ns/fr/frbr/frbroo/F38
+<http://iflastandards.info/ns/fr/frbr/frbroo/F38> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iflastandards.info/ns/fr/frbr/frbroo/F38> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.cidoc-crm.org/cidoc-crm/E28_Conceptual_Object> .
+# 
+# http://iflastandards.info/ns/fr/frbr/frbroo/F38_Character
+<http://iflastandards.info/ns/fr/frbr/frbroo/F38_Character> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iflastandards.info/ns/fr/frbr/frbroo/F38_Character> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.cidoc-crm.org/cidoc-crm/E28_Conceptual_Object> .
+# 
+# http://iflastandards.info/ns/fr/frbr/frbroo/F39
+<http://iflastandards.info/ns/fr/frbr/frbroo/F39> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iflastandards.info/ns/fr/frbr/frbroo/F39> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.cidoc-crm.org/cidoc-crm/E74_Group> .
+# 
+# http://iflastandards.info/ns/fr/frbr/frbroo/F39_Family
+<http://iflastandards.info/ns/fr/frbr/frbroo/F39_Family> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iflastandards.info/ns/fr/frbr/frbroo/F39_Family> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.cidoc-crm.org/cidoc-crm/E74_Group> .
+# 
+# http://iflastandards.info/ns/fr/frbr/frbroo/F3_Manifestation_Product_Type
+<http://iflastandards.info/ns/fr/frbr/frbroo/F3_Manifestation_Product_Type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iflastandards.info/ns/fr/frbr/frbroo/F3_Manifestation_Product_Type> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.cidoc-crm.org/cidoc-crm/E55_Type> .
+<http://iflastandards.info/ns/fr/frbr/frbroo/F3_Manifestation_Product_Type> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.cidoc-crm.org/cidoc-crm/E72_Legal_Object> .
+# 
+# http://iflastandards.info/ns/fr/frbr/frbroo/F4
+<http://iflastandards.info/ns/fr/frbr/frbroo/F4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iflastandards.info/ns/fr/frbr/frbroo/F4> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.cidoc-crm.org/cidoc-crm/E24_Physical_Man-Made_Thing> .
+# 
+# http://iflastandards.info/ns/fr/frbr/frbroo/F40
+<http://iflastandards.info/ns/fr/frbr/frbroo/F40> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iflastandards.info/ns/fr/frbr/frbroo/F40> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.cidoc-crm.org/cidoc-crm/E15_Identifier_Assignment> .
+# 
+# http://iflastandards.info/ns/fr/frbr/frbroo/F40_Identifier_Assignment
+<http://iflastandards.info/ns/fr/frbr/frbroo/F40_Identifier_Assignment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iflastandards.info/ns/fr/frbr/frbroo/F40_Identifier_Assignment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.cidoc-crm.org/cidoc-crm/E15_Identifier_Assignment> .
+# 
+# http://iflastandards.info/ns/fr/frbr/frbroo/F43
+<http://iflastandards.info/ns/fr/frbr/frbroo/F43> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iflastandards.info/ns/fr/frbr/frbroo/F43> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iflastandards.info/ns/fr/frbr/frbroo/F2> .
+# 
+# http://iflastandards.info/ns/fr/frbr/frbroo/F4_Manifestation_Singleton
+<http://iflastandards.info/ns/fr/frbr/frbroo/F4_Manifestation_Singleton> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iflastandards.info/ns/fr/frbr/frbroo/F4_Manifestation_Singleton> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.cidoc-crm.org/cidoc-crm/E24_Physical_Man-Made_Thing> .
+# 
+# http://iflastandards.info/ns/fr/frbr/frbroo/F5
+<http://iflastandards.info/ns/fr/frbr/frbroo/F5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iflastandards.info/ns/fr/frbr/frbroo/F5> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.cidoc-crm.org/cidoc-crm/E84_Information_Carrier> .
+<http://iflastandards.info/ns/fr/frbr/frbroo/F5> <http://www.w3.org/2000/01/rdf-schema#comment> "This class comprises physical objects (printed books, scores, CDs, DVDs, CD-ROMS, etc.) that carry a F24 Publication Expression and were produced by an industrial process involving an F3 Manifestation Product Type.Marin Mersenne's personal copy of his own ‘Harmonie universelle’ without any manuscript addition and without Charles Racquet’s manuscript score, as a mere witness of the 1st edition of ‘Harmonie universelle’, Paris, 1636 [the same physical object can be regarded at the same time as an instance of F5 Item inasmuch as it is a witness of a publication, and as an instance of F4 Manifestation Singleton inasmuch as it contains manuscript annotations and additions and as it served as the basis for a subsequent production process]\nAny other copy of the original edition of Marin Mersenne’s ‘Harmonie universelle’, Paris, 1636\nAny copy of the modern reprint publication of Marin Mersenne’s ‘Harmonie universelle’, Paris, 1986, ISBN ‘2-222-00835-2’"@en .
+<http://iflastandards.info/ns/fr/frbr/frbroo/F5> <http://www.w3.org/2000/01/rdf-schema#label> "Item"@en .
+# 
+# http://iflastandards.info/ns/fr/frbr/frbroo/F54_Utilized_Information_Carrier
+<http://iflastandards.info/ns/fr/frbr/frbroo/F54_Utilized_Information_Carrier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iflastandards.info/ns/fr/frbr/frbroo/F54_Utilized_Information_Carrier> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.cidoc-crm.org/cidoc-crm/E84_Information_Carrier> .
+<http://iflastandards.info/ns/fr/frbr/frbroo/F54_Utilized_Information_Carrier> <http://www.w3.org/2000/01/rdf-schema#comment> "This class comprises physical objects that carry one or more instances of F24 Publication Expression.\n"@en .
+<http://iflastandards.info/ns/fr/frbr/frbroo/F54_Utilized_Information_Carrier> <http://www.w3.org/2000/01/rdf-schema#label> "Utilized Information Carrier"@en .
+# 
+# http://iflastandards.info/ns/fr/frbr/frbroo/F5_Item
+<http://iflastandards.info/ns/fr/frbr/frbroo/F5_Item> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iflastandards.info/ns/fr/frbr/frbroo/F5_Item> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://iflastandards.info/ns/fr/frbr/frbroo/F54_Utilized_Information_Carrier> .
+# 
+# http://iflastandards.info/ns/fr/frbr/frbroo/F6
+<http://iflastandards.info/ns/fr/frbr/frbroo/F6> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iflastandards.info/ns/fr/frbr/frbroo/F6> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.cidoc-crm.org/cidoc-crm/E28_Conceptual_Object> .
+# 
+# http://iflastandards.info/ns/fr/frbr/frbroo/F6_Concept
+<http://iflastandards.info/ns/fr/frbr/frbroo/F6_Concept> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iflastandards.info/ns/fr/frbr/frbroo/F6_Concept> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.cidoc-crm.org/cidoc-crm/E28_Conceptual_Object> .
+# 
+# http://iflastandards.info/ns/fr/frbr/frbroo/F8
+<http://iflastandards.info/ns/fr/frbr/frbroo/F8> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iflastandards.info/ns/fr/frbr/frbroo/F8> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.cidoc-crm.org/cidoc-crm/E4_Period> .
+<http://iflastandards.info/ns/fr/frbr/frbroo/F8> <http://www.w3.org/2000/01/rdf-schema#comment> "This class comprises sets of coherent phenomena or cultural manifestations bounded in time and space.\n\nIt is the social or physical coherence of these phenomena that identify an E4 Period and not the associated spatio-temporal bounds. These bounds are a mere approximation of the actual process of growth, spread and retreat. Consequently, different periods can overlap and coexist in time and space, such as when a nomadic culture exists in the same area as a sedentary culture.\n\nTypically this class is used to describe prehistoric or historic periods such as the ‘Neolithic Period’, the ‘Ming Dynasty’ or the ‘McCarthy Era’. There are however no assumptions about the scale of the associated phenomena. In particular all events are seen as synthetic processes consisting of coherent phenomena. Therefore E4 Period is a superclass of E5 Event. For example, a modern clinical E67 Birth can be seen as both an atomic E5 Event and as an E4 Period that consists of multiple activities performed by multiple instances of E39 Actor.\n\nThere are two different conceptualisations of “artistic style”, defined either by physical features or by historical context. For example, Impressionism can be viewed as a period lasting from approximately 1870 to 1905 during which paintings with particular characteristics were produced by a group of artists that included (among others) Monet, Renoir, Pissarro, Sisley and Degas. Alternatively, it can be regarded as a style applicable to all paintings sharing the characteristics of the works produced by the Impressionist painters, regardless of historical context. The first interpretation is an E4 Period, and the second defines morphological object types that fall under E55 Type.\n\nAnother specific case of an E4 Period is the set of activities and phenomena associated with a settlement, such as the populated period of Nineveh.\n\n[This is the Scope note for E4 Period in CIDOC CRM version 5.0.1]\n\n[Note that in CIDOC CRM, E12 Production, E13 Attribute Assignment, and E65 Creation are indirect subclasses of E4 Period = F8 Event; as a consequence, F8 Event is an indirect superclass of: F27 Work Conception, F28 Expression Creation, F40 Identifier Assignment, F41 Representative Manifestation Assignment, F42 Representative Expression Assignment, F32 Carrier Production Event, F33 Reproduction Event, and F30 Publication Event]"@en .
+# 
+# http://iflastandards.info/ns/fr/frbr/frbroo/F8_Event
+<http://iflastandards.info/ns/fr/frbr/frbroo/F8_Event> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iflastandards.info/ns/fr/frbr/frbroo/F8_Event> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.cidoc-crm.org/cidoc-crm/E4_Period> .
+# 
+# http://iflastandards.info/ns/fr/frbr/frbroo/F9
+<http://iflastandards.info/ns/fr/frbr/frbroo/F9> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iflastandards.info/ns/fr/frbr/frbroo/F9> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.cidoc-crm.org/cidoc-crm/E53_Place> .
+# 
+# http://iflastandards.info/ns/fr/frbr/frbroo/F9_Place
+<http://iflastandards.info/ns/fr/frbr/frbroo/F9_Place> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://iflastandards.info/ns/fr/frbr/frbroo/F9_Place> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.cidoc-crm.org/cidoc-crm/E53_Place> .
+# 
+# http://purl.org/ontology/olo/core#OrderedList
+<http://purl.org/ontology/olo/core#OrderedList> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://purl.org/ontology/olo/core#Slot
+<http://purl.org/ontology/olo/core#Slot> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://schema.org/GeoCoordinates
+<http://schema.org/GeoCoordinates> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://schema.org/Place
+<http://schema.org/Place> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.cidoc-crm.org/cidoc-crm/E15_Identifier_Assignment
+<http://www.cidoc-crm.org/cidoc-crm/E15_Identifier_Assignment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity
+<http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.cidoc-crm.org/cidoc-crm/E21_Person
+<http://www.cidoc-crm.org/cidoc-crm/E21_Person> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.cidoc-crm.org/cidoc-crm/E24_Physical_Man-Made_Thing
+<http://www.cidoc-crm.org/cidoc-crm/E24_Physical_Man-Made_Thing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.cidoc-crm.org/cidoc-crm/E28_Conceptual_Object
+<http://www.cidoc-crm.org/cidoc-crm/E28_Conceptual_Object> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.cidoc-crm.org/cidoc-crm/E2_Temporal_Entity
+<http://www.cidoc-crm.org/cidoc-crm/E2_Temporal_Entity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.cidoc-crm.org/cidoc-crm/E39_Actor
+<http://www.cidoc-crm.org/cidoc-crm/E39_Actor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.cidoc-crm.org/cidoc-crm/E4_Period
+<http://www.cidoc-crm.org/cidoc-crm/E4_Period> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.cidoc-crm.org/cidoc-crm/E52_Time-Span
+<http://www.cidoc-crm.org/cidoc-crm/E52_Time-Span> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.cidoc-crm.org/cidoc-crm/E52_Time-Span> <http://www.w3.org/2000/01/rdf-schema#comment> "This class comprises abstract temporal extents, in the sense of Galilean physics, having a beginning, an end and a duration.\n\nTime Span has no other semantic connotations. Time-Spans are used to define the temporal extent of instances of E4 Period, E5 Event and any other phenomena valid for a certain time. An E52 Time-Span may be identified by one or more instances of E49 Time Appellation.\n\nSince our knowledge of history is imperfect, instances of E52 Time-Span can best be considered as approximations of the actual Time-Spans of temporal entities. The properties of E52 Time-Span are intended to allow these approximations to be expressed precisely. An extreme case of approximation, might, for example, define an E52 Time-Span having unknown beginning, end and duration. Used as a common E52 Time-Span for two events, it would nevertheless define them as being simultaneous, even if nothing else was known.\n\nAutomatic processing and querying of instances of E52 Time-Span is facilitated if data can be parsed into an E61 Time Primitive.\n\n1961\nFrom 12-17-1993 to 12-8-1996\n14h30 – 16h22 4th July 1945\n9.30 am 1.1.1999 to 2.00 pm 1.1.1999\nduration of the Ming Dynasty"@en .
+# 
+# http://www.cidoc-crm.org/cidoc-crm/E53_Place
+<http://www.cidoc-crm.org/cidoc-crm/E53_Place> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.cidoc-crm.org/cidoc-crm/E54_Dimension
+<http://www.cidoc-crm.org/cidoc-crm/E54_Dimension> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.cidoc-crm.org/cidoc-crm/E55_Type
+<http://www.cidoc-crm.org/cidoc-crm/E55_Type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.cidoc-crm.org/cidoc-crm/E56_Language
+<http://www.cidoc-crm.org/cidoc-crm/E56_Language> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.cidoc-crm.org/cidoc-crm/E57_Material
+<http://www.cidoc-crm.org/cidoc-crm/E57_Material> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.cidoc-crm.org/cidoc-crm/E65_Creation
+<http://www.cidoc-crm.org/cidoc-crm/E65_Creation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.cidoc-crm.org/cidoc-crm/E72_Legal_Object
+<http://www.cidoc-crm.org/cidoc-crm/E72_Legal_Object> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object
+<http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.cidoc-crm.org/cidoc-crm/E74_Group
+<http://www.cidoc-crm.org/cidoc-crm/E74_Group> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.cidoc-crm.org/cidoc-crm/E84_Information_Carrier
+<http://www.cidoc-crm.org/cidoc-crm/E84_Information_Carrier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.cidoc-crm.org/cidoc-crm/E89_Propositional_Object
+<http://www.cidoc-crm.org/cidoc-crm/E89_Propositional_Object> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.europeana.eu/schemas/edm/ProvidedCHO
+<http://www.europeana.eu/schemas/edm/ProvidedCHO> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.w3.org/2004/02/skos/core#Concept
+<http://www.w3.org/2004/02/skos/core#Concept> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.w3.org/2004/02/skos/core#ConceptScheme
+<http://www.w3.org/2004/02/skos/core#ConceptScheme> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://bdovidiana.es/ontology/#Theme
+<http://bdovidiana.es/ontology/#Theme> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://bdovidiana.es/ontology/#Theme> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Annotations
+# #
+# #################################################################
+# 
+# 
+<http://bdovidiana.es/ontology/#Theme> <http://www.w3.org/2000/01/rdf-schema#comment> "Theme represented in the illustration"@en .
+<http://bdovidiana.es/ontology/#Theme> <http://www.w3.org/2000/01/rdf-schema#label> "Subject"@en .
+<http://bdovidiana.es/ontology/#Theme> <http://www.w3.org/2000/01/rdf-schema#label> "Tema"@es .
+# 
+<http://iflastandards.info/ns/fr/frbr/frbroo/> <http://purl.org/dc/elements/1.1/title> "FRBRoo model"@en .
+<http://iflastandards.info/ns/fr/frbr/frbroo/> <http://www.w3.org/2004/02/skos/core#note> "Element set of the Functional Requirements for Bibliographic Records object-oriented extension to the the CIDOC Conceptual Reference Model (CRM)"@en .
+# 
+<http://purl.org/dc/elements/1.1/title> <http://www.w3.org/2000/01/rdf-schema#comment> "Title of the edition or specimen"@es .
+<http://purl.org/dc/elements/1.1/title> <http://www.w3.org/2000/01/rdf-schema#label> "Title"@en .
+<http://purl.org/dc/elements/1.1/title> <http://www.w3.org/2000/01/rdf-schema#label> "Título"@es .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    General axioms
+# #
+# #################################################################
+# 
+# 
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid2 <http://www.w3.org/2002/07/owl#members> _:genid16 .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid15 .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid14 .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid13 .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid12 .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid11 .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid10 .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid9 .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid8 .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid7 .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid6 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid5 .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid4 .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid3 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://bdovidiana.es/ontology/#Theme> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://bdovidiana.es/ontology/#Specimen> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://bdovidiana.es/ontology/#PublicationPlace> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://bdovidiana.es/ontology/#Province> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://bdovidiana.es/ontology/#Printer> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://bdovidiana.es/ontology/#Opus> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://bdovidiana.es/ontology/#Library> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://bdovidiana.es/ontology/#Index> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://bdovidiana.es/ontology/#Illustrator> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://bdovidiana.es/ontology/#Illustration> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://bdovidiana.es/ontology/#Edition> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://bdovidiana.es/ontology/#Date> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://bdovidiana.es/ontology/#City> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://bdovidiana.es/ontology/#Category> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

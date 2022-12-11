@@ -1,0 +1,4602 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "en", "it", "es", "undefined" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://schema.org", "http://iflastandards.info/ns/fr/frbr/frbroo", "http://www.w3.org/2002/07/owl", "http://www.ontologydesignpatterns.org/cp/owl/agentrole.owl", "http://www.w3.org/2001/XMLSchema", "http://dbpedia.org/ontology", "http://www.europeana.eu/schemas/edm", "http://purl.org/dc/elements/1.1", "http://purl.org/ontology/olo/core", "http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl", "http://www.w3.org/2000/01/rdf-schema", "http://www.ontologydesignpatterns.org/cp/owl/classification.owl", "http://bdovidiana.es/ontology/", "http://www.cidoc-crm.org/cidoc-crm", "http://www.w3.org/2004/02/skos/core" ],
+    "title" : {
+      "en" : "Ontology of the Ovid Digital Library",
+      "es" : "Ontología de la Biblioteca Digital Ovidiana"
+    },
+    "iri" : "http://bdovidiana.es/ontology/",
+    "version" : "V1.0",
+    "author" : [ "Paloma Centenera Centenera", "M Luisa Díez-Platas\nhttps://orcid.org/0000-0002-9416-3147" ],
+    "description" : {
+      "en" : "This ontology models the information available in the Ovidian Digital Library. \nThe Ovidian Digital Library is the result of a series of research projects of the same title, funded by the Ministries of Science and Technology, Science and Innovation, and Economy and Competitiveness, which have been carried out at the University of Santiago de Compostela since 2007.\nThe information has been extracted from the detailed study of the copies of the illustrated editions of Ovid from the 15th to the 19th century, which are curated in Spanish libraries, both public and private.\nThe ontology models the different entities, their attributes and relationships. \nAn important feature is the integration of a series of thesauri to represent the values of certain properties and which are in the process of being developed.\nThe ontology is under development and undergoing successive refinements.",
+      "es" : "Esta ontología modela la información con la que se cuenta en la Biblioteca Digital Ovidiana. \nLa Biblioteca Digital Ovidiana es el resultado de una serie de proyectos de investigación del mismo título, financiados por los Ministerios de Ciencia y Tecnología, Ciencia e Innovación y Economía y Competitividad, que se llevan desarrollando en la Universidad de Santiago de Compostela desde el año 2007\nLa información se ha extraido del estudio pormenorizado de los ejemplares de las ediciones  ilustradas de Ovido desde el siglo XV hasta el XIX y que se encuantran custodiados en biblotecas españolas, tanto públicas como privadas.\nEn la ontología se modelan las distintas entidades, sus atributos y relaciones. \nUna característica importante es la integración de una serie de tesauros para representar los valores de determinadas propiedades y que se encuentran en proceso de elaboración.\nLa ontología se encuentra en desarrollo y está siendo sometida a sucesivos refinamientos."
+    },
+    "other" : {
+      "date" : [ {
+        "identifier" : "date",
+        "language" : "en",
+        "value" : "2022",
+        "type" : "label"
+      } ],
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "en",
+        "value" : "M Luisa Díez-Platas\nhttps://orcid.org/0000-0002-9416-3147",
+        "type" : "label"
+      }, {
+        "identifier" : "creator",
+        "language" : "en",
+        "value" : "Paloma Centenera Centenera",
+        "type" : "label"
+      } ],
+      "contributor" : [ {
+        "identifier" : "contributor",
+        "language" : "es",
+        "value" : "Fatima Díez-Platas\nhttps://scholar.google.es/citations?user=ffHzVkkAAAAJ&hl=es\nhttps://www.researchgate.net/profile/Fatima-Diez-Platas",
+        "type" : "label"
+      } ],
+      "preferredNamespacePrefix" : [ {
+        "identifier" : "preferredNamespacePrefix",
+        "language" : "en",
+        "value" : "bdo",
+        "type" : "label"
+      } ],
+      "publisher" : [ {
+        "identifier" : "publisher",
+        "language" : "en",
+        "value" : "Ovid Digital Library Projects. Principal Investigator: Fátima Díez-Platas\n\nPhase I (2007- 2010): \"Ovidian digital library: illustrated editions of Ovid, 15th-19th centuries (I): the libraries of Galicia and Catalonia\" (HUM2007- 60265/ARTE)\nPhase II (2011-2012): \"Ovidian digital library: illustrated editions of Ovid, 15th-19th centuries (II): the libraries of Catalonia\" (HAR2010-20015).\nPhase III (2012-2014): \"Ovidian digital library: illustrated editions of Ovid, 15th-19th centuries (III): the libraries of Castilla y León\" (HAR2011-25853).\nPhase IV (2015-2017): \"Ovidian digital library: illustrated editions of Ovid, 15th-19th centuries (IV): the libraries of the Community of Madrid\" (HAR2014-55617-P).\nPhase V (2018-2022): \"Ovidian digital library: illustrated editions of Ovid, 15th-19th centuries (V): the libraries of the Autonomous Communities of Andalusia, Extremadura, the Canary Islands, Ceuta and Melilla\" (HAR2017-86876-P).\nFunded by the Ministerios de Ciencia y Tecnología, Ciencia e Innovación y Economía y Competitividad. Spain.",
+        "type" : "label"
+      } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "en",
+        "value" : "V1.0",
+        "type" : "label"
+      } ],
+      "title" : [ {
+        "identifier" : "title",
+        "language" : "en",
+        "value" : "Ontology of the Ovid Digital Library",
+        "type" : "label"
+      }, {
+        "identifier" : "title",
+        "language" : "es",
+        "value" : "Ontología de la Biblioteca Digital Ovidiana",
+        "type" : "label"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "0",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "4",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "5",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "6",
+    "type" : "owl:Class"
+  }, {
+    "id" : "9",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "13",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "17",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "18",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "19",
+    "type" : "owl:Class"
+  }, {
+    "id" : "16",
+    "type" : "owl:Class"
+  }, {
+    "id" : "12",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "29",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "30",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "31",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "28",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "32",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "33",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "36",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "37",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "38",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "39",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "40",
+    "type" : "owl:Class"
+  }, {
+    "id" : "44",
+    "type" : "owl:Class"
+  }, {
+    "id" : "46",
+    "type" : "owl:Class"
+  }, {
+    "id" : "52",
+    "type" : "owl:Class"
+  }, {
+    "id" : "53",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "57",
+    "type" : "owl:Class"
+  }, {
+    "id" : "69",
+    "type" : "owl:Class"
+  }, {
+    "id" : "80",
+    "type" : "owl:Class"
+  }, {
+    "id" : "82",
+    "type" : "owl:Class"
+  }, {
+    "id" : "100",
+    "type" : "owl:Class"
+  }, {
+    "id" : "48",
+    "type" : "owl:Class"
+  }, {
+    "id" : "83",
+    "type" : "owl:Class"
+  }, {
+    "id" : "122",
+    "type" : "owl:Class"
+  }, {
+    "id" : "135",
+    "type" : "owl:Class"
+  }, {
+    "id" : "7",
+    "type" : "owl:Class"
+  }, {
+    "id" : "157",
+    "type" : "owl:Class"
+  }, {
+    "id" : "85",
+    "type" : "owl:Class"
+  }, {
+    "id" : "142",
+    "type" : "owl:Class"
+  }, {
+    "id" : "115",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "121",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "199",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "200",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "201",
+    "type" : "owl:Class"
+  }, {
+    "id" : "50",
+    "type" : "owl:Class"
+  }, {
+    "id" : "208",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "209",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "210",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "250",
+    "type" : "owl:Class"
+  }, {
+    "id" : "24",
+    "type" : "owl:Class"
+  }, {
+    "id" : "20",
+    "type" : "owl:Class"
+  }, {
+    "id" : "112",
+    "type" : "owl:Class"
+  }, {
+    "id" : "258",
+    "type" : "owl:Class"
+  }, {
+    "id" : "94",
+    "type" : "owl:Class"
+  }, {
+    "id" : "274",
+    "type" : "owl:Class"
+  }, {
+    "id" : "131",
+    "type" : "owl:Class"
+  }, {
+    "id" : "235",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "62",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "207",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "246",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "68",
+    "type" : "owl:Class"
+  }, {
+    "id" : "296",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "91",
+    "type" : "owl:Class"
+  }, {
+    "id" : "126",
+    "type" : "owl:Class"
+  }, {
+    "id" : "109",
+    "type" : "owl:Class"
+  }, {
+    "id" : "75",
+    "type" : "owl:Class"
+  }, {
+    "id" : "308",
+    "type" : "owl:Class"
+  }, {
+    "id" : "58",
+    "type" : "owl:Class"
+  }, {
+    "id" : "61",
+    "type" : "owl:Class"
+  }, {
+    "id" : "315",
+    "type" : "owl:Class"
+  }, {
+    "id" : "169",
+    "type" : "owl:Class"
+  }, {
+    "id" : "198",
+    "type" : "owl:Class"
+  }, {
+    "id" : "177",
+    "type" : "owl:Class"
+  }, {
+    "id" : "318",
+    "type" : "owl:Class"
+  }, {
+    "id" : "178",
+    "type" : "owl:Class"
+  }, {
+    "id" : "67",
+    "type" : "owl:Class"
+  }, {
+    "id" : "180",
+    "type" : "owl:Class"
+  }, {
+    "id" : "138",
+    "type" : "owl:Class"
+  }, {
+    "id" : "98",
+    "type" : "owl:Class"
+  }, {
+    "id" : "164",
+    "type" : "owl:Class"
+  }, {
+    "id" : "167",
+    "type" : "owl:Class"
+  }, {
+    "id" : "174",
+    "type" : "owl:Class"
+  }, {
+    "id" : "163",
+    "type" : "owl:Class"
+  }, {
+    "id" : "170",
+    "type" : "owl:Class"
+  }, {
+    "id" : "175",
+    "type" : "owl:Class"
+  }, {
+    "id" : "35",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "51",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "172",
+    "type" : "owl:Class"
+  }, {
+    "id" : "320",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "102",
+    "type" : "owl:Class"
+  }, {
+    "id" : "321",
+    "type" : "owl:Class"
+  }, {
+    "id" : "143",
+    "type" : "owl:Class"
+  }, {
+    "id" : "145",
+    "type" : "owl:Class"
+  }, {
+    "id" : "74",
+    "type" : "owl:Class"
+  }, {
+    "id" : "101",
+    "type" : "owl:Class"
+  }, {
+    "id" : "132",
+    "type" : "owl:Class"
+  }, {
+    "id" : "117",
+    "type" : "owl:Class"
+  }, {
+    "id" : "110",
+    "type" : "owl:Class"
+  }, {
+    "id" : "59",
+    "type" : "owl:Class"
+  }, {
+    "id" : "3",
+    "type" : "owl:Class"
+  }, {
+    "id" : "86",
+    "type" : "owl:Class"
+  }, {
+    "id" : "8",
+    "type" : "owl:Class"
+  }, {
+    "id" : "328",
+    "type" : "owl:Class"
+  }, {
+    "id" : "330",
+    "type" : "owl:Class"
+  }, {
+    "id" : "77",
+    "type" : "owl:Class"
+  }, {
+    "id" : "166",
+    "type" : "owl:Class"
+  }, {
+    "id" : "15",
+    "type" : "owl:Class"
+  }, {
+    "id" : "64",
+    "type" : "owl:Class"
+  }, {
+    "id" : "134",
+    "type" : "owl:Class"
+  }, {
+    "id" : "21",
+    "type" : "owl:Class"
+  }, {
+    "id" : "70",
+    "type" : "owl:Class"
+  }, {
+    "id" : "324",
+    "type" : "owl:Class"
+  }, {
+    "id" : "158",
+    "type" : "owl:Class"
+  }, {
+    "id" : "237",
+    "type" : "owl:Class"
+  }, {
+    "id" : "93",
+    "type" : "owl:Class"
+  }, {
+    "id" : "334",
+    "type" : "owl:Class"
+  }, {
+    "id" : "185",
+    "type" : "owl:Class"
+  }, {
+    "id" : "325",
+    "type" : "owl:Class"
+  }, {
+    "id" : "326",
+    "type" : "owl:Class"
+  }, {
+    "id" : "337",
+    "type" : "owl:Class"
+  }, {
+    "id" : "333",
+    "type" : "owl:Class"
+  }, {
+    "id" : "84",
+    "type" : "owl:Class"
+  }, {
+    "id" : "104",
+    "type" : "owl:Class"
+  }, {
+    "id" : "43",
+    "type" : "owl:Class"
+  }, {
+    "id" : "27",
+    "type" : "owl:Class"
+  }, {
+    "id" : "25",
+    "type" : "owl:Class"
+  }, {
+    "id" : "332",
+    "type" : "owl:Class"
+  }, {
+    "id" : "338",
+    "type" : "owl:Class"
+  }, {
+    "id" : "345",
+    "type" : "owl:Class"
+  }, {
+    "id" : "329",
+    "type" : "owl:Class"
+  }, {
+    "id" : "47",
+    "type" : "owl:Class"
+  }, {
+    "id" : "353",
+    "type" : "owl:Class"
+  }, {
+    "id" : "96",
+    "type" : "owl:Class"
+  }, {
+    "id" : "106",
+    "type" : "owl:Class"
+  }, {
+    "id" : "42",
+    "type" : "owl:Class"
+  }, {
+    "id" : "129",
+    "type" : "owl:Class"
+  }, {
+    "id" : "72",
+    "type" : "owl:Class"
+  }, {
+    "id" : "216",
+    "type" : "owl:Class"
+  }, {
+    "id" : "88",
+    "type" : "owl:Class"
+  }, {
+    "id" : "99",
+    "type" : "owl:Class"
+  }, {
+    "id" : "81",
+    "type" : "owl:Class"
+  }, {
+    "id" : "11",
+    "type" : "owl:Class"
+  }, {
+    "id" : "41",
+    "type" : "owl:Class"
+  }, {
+    "id" : "55",
+    "type" : "owl:Class"
+  }, {
+    "id" : "79",
+    "type" : "owl:Class"
+  }, {
+    "id" : "401",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://www.w3.org/2001/XMLSchema#anyURI",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "0",
+    "label" : {
+      "IRI-based" : "anyURI"
+    }
+  }, {
+    "iri" : "http://www.cidoc-crm.org/cidoc-crm/E89_Propositional_Object",
+    "baseIri" : "http://www.cidoc-crm.org/cidoc-crm",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "E89_Propositional_Object"
+    },
+    "subClasses" : [ "2", "3" ],
+    "attributes" : [ "external" ],
+    "id" : "1"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#anyURI",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "4",
+    "label" : {
+      "IRI-based" : "anyURI"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "5",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.cidoc-crm.org/cidoc-crm/E24_Physical_Man-Made_Thing",
+    "baseIri" : "http://www.cidoc-crm.org/cidoc-crm",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "E24_Physical_Man-Made_Thing"
+    },
+    "subClasses" : [ "7", "8" ],
+    "attributes" : [ "external" ],
+    "id" : "6"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "9",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "13",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "17",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "18",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://iflastandards.info/ns/fr/frbr/frbroo/F17_Aggregation_Work",
+    "baseIri" : "http://iflastandards.info/ns/fr/frbr/frbroo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "F17_Aggregation_Work"
+    },
+    "attributes" : [ "external" ],
+    "id" : "19",
+    "superClasses" : [ "20", "21" ]
+  }, {
+    "iri" : "http://bdovidiana.es/ontology/#Theme",
+    "baseIri" : "http://bdovidiana.es/ontology/",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Theme",
+      "en" : "Subject",
+      "es" : "Tema"
+    },
+    "comment" : {
+      "en" : "Theme represented in the illustration"
+    },
+    "id" : "16",
+    "superClasses" : [ "24", "25" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "12",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#anyURI",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "29",
+    "label" : {
+      "IRI-based" : "anyURI"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "30",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "31",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "28",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "32",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "33",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "36",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "37",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "38",
+    "label" : {
+      "IRI-based" : "integer"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "39",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://iflastandards.info/ns/fr/frbr/frbroo/F2_Expression",
+    "baseIri" : "http://iflastandards.info/ns/fr/frbr/frbroo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "F2_Expression"
+    },
+    "subClasses" : [ "42", "43" ],
+    "attributes" : [ "external" ],
+    "id" : "40",
+    "superClasses" : [ "41" ]
+  }, {
+    "iri" : "http://iflastandards.info/ns/fr/frbr/frbroo/F20_Performance_Work",
+    "baseIri" : "http://iflastandards.info/ns/fr/frbr/frbroo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "F20_Performance_Work"
+    },
+    "attributes" : [ "external" ],
+    "id" : "44",
+    "superClasses" : [ "21" ]
+  }, {
+    "iri" : "http://bdovidiana.es/ontology/#ListOfEditionIllustrations",
+    "baseIri" : "http://bdovidiana.es/ontology/",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ListOfEditionIllustrations"
+    },
+    "subClasses" : [ "48" ],
+    "id" : "46",
+    "superClasses" : [ "47" ]
+  }, {
+    "iri" : "http://schema.org/GeoCoordinates",
+    "baseIri" : "http://schema.org",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "GeoCoordinates"
+    },
+    "attributes" : [ "external" ],
+    "id" : "52"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "53",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.cidoc-crm.org/cidoc-crm/E55_Type",
+    "baseIri" : "http://www.cidoc-crm.org/cidoc-crm",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "E55_Type"
+    },
+    "subClasses" : [ "58", "59" ],
+    "attributes" : [ "external" ],
+    "id" : "57"
+  }, {
+    "iri" : "http://bdovidiana.es/ontology/#ApproximateDate",
+    "baseIri" : "http://bdovidiana.es/ontology/",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ApproximateDate"
+    },
+    "id" : "69",
+    "superClasses" : [ "70" ]
+  }, {
+    "iri" : "http://bdovidiana.es/ontology/#Illustrator",
+    "baseIri" : "http://bdovidiana.es/ontology/",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Illustrator"
+    },
+    "id" : "80",
+    "superClasses" : [ "81" ]
+  }, {
+    "iri" : "http://www.cidoc-crm.org/cidoc-crm/E28_Conceptual_Object",
+    "baseIri" : "http://www.cidoc-crm.org/cidoc-crm",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "E28_Conceptual_Object"
+    },
+    "subClasses" : [ "83", "84", "85", "86" ],
+    "attributes" : [ "external" ],
+    "id" : "82"
+  }, {
+    "iri" : "http://www.cidoc-crm.org/cidoc-crm/E53_Place",
+    "baseIri" : "http://www.cidoc-crm.org/cidoc-crm",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "E53_Place"
+    },
+    "subClasses" : [ "101", "102" ],
+    "attributes" : [ "external" ],
+    "id" : "100"
+  }, {
+    "iri" : "http://bdovidiana.es/ontology/#ListOfSpecimenIllustrations",
+    "baseIri" : "http://bdovidiana.es/ontology/",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ListOfSpecimenIllustrations"
+    },
+    "id" : "48",
+    "superClasses" : [ "46" ]
+  }, {
+    "iri" : "http://iflastandards.info/ns/fr/frbr/frbroo/F6_Concept",
+    "baseIri" : "http://iflastandards.info/ns/fr/frbr/frbroo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "F6_Concept"
+    },
+    "attributes" : [ "external" ],
+    "id" : "83",
+    "superClasses" : [ "82" ]
+  }, {
+    "iri" : "http://bdovidiana.es/ontology/#ListOfThemes",
+    "baseIri" : "http://bdovidiana.es/ontology/",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ListOfThemes"
+    },
+    "id" : "122",
+    "superClasses" : [ "47" ]
+  }, {
+    "iri" : "http://bdovidiana.es/ontology/#City",
+    "baseIri" : "http://bdovidiana.es/ontology/",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "City"
+    },
+    "id" : "135",
+    "superClasses" : [ "101", "132" ]
+  }, {
+    "iri" : "http://iflastandards.info/ns/fr/frbr/frbroo/F4_Manifestation_Singleton",
+    "baseIri" : "http://iflastandards.info/ns/fr/frbr/frbroo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "F4_Manifestation_Singleton"
+    },
+    "attributes" : [ "external" ],
+    "id" : "7",
+    "superClasses" : [ "6" ]
+  }, {
+    "iri" : "http://iflastandards.info/ns/fr/frbr/frbroo/F11_Corporate_Body",
+    "baseIri" : "http://iflastandards.info/ns/fr/frbr/frbroo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "F11_Corporate_Body"
+    },
+    "attributes" : [ "external" ],
+    "id" : "157",
+    "superClasses" : [ "158" ]
+  }, {
+    "iri" : "http://iflastandards.info/ns/fr/frbr/frbroo/F38_Character",
+    "baseIri" : "http://iflastandards.info/ns/fr/frbr/frbroo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "F38_Character"
+    },
+    "attributes" : [ "external" ],
+    "id" : "85",
+    "superClasses" : [ "82" ]
+  }, {
+    "iri" : "http://iflastandards.info/ns/fr/frbr/frbroo/F18_Serial_Work",
+    "baseIri" : "http://iflastandards.info/ns/fr/frbr/frbroo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "F18_Serial_Work"
+    },
+    "attributes" : [ "external" ],
+    "id" : "142",
+    "superClasses" : [ "143", "64" ]
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "115",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "121",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "199",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "200",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "instances" : 0,
+    "union" : [ "134", "122" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "201"
+  }, {
+    "iri" : "http://bdovidiana.es/ontology/#ExactDate",
+    "baseIri" : "http://bdovidiana.es/ontology/",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ExactDate"
+    },
+    "id" : "50",
+    "superClasses" : [ "70" ]
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "208",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "209",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "210",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.europeana.eu/schemas/edm/ProvidedCHO",
+    "baseIri" : "http://www.europeana.eu/schemas/edm",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ProvidedCHO"
+    },
+    "subClasses" : [ "106" ],
+    "attributes" : [ "external" ],
+    "id" : "250"
+  }, {
+    "iri" : "http://purl.org/ontology/olo/core#Slot",
+    "baseIri" : "http://purl.org/ontology/olo/core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Slot"
+    },
+    "subClasses" : [ "110", "16", "258" ],
+    "attributes" : [ "external" ],
+    "id" : "24"
+  }, {
+    "iri" : "http://iflastandards.info/ns/fr/frbr/frbroo/F14_Individual_Work",
+    "baseIri" : "http://iflastandards.info/ns/fr/frbr/frbroo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "F14_Individual_Work"
+    },
+    "subClasses" : [ "19" ],
+    "attributes" : [ "external" ],
+    "id" : "20",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://bdovidiana.es/ontology/#Translator",
+    "baseIri" : "http://bdovidiana.es/ontology/",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Translator"
+    },
+    "id" : "112",
+    "superClasses" : [ "81" ]
+  }, {
+    "iri" : "http://bdovidiana.es/ontology/#Section",
+    "baseIri" : "http://bdovidiana.es/ontology/",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Section"
+    },
+    "id" : "258",
+    "superClasses" : [ "24" ]
+  }, {
+    "iri" : "http://www.cidoc-crm.org/cidoc-crm/E15_Identifier_Assignment",
+    "baseIri" : "http://www.cidoc-crm.org/cidoc-crm",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "E15_Identifier_Assignment"
+    },
+    "subClasses" : [ "93", "96" ],
+    "attributes" : [ "external" ],
+    "id" : "94"
+  }, {
+    "iri" : "http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity",
+    "baseIri" : "http://www.cidoc-crm.org/cidoc-crm",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "E1_CRM_Entity"
+    },
+    "attributes" : [ "external" ],
+    "id" : "274"
+  }, {
+    "iri" : "http://bdovidiana.es/ontology/#Community",
+    "baseIri" : "http://bdovidiana.es/ontology/",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Community"
+    },
+    "id" : "131",
+    "superClasses" : [ "101", "132" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "235",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "62",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "207",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "246",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://iflastandards.info/ns/fr/frbr/frbroo/F1_Work",
+    "baseIri" : "http://iflastandards.info/ns/fr/frbr/frbroo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "F1_Work"
+    },
+    "subClasses" : [ "20", "55", "21", "64" ],
+    "attributes" : [ "external" ],
+    "id" : "2",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://www.cidoc-crm.org/cidoc-crm/E65_Creation",
+    "baseIri" : "http://www.cidoc-crm.org/cidoc-crm",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "E65_Creation"
+    },
+    "subClasses" : [ "67", "72" ],
+    "attributes" : [ "external" ],
+    "id" : "68"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "296",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://iflastandards.info/ns/fr/frbr/frbroo/F24_Publication_Expression",
+    "baseIri" : "http://iflastandards.info/ns/fr/frbr/frbroo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "F24_Publication_Expression"
+    },
+    "attributes" : [ "external" ],
+    "id" : "91",
+    "superClasses" : [ "42" ]
+  }, {
+    "iri" : "http://bdovidiana.es/ontology/#LibraryLocation",
+    "baseIri" : "http://bdovidiana.es/ontology/",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "LibraryLocation",
+      "en" : "Library Location",
+      "es" : "Ubicación Biblioteca"
+    },
+    "comment" : {
+      "en" : "Location of the library by specifying the city, province and community to which it belongs. \nAt the moment it is not necessary the pias because all the libraries are located in the Spanish territory."
+    },
+    "id" : "126",
+    "superClasses" : [ "101" ]
+  }, {
+    "iri" : "http://bdovidiana.es/ontology/#SpecimenIllustration",
+    "baseIri" : "http://bdovidiana.es/ontology/",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SpecimenIllustration",
+      "en" : "Illustration that appears in a specimen. \nThe characteristics and themes of the illustration are already specified in the edition corresponding to the issue. \nThis class reports specifically on aspects found in a copy, such as possible censorship and others."
+    },
+    "comment" : {
+      "en" : "Illustration that appears in a specimen. \nThe characteristics and themes of the illustration are already specified in the edition corresponding to the issue. \nThis class reports specifically on aspects found in a specimen, such as possible censorship and others."
+    },
+    "id" : "109",
+    "superClasses" : [ "110" ]
+  }, {
+    "iri" : "http://www.cidoc-crm.org/cidoc-crm/E4_Period",
+    "baseIri" : "http://www.cidoc-crm.org/cidoc-crm",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "E4_Period"
+    },
+    "subClasses" : [ "74", "77" ],
+    "attributes" : [ "external" ],
+    "id" : "75"
+  }, {
+    "iri" : "http://www.cidoc-crm.org/cidoc-crm/E39_Actor",
+    "baseIri" : "http://www.cidoc-crm.org/cidoc-crm",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "E39_Actor"
+    },
+    "attributes" : [ "external" ],
+    "id" : "308"
+  }, {
+    "iri" : "http://iflastandards.info/ns/fr/frbr/frbroo/F3_Manifestation_Product_Type",
+    "baseIri" : "http://iflastandards.info/ns/fr/frbr/frbroo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "F3_Manifestation_Product_Type"
+    },
+    "subClasses" : [ "61" ],
+    "attributes" : [ "external" ],
+    "id" : "58",
+    "superClasses" : [ "57", "79" ]
+  }, {
+    "iri" : "http://bdovidiana.es/ontology/#Edition",
+    "baseIri" : "http://bdovidiana.es/ontology/",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Edition",
+      "en" : "Edition",
+      "es" : "Edición"
+    },
+    "comment" : {
+      "en" : "Concept that represents a collection of specimens that have common characteristics, such as their format, the list of illustrations and others."
+    },
+    "id" : "61",
+    "superClasses" : [ "58" ]
+  }, {
+    "iri" : "http://iflastandards.info/ns/fr/frbr/frbroo/F21",
+    "baseIri" : "http://iflastandards.info/ns/fr/frbr/frbroo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "F21"
+    },
+    "attributes" : [ "external" ],
+    "id" : "315",
+    "superClasses" : [ "3" ]
+  }, {
+    "iri" : "http://iflastandards.info/ns/fr/frbr/frbroo/F20",
+    "baseIri" : "http://iflastandards.info/ns/fr/frbr/frbroo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "F20"
+    },
+    "attributes" : [ "external" ],
+    "id" : "169",
+    "superClasses" : [ "170" ]
+  }, {
+    "iri" : "http://iflastandards.info/ns/fr/frbr/frbroo/F25",
+    "baseIri" : "http://iflastandards.info/ns/fr/frbr/frbroo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "F25"
+    },
+    "attributes" : [ "external" ],
+    "id" : "198",
+    "superClasses" : [ "178" ]
+  }, {
+    "iri" : "http://iflastandards.info/ns/fr/frbr/frbroo/F24",
+    "baseIri" : "http://iflastandards.info/ns/fr/frbr/frbroo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "F24"
+    },
+    "attributes" : [ "external" ],
+    "id" : "177",
+    "superClasses" : [ "178" ]
+  }, {
+    "iri" : "http://iflastandards.info/ns/fr/frbr/frbroo/F23",
+    "baseIri" : "http://iflastandards.info/ns/fr/frbr/frbroo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "F23"
+    },
+    "attributes" : [ "external" ],
+    "id" : "318",
+    "superClasses" : [ "117" ]
+  }, {
+    "iri" : "http://iflastandards.info/ns/fr/frbr/frbroo/F22",
+    "baseIri" : "http://iflastandards.info/ns/fr/frbr/frbroo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "F22"
+    },
+    "subClasses" : [ "198", "177", "180" ],
+    "attributes" : [ "external" ],
+    "id" : "178",
+    "superClasses" : [ "117" ]
+  }, {
+    "iri" : "http://iflastandards.info/ns/fr/frbr/frbroo/F27",
+    "baseIri" : "http://iflastandards.info/ns/fr/frbr/frbroo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "F27"
+    },
+    "attributes" : [ "external" ],
+    "id" : "67",
+    "superClasses" : [ "68" ]
+  }, {
+    "iri" : "http://iflastandards.info/ns/fr/frbr/frbroo/F26",
+    "baseIri" : "http://iflastandards.info/ns/fr/frbr/frbroo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "F26"
+    },
+    "attributes" : [ "external" ],
+    "id" : "180",
+    "superClasses" : [ "178" ]
+  }, {
+    "iri" : "http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#Object",
+    "baseIri" : "http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Object",
+      "en" : "Object",
+      "it" : "Oggetto"
+    },
+    "subClasses" : [ "185" ],
+    "comment" : {
+      "undefined" : "Any physical, social, or mental object, or a substance"
+    },
+    "attributes" : [ "external" ],
+    "id" : "138"
+  }, {
+    "iri" : "http://iflastandards.info/ns/fr/frbr/frbroo/F10",
+    "baseIri" : "http://iflastandards.info/ns/fr/frbr/frbroo",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://iflastandards.info/ns/fr/frbr/frbroo/",
+        "type" : "iri"
+      } ],
+      "name" : [ {
+        "identifier" : "name",
+        "language" : "en",
+        "value" : "Person",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "This class comprises real persons who live or are assumed to have lived.",
+        "type" : "label"
+      } ],
+      "scopeNote" : [ {
+        "identifier" : "scopeNote",
+        "language" : "en",
+        "value" : "Bibliographic identities or personae assumed by an individual or a group should be modelled as F12 Nomen and connected to the relevant person or group with an instance of F35 Nomen Use Statement, even if nothing more can be said about this person or group. In a bibliographic context, a name presented following the conventions usually employed for personal names will be assumed to correspond to an actual real person (F10 Person), unless evidence is available to indicate that this is not the case. The fact that a persona may erroneously be classified as an instance of F10 Person does not imply that the concept comprises personae.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "F10",
+      "en" : "Person"
+    },
+    "comment" : {
+      "en" : "This class comprises real persons who live or are assumed to have lived. Bibliographic identities or personae assumed by an individual or a group should be modelled as F12 Nomen and connected to the relevant person or group with an instance of F35 Nomen Use Statement, even if nothing more can be said about this person or group. In a bibliographic context, a name presented following the conventions usually employed for personal names will be assumed to correspond to an actual real person (F10 Person), unless evidence is available to indicate that this is not the case. The fact that a persona may erroneously be classified as an instance of F10 Person does not imply that the concept comprises personae."
+    },
+    "attributes" : [ "external" ],
+    "id" : "98",
+    "superClasses" : [ "99" ]
+  }, {
+    "iri" : "http://iflastandards.info/ns/fr/frbr/frbroo/F14",
+    "baseIri" : "http://iflastandards.info/ns/fr/frbr/frbroo",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://iflastandards.info/ns/fr/frbr/frbroo/",
+        "type" : "iri"
+      } ],
+      "name" : [ {
+        "identifier" : "name",
+        "language" : "en",
+        "value" : "IndividualWork",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "This class comprises works that are realised by one and only one self-contained expression, i.e., works representing the concept as expressed by precisely this expression, and that do not have other works as parts.",
+        "type" : "label"
+      } ],
+      "scopeNote" : [ {
+        "identifier" : "scopeNote",
+        "language" : "en",
+        "value" : "Inherent to the notion of work is the completion of recognisable outcomes of the work. These outcomes, i.e. the Self-Contained Expressions, are regarded as the symbolic equivalents of Individual Works, which form the atoms of a complex work. Normally creators would characterise an outcome of a work as finished. In other cases, one could recognise an outcome of a work as complete from the elaboration or logical coherence of its content, or if there is any historical knowledge about the creator deliberately or accidentally never finishing (completing) that particular expression. In all those cases, one would regard the corresponding expression as equivalent to one Individual Work.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "F14",
+      "en" : "Individual Work"
+    },
+    "subClasses" : [ "163" ],
+    "comment" : {
+      "en" : "This class comprises works that are realised by one and only one self-contained expression, i.e., works representing the concept as expressed by precisely this expression, and that do not have other works as parts. Inherent to the notion of work is the completion of recognisable outcomes of the work. These outcomes, i.e. the Self-Contained Expressions, are regarded as the symbolic equivalents of Individual Works, which form the atoms of a complex work. Normally creators would characterise an outcome of a work as finished. In other cases, one could recognise an outcome of a work as complete from the elaboration or logical coherence of its content, or if there is any historical knowledge about the creator deliberately or accidentally never finishing (completing) that particular expression. In all those cases, one would regard the corresponding expression as equivalent to one Individual Work."
+    },
+    "attributes" : [ "external" ],
+    "id" : "164",
+    "superClasses" : [ "3" ]
+  }, {
+    "iri" : "http://iflastandards.info/ns/fr/frbr/frbroo/F11",
+    "baseIri" : "http://iflastandards.info/ns/fr/frbr/frbroo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "F11"
+    },
+    "subClasses" : [ "166" ],
+    "attributes" : [ "external" ],
+    "id" : "167",
+    "superClasses" : [ "158" ]
+  }, {
+    "iri" : "http://iflastandards.info/ns/fr/frbr/frbroo/F18",
+    "baseIri" : "http://iflastandards.info/ns/fr/frbr/frbroo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "F18"
+    },
+    "attributes" : [ "external" ],
+    "id" : "174",
+    "superClasses" : [ "175" ]
+  }, {
+    "iri" : "http://iflastandards.info/ns/fr/frbr/frbroo/F17",
+    "baseIri" : "http://iflastandards.info/ns/fr/frbr/frbroo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "F17"
+    },
+    "attributes" : [ "external" ],
+    "id" : "163",
+    "superClasses" : [ "164" ]
+  }, {
+    "iri" : "http://iflastandards.info/ns/fr/frbr/frbroo/F16",
+    "baseIri" : "http://iflastandards.info/ns/fr/frbr/frbroo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "F16"
+    },
+    "subClasses" : [ "169", "172" ],
+    "attributes" : [ "external" ],
+    "id" : "170",
+    "superClasses" : [ "3" ]
+  }, {
+    "iri" : "http://iflastandards.info/ns/fr/frbr/frbroo/F15",
+    "baseIri" : "http://iflastandards.info/ns/fr/frbr/frbroo",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://iflastandards.info/ns/fr/frbr/frbroo/",
+        "type" : "iri"
+      } ],
+      "name" : [ {
+        "identifier" : "name",
+        "language" : "en",
+        "value" : "ComplexWork",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "This class comprises works that have more than one work as members.",
+        "type" : "label"
+      } ],
+      "scopeNote" : [ {
+        "identifier" : "scopeNote",
+        "language" : "en",
+        "value" : "The members of a Complex Work may constitute components of the overall concept or be alternatives to other members of the work. In practice, no clear line can be drawn between parallel and subsequent processes in the evolution of a work. One part may not be finished when another is already revised. An initially monolithic work may be taken up and evolve in pieces. The member relationship of Work is based on the conceptual relationship, and should not be confused with the internal structural parts of an individual expression. The fact that an expression may contain parts from other work(s) does not make the expressed work complex. For instance, an anthology for which only one version exists is not a complex work. The boundaries of a Complex Work have nothing to do with the value of the intellectual achievement but only with the dominance of a concept. Thus, derivations such as translations are regarded as belonging to the same Complex Work, even though in addition they constitute an Individual Work themselves. In contrast, a Work that significantly takes up and merges concepts of other works so that it is no longer dominated by the initial concept is regarded as a new work. In cataloguing practice, detailed rules are established prescribing which kinds of derivation should be regarded as crossing the boundaries of a complex work. Adaptation and derivation graphs allow the recognition of distinct sub-units, i.e. a complex work contained in a larger complex work. As a Complex Work can be taken up by any creator who acquires the spirit of its concept, it is never finished in an absolute sense.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "F15",
+      "en" : "Complex Work"
+    },
+    "subClasses" : [ "174" ],
+    "comment" : {
+      "en" : "This class comprises works that have more than one work as members. The members of a Complex Work may constitute components of the overall concept or be alternatives to other members of the work. In practice, no clear line can be drawn between parallel and subsequent processes in the evolution of a work. One part may not be finished when another is already revised. An initially monolithic work may be taken up and evolve in pieces. The member relationship of Work is based on the conceptual relationship, and should not be confused with the internal structural parts of an individual expression. The fact that an expression may contain parts from other work(s) does not make the expressed work complex. For instance, an anthology for which only one version exists is not a complex work. The boundaries of a Complex Work have nothing to do with the value of the intellectual achievement but only with the dominance of a concept. Thus, derivations such as translations are regarded as belonging to the same Complex Work, even though in addition they constitute an Individual Work themselves. In contrast, a Work that significantly takes up and merges concepts of other works so that it is no longer dominated by the initial concept is regarded as a new work. In cataloguing practice, detailed rules are established prescribing which kinds of derivation should be regarded as crossing the boundaries of a complex work. Adaptation and derivation graphs allow the recognition of distinct sub-units, i.e. a complex work contained in a larger complex work. As a Complex Work can be taken up by any creator who acquires the spirit of its concept, it is never finished in an absolute sense."
+    },
+    "attributes" : [ "external" ],
+    "id" : "175",
+    "superClasses" : [ "3" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "35",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "51",
+    "label" : {
+      "IRI-based" : "decimal"
+    }
+  }, {
+    "iri" : "http://iflastandards.info/ns/fr/frbr/frbroo/F19",
+    "baseIri" : "http://iflastandards.info/ns/fr/frbr/frbroo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "F19"
+    },
+    "attributes" : [ "external" ],
+    "id" : "172",
+    "superClasses" : [ "170" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "320",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://iflastandards.info/ns/fr/frbr/frbroo/F9_Place",
+    "baseIri" : "http://iflastandards.info/ns/fr/frbr/frbroo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "F9_Place"
+    },
+    "attributes" : [ "external" ],
+    "id" : "102",
+    "superClasses" : [ "100" ]
+  }, {
+    "iri" : "http://www.cidoc-crm.org/cidoc-crm/E2_Temporal_Entity",
+    "baseIri" : "http://www.cidoc-crm.org/cidoc-crm",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "E2_Temporal_Entity"
+    },
+    "attributes" : [ "external" ],
+    "id" : "321"
+  }, {
+    "iri" : "http://iflastandards.info/ns/fr/frbr/frbroo/F19_Publication_Work",
+    "baseIri" : "http://iflastandards.info/ns/fr/frbr/frbroo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "F19_Publication_Work"
+    },
+    "subClasses" : [ "142" ],
+    "attributes" : [ "external" ],
+    "id" : "143",
+    "superClasses" : [ "21" ]
+  }, {
+    "iri" : "http://www.cidoc-crm.org/cidoc-crm/E52_Time-Span",
+    "baseIri" : "http://www.cidoc-crm.org/cidoc-crm",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "E52_Time-Span"
+    },
+    "subClasses" : [ "70" ],
+    "comment" : {
+      "en" : "This class comprises abstract temporal extents, in the sense of Galilean physics, having a beginning, an end and a duration.\n\nTime Span has no other semantic connotations. Time-Spans are used to define the temporal extent of instances of E4 Period, E5 Event and any other phenomena valid for a certain time. An E52 Time-Span may be identified by one or more instances of E49 Time Appellation.\n\nSince our knowledge of history is imperfect, instances of E52 Time-Span can best be considered as approximations of the actual Time-Spans of temporal entities. The properties of E52 Time-Span are intended to allow these approximations to be expressed precisely. An extreme case of approximation, might, for example, define an E52 Time-Span having unknown beginning, end and duration. Used as a common E52 Time-Span for two events, it would nevertheless define them as being simultaneous, even if nothing else was known.\n\nAutomatic processing and querying of instances of E52 Time-Span is facilitated if data can be parsed into an E61 Time Primitive.\n\n1961\nFrom 12-17-1993 to 12-8-1996\n14h30 – 16h22 4th July 1945\n9.30 am 1.1.1999 to 2.00 pm 1.1.1999\nduration of the Ming Dynasty"
+    },
+    "attributes" : [ "external" ],
+    "id" : "145"
+  }, {
+    "iri" : "http://iflastandards.info/ns/fr/frbr/frbroo/F8",
+    "baseIri" : "http://iflastandards.info/ns/fr/frbr/frbroo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "F8"
+    },
+    "comment" : {
+      "en" : "This class comprises sets of coherent phenomena or cultural manifestations bounded in time and space.\n\nIt is the social or physical coherence of these phenomena that identify an E4 Period and not the associated spatio-temporal bounds. These bounds are a mere approximation of the actual process of growth, spread and retreat. Consequently, different periods can overlap and coexist in time and space, such as when a nomadic culture exists in the same area as a sedentary culture.\n\nTypically this class is used to describe prehistoric or historic periods such as the ‘Neolithic Period’, the ‘Ming Dynasty’ or the ‘McCarthy Era’. There are however no assumptions about the scale of the associated phenomena. In particular all events are seen as synthetic processes consisting of coherent phenomena. Therefore E4 Period is a superclass of E5 Event. For example, a modern clinical E67 Birth can be seen as both an atomic E5 Event and as an E4 Period that consists of multiple activities performed by multiple instances of E39 Actor.\n\nThere are two different conceptualisations of “artistic style”, defined either by physical features or by historical context. For example, Impressionism can be viewed as a period lasting from approximately 1870 to 1905 during which paintings with particular characteristics were produced by a group of artists that included (among others) Monet, Renoir, Pissarro, Sisley and Degas. Alternatively, it can be regarded as a style applicable to all paintings sharing the characteristics of the works produced by the Impressionist painters, regardless of historical context. The first interpretation is an E4 Period, and the second defines morphological object types that fall under E55 Type.\n\nAnother specific case of an E4 Period is the set of activities and phenomena associated with a settlement, such as the populated period of Nineveh.\n\n[This is the Scope note for E4 Period in CIDOC CRM version 5.0.1]\n\n[Note that in CIDOC CRM, E12 Production, E13 Attribute Assignment, and E65 Creation are indirect subclasses of E4 Period = F8 Event; as a consequence, F8 Event is an indirect superclass of: F27 Work Conception, F28 Expression Creation, F40 Identifier Assignment, F41 Representative Manifestation Assignment, F42 Representative Expression Assignment, F32 Carrier Production Event, F33 Reproduction Event, and F30 Publication Event]"
+    },
+    "attributes" : [ "external" ],
+    "id" : "74",
+    "superClasses" : [ "75" ]
+  }, {
+    "iri" : "http://iflastandards.info/ns/fr/frbr/frbroo/F9",
+    "baseIri" : "http://iflastandards.info/ns/fr/frbr/frbroo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "F9"
+    },
+    "subClasses" : [ "131", "134", "135", "126", "129" ],
+    "attributes" : [ "external" ],
+    "id" : "101",
+    "superClasses" : [ "100" ]
+  }, {
+    "iri" : "http://schema.org/Place",
+    "baseIri" : "http://schema.org",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Place"
+    },
+    "subClasses" : [ "131", "134", "135", "129" ],
+    "attributes" : [ "external" ],
+    "id" : "132"
+  }, {
+    "iri" : "http://iflastandards.info/ns/fr/frbr/frbroo/F2",
+    "baseIri" : "http://iflastandards.info/ns/fr/frbr/frbroo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "F2"
+    },
+    "subClasses" : [ "324", "325", "318", "326", "178" ],
+    "attributes" : [ "external" ],
+    "id" : "117",
+    "superClasses" : [ "41" ]
+  }, {
+    "iri" : "http://bdovidiana.es/ontology/#Illustration",
+    "baseIri" : "http://bdovidiana.es/ontology/",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Illustration",
+      "en" : "Illustration",
+      "es" : "Ilustración"
+    },
+    "subClasses" : [ "109" ],
+    "comment" : {
+      "en" : "Illustration that appears in an edition. Contains enumeration, position and thematic description."
+    },
+    "id" : "110",
+    "superClasses" : [ "24" ]
+  }, {
+    "iri" : "http://iflastandards.info/ns/fr/frbr/frbroo/F3",
+    "baseIri" : "http://iflastandards.info/ns/fr/frbr/frbroo",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://iflastandards.info/ns/fr/frbr/frbroo/",
+        "type" : "iri"
+      } ],
+      "name" : [ {
+        "identifier" : "name",
+        "language" : "en",
+        "value" : "ManifestationProductType",
+        "type" : "label"
+      }, {
+        "identifier" : "name",
+        "language" : "en",
+        "value" : "http://www.cidoc-crm.org/cidoc-crm/E72_Legal_Object",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "This class comprises the definitions of publication products.",
+        "type" : "label"
+      } ],
+      "scopeNote" : [ {
+        "identifier" : "scopeNote",
+        "language" : "en",
+        "value" : "An instance of F3 Manifestation Product Type is the \"species\", and all copies of a given object are \"specimens\" of it. An instance of F3 Manifestation Product Type defines all of the features or traits that instances of F5 Item normally display in order that they may be recognised as copies of a particular publication. However, due to production problems or subsequent events, one or more instances of F5 Item may not exhibit all these features or traits; yet such instances still retain their relationship to the same instance of F3 Manifestation Product Type. The features that characterise a given instance of F3 Manifestation Product Type include: one instance of F24 Publication Expression, containing one or more than one instance of F2 Expression, reflecting the authors’ content of the manifestation and all additional input by the publisher; and the appropriate types of physical features for that form of the object. For example, hardcover and paperback are two distinct publications (i.e. two distinct instances of F3 Manifestation Product Type) even though authorial and editorial content are otherwise identical in both publications. The activity of cataloguing aims at the most accurate listing of features or traits of an instance of F3 Manifestation Product Type that are sufficient to distinguish it from another instance of F3 Manifestation Product Type. In this sense, it may be said that a typical bibliographic record for a publication (not a manuscript) reflects the notion of F3 Manifestation Product Type.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "F3",
+      "en" : "Manifestation Product Type"
+    },
+    "comment" : {
+      "en" : "This class comprises the definitions of publication products. An instance of F3 Manifestation Product Type is the \"species\", and all copies of a given object are \"specimens\" of it. An instance of F3 Manifestation Product Type defines all of the features or traits that instances of F5 Item normally display in order that they may be recognised as copies of a particular publication. However, due to production problems or subsequent events, one or more instances of F5 Item may not exhibit all these features or traits; yet such instances still retain their relationship to the same instance of F3 Manifestation Product Type. The features that characterise a given instance of F3 Manifestation Product Type include: one instance of F24 Publication Expression, containing one or more than one instance of F2 Expression, reflecting the authors’ content of the manifestation and all additional input by the publisher; and the appropriate types of physical features for that form of the object. For example, hardcover and paperback are two distinct publications (i.e. two distinct instances of F3 Manifestation Product Type) even though authorial and editorial content are otherwise identical in both publications. The activity of cataloguing aims at the most accurate listing of features or traits of an instance of F3 Manifestation Product Type that are sufficient to distinguish it from another instance of F3 Manifestation Product Type. In this sense, it may be said that a typical bibliographic record for a publication (not a manuscript) reflects the notion of F3 Manifestation Product Type."
+    },
+    "attributes" : [ "external" ],
+    "id" : "59",
+    "superClasses" : [ "57" ]
+  }, {
+    "iri" : "http://iflastandards.info/ns/fr/frbr/frbroo/F1",
+    "baseIri" : "http://iflastandards.info/ns/fr/frbr/frbroo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "F1"
+    },
+    "subClasses" : [ "315", "164", "106", "170", "175" ],
+    "attributes" : [ "external" ],
+    "id" : "3",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://iflastandards.info/ns/fr/frbr/frbroo/F6",
+    "baseIri" : "http://iflastandards.info/ns/fr/frbr/frbroo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "F6"
+    },
+    "attributes" : [ "external" ],
+    "id" : "86",
+    "superClasses" : [ "82" ]
+  }, {
+    "iri" : "http://iflastandards.info/ns/fr/frbr/frbroo/F4",
+    "baseIri" : "http://iflastandards.info/ns/fr/frbr/frbroo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "F4"
+    },
+    "attributes" : [ "external" ],
+    "id" : "8",
+    "superClasses" : [ "6" ]
+  }, {
+    "iri" : "http://iflastandards.info/ns/fr/frbr/frbroo/F5",
+    "baseIri" : "http://iflastandards.info/ns/fr/frbr/frbroo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "F5",
+      "en" : "Item"
+    },
+    "subClasses" : [ "27" ],
+    "comment" : {
+      "en" : "This class comprises physical objects (printed books, scores, CDs, DVDs, CD-ROMS, etc.) that carry a F24 Publication Expression and were produced by an industrial process involving an F3 Manifestation Product Type.Marin Mersenne's personal copy of his own ‘Harmonie universelle’ without any manuscript addition and without Charles Racquet’s manuscript score, as a mere witness of the 1st edition of ‘Harmonie universelle’, Paris, 1636 [the same physical object can be regarded at the same time as an instance of F5 Item inasmuch as it is a witness of a publication, and as an instance of F4 Manifestation Singleton inasmuch as it contains manuscript annotations and additions and as it served as the basis for a subsequent production process]\nAny other copy of the original edition of Marin Mersenne’s ‘Harmonie universelle’, Paris, 1636\nAny copy of the modern reprint publication of Marin Mersenne’s ‘Harmonie universelle’, Paris, 1986, ISBN ‘2-222-00835-2’"
+    },
+    "attributes" : [ "external" ],
+    "id" : "328",
+    "superClasses" : [ "329" ]
+  }, {
+    "iri" : "http://www.cidoc-crm.org/cidoc-crm/E57_Material",
+    "baseIri" : "http://www.cidoc-crm.org/cidoc-crm",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "E57_Material"
+    },
+    "attributes" : [ "external" ],
+    "id" : "330"
+  }, {
+    "iri" : "http://iflastandards.info/ns/fr/frbr/frbroo/F8_Event",
+    "baseIri" : "http://iflastandards.info/ns/fr/frbr/frbroo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "F8_Event"
+    },
+    "attributes" : [ "external" ],
+    "id" : "77",
+    "superClasses" : [ "75" ]
+  }, {
+    "iri" : "http://bdovidiana.es/ontology/#Library",
+    "baseIri" : "http://bdovidiana.es/ontology/",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Library"
+    },
+    "id" : "166",
+    "superClasses" : [ "167" ]
+  }, {
+    "iri" : "http://www.w3.org/2004/02/skos/core#ConceptScheme",
+    "baseIri" : "http://www.w3.org/2004/02/skos/core",
+    "instances" : 1,
+    "label" : {
+      "IRI-based" : "ConceptScheme"
+    },
+    "attributes" : [ "external" ],
+    "id" : "15"
+  }, {
+    "iri" : "http://iflastandards.info/ns/fr/frbr/frbroo/F15_Complex_Work",
+    "baseIri" : "http://iflastandards.info/ns/fr/frbr/frbroo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "F15_Complex_Work"
+    },
+    "subClasses" : [ "142" ],
+    "attributes" : [ "external" ],
+    "id" : "64",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://bdovidiana.es/ontology/#PublicationPlace",
+    "baseIri" : "http://bdovidiana.es/ontology/",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PublicationPlace"
+    },
+    "id" : "134",
+    "superClasses" : [ "101", "132" ]
+  }, {
+    "iri" : "http://iflastandards.info/ns/fr/frbr/frbroo/F16_Container_Work",
+    "baseIri" : "http://iflastandards.info/ns/fr/frbr/frbroo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "F16_Container_Work"
+    },
+    "subClasses" : [ "19", "143", "44" ],
+    "attributes" : [ "external" ],
+    "id" : "21",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://bdovidiana.es/ontology/#Date",
+    "baseIri" : "http://bdovidiana.es/ontology/",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Date"
+    },
+    "subClasses" : [ "69", "50" ],
+    "id" : "70",
+    "superClasses" : [ "145" ]
+  }, {
+    "iri" : "http://iflastandards.info/ns/fr/frbr/frbroo/F43",
+    "baseIri" : "http://iflastandards.info/ns/fr/frbr/frbroo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "F43"
+    },
+    "attributes" : [ "external" ],
+    "id" : "324",
+    "superClasses" : [ "117" ]
+  }, {
+    "iri" : "http://www.cidoc-crm.org/cidoc-crm/E74_Group",
+    "baseIri" : "http://www.cidoc-crm.org/cidoc-crm",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "E74_Group"
+    },
+    "subClasses" : [ "157", "167", "333", "334" ],
+    "attributes" : [ "external" ],
+    "id" : "158"
+  }, {
+    "iri" : "http://bdovidiana.es/ontology/#Category",
+    "baseIri" : "http://bdovidiana.es/ontology/",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Category"
+    },
+    "id" : "237"
+  }, {
+    "iri" : "http://iflastandards.info/ns/fr/frbr/frbroo/F40",
+    "baseIri" : "http://iflastandards.info/ns/fr/frbr/frbroo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "F40"
+    },
+    "attributes" : [ "external" ],
+    "id" : "93",
+    "superClasses" : [ "94" ]
+  }, {
+    "iri" : "http://iflastandards.info/ns/fr/frbr/frbroo/F39_Family",
+    "baseIri" : "http://iflastandards.info/ns/fr/frbr/frbroo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "F39_Family"
+    },
+    "attributes" : [ "external" ],
+    "id" : "334",
+    "superClasses" : [ "158" ]
+  }, {
+    "iri" : "http://www.ontologydesignpatterns.org/cp/owl/agentrole.owl#Agent",
+    "baseIri" : "http://www.ontologydesignpatterns.org/cp/owl/agentrole.owl",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.ontologydesignpatterns.org/cp/owl/agentrole.owl",
+        "type" : "iri"
+      } ],
+      "isCloneOf" : [ {
+        "identifier" : "isCloneOf",
+        "language" : "undefined",
+        "value" : "http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Agent",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Agent",
+      "en" : "Agent",
+      "it" : "Agente"
+    },
+    "comment" : {
+      "undefined" : "Any agentive Object , either physical, or social."
+    },
+    "attributes" : [ "external" ],
+    "id" : "185",
+    "superClasses" : [ "138" ]
+  }, {
+    "iri" : "http://iflastandards.info/ns/fr/frbr/frbroo/F35",
+    "baseIri" : "http://iflastandards.info/ns/fr/frbr/frbroo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "F35"
+    },
+    "attributes" : [ "external" ],
+    "id" : "325",
+    "superClasses" : [ "117" ]
+  }, {
+    "iri" : "http://iflastandards.info/ns/fr/frbr/frbroo/F34",
+    "baseIri" : "http://iflastandards.info/ns/fr/frbr/frbroo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "F34"
+    },
+    "attributes" : [ "external" ],
+    "id" : "326",
+    "superClasses" : [ "117" ]
+  }, {
+    "iri" : "http://iflastandards.info/ns/fr/frbr/frbroo/F54_Utilized_Information_Carrier",
+    "baseIri" : "http://iflastandards.info/ns/fr/frbr/frbroo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "F54_Utilized_Information_Carrier",
+      "en" : "Utilized Information Carrier"
+    },
+    "subClasses" : [ "338" ],
+    "comment" : {
+      "en" : "This class comprises physical objects that carry one or more instances of F24 Publication Expression.\n"
+    },
+    "attributes" : [ "external" ],
+    "id" : "337",
+    "superClasses" : [ "329" ]
+  }, {
+    "iri" : "http://iflastandards.info/ns/fr/frbr/frbroo/F39",
+    "baseIri" : "http://iflastandards.info/ns/fr/frbr/frbroo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "F39"
+    },
+    "attributes" : [ "external" ],
+    "id" : "333",
+    "superClasses" : [ "158" ]
+  }, {
+    "iri" : "http://iflastandards.info/ns/fr/frbr/frbroo/F38",
+    "baseIri" : "http://iflastandards.info/ns/fr/frbr/frbroo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "F38"
+    },
+    "attributes" : [ "external" ],
+    "id" : "84",
+    "superClasses" : [ "82" ]
+  }, {
+    "iri" : "http://iflastandards.info/ns/fr/frbr/frbroo/F10_Person",
+    "baseIri" : "http://iflastandards.info/ns/fr/frbr/frbroo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "F10_Person"
+    },
+    "attributes" : [ "external" ],
+    "id" : "104",
+    "superClasses" : [ "99" ]
+  }, {
+    "iri" : "http://iflastandards.info/ns/fr/frbr/frbroo/F23_Expression_Fragment",
+    "baseIri" : "http://iflastandards.info/ns/fr/frbr/frbroo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "F23_Expression_Fragment"
+    },
+    "attributes" : [ "external" ],
+    "id" : "43",
+    "superClasses" : [ "40" ]
+  }, {
+    "iri" : "http://bdovidiana.es/ontology/#Specimen",
+    "baseIri" : "http://bdovidiana.es/ontology/",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Specimen",
+      "en" : "Specimen",
+      "es" : "Ejemplar"
+    },
+    "comment" : {
+      "en" : "Each of the physical manifestations of an edition found in the libraries referenced in the Ovid Digital Library."
+    },
+    "id" : "27",
+    "superClasses" : [ "328" ]
+  }, {
+    "iri" : "http://www.w3.org/2004/02/skos/core#Concept",
+    "baseIri" : "http://www.w3.org/2004/02/skos/core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Concept"
+    },
+    "subClasses" : [ "16" ],
+    "attributes" : [ "external" ],
+    "id" : "25"
+  }, {
+    "iri" : "http://www.ontologydesignpatterns.org/cp/owl/classification.owl#Concept",
+    "baseIri" : "http://www.ontologydesignpatterns.org/cp/owl/classification.owl",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.ontologydesignpatterns.org/cp/owl/classification.owl",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Concept",
+      "en" : "Concept",
+      "it" : "Concetto"
+    },
+    "subClasses" : [ "81" ],
+    "comment" : {
+      "undefined" : "A concept is a Social Object. \nThe classifies relation relates concepts to entities at some time, but time can only be expressed in the alternative pattern: timeindexedclassification."
+    },
+    "attributes" : [ "external" ],
+    "id" : "332"
+  }, {
+    "iri" : "http://iflastandards.info/ns/fr/frbr/frbroo/F5_Item",
+    "baseIri" : "http://iflastandards.info/ns/fr/frbr/frbroo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "F5_Item"
+    },
+    "attributes" : [ "external" ],
+    "id" : "338",
+    "superClasses" : [ "337" ]
+  }, {
+    "iri" : "http://iflastandards.info/ns/fr/frbr/frbroo/F26_Recording",
+    "baseIri" : "http://iflastandards.info/ns/fr/frbr/frbroo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "F26_Recording"
+    },
+    "attributes" : [ "external" ],
+    "id" : "345",
+    "superClasses" : [ "42" ]
+  }, {
+    "iri" : "http://www.cidoc-crm.org/cidoc-crm/E84_Information_Carrier",
+    "baseIri" : "http://www.cidoc-crm.org/cidoc-crm",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "E84_Information_Carrier"
+    },
+    "subClasses" : [ "337", "328" ],
+    "attributes" : [ "external" ],
+    "id" : "329"
+  }, {
+    "iri" : "http://purl.org/ontology/olo/core#OrderedList",
+    "baseIri" : "http://purl.org/ontology/olo/core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "OrderedList"
+    },
+    "subClasses" : [ "46", "216", "122" ],
+    "attributes" : [ "external" ],
+    "id" : "47"
+  }, {
+    "iri" : "http://www.cidoc-crm.org/cidoc-crm/E56_Language",
+    "baseIri" : "http://www.cidoc-crm.org/cidoc-crm",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "E56_Language"
+    },
+    "attributes" : [ "external" ],
+    "id" : "353"
+  }, {
+    "iri" : "http://iflastandards.info/ns/fr/frbr/frbroo/F40_Identifier_Assignment",
+    "baseIri" : "http://iflastandards.info/ns/fr/frbr/frbroo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "F40_Identifier_Assignment"
+    },
+    "attributes" : [ "external" ],
+    "id" : "96",
+    "superClasses" : [ "94" ]
+  }, {
+    "iri" : "http://bdovidiana.es/ontology/#Opus",
+    "baseIri" : "http://bdovidiana.es/ontology/",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Opus"
+    },
+    "comment" : {
+      "es" : "Cada una de las obras contenidas en el ejemplar"
+    },
+    "id" : "106",
+    "superClasses" : [ "250", "3" ]
+  }, {
+    "iri" : "http://iflastandards.info/ns/fr/frbr/frbroo/F22_Self-Contained_Expression",
+    "baseIri" : "http://iflastandards.info/ns/fr/frbr/frbroo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "F22_Self-Contained_Expression",
+      "en" : "Self-Contained Expression"
+    },
+    "subClasses" : [ "345", "91" ],
+    "comment" : {
+      "en" : "This class comprises the immaterial realisations of individual works at a particular time that are regarded as a complete whole. The quality of wholeness reflects the intention of its creator that this expression should convey the concept of the work. Such a whole can in turn be part of a larger whole.\nInherent to the notion of work is the completion of recognisable outcomes of the work. These outcomes, i.e. the Self-Contained Expressions, are regarded as the symbolic equivalents of Individual Works, which form the atoms of a complex work. A Self-Contained Expression may contain expressions or parts of expressions from other work, such as citations or items collected in anthologies. Even though they are incorporated in the Self-Contained Expression, they are not regarded as becoming members of the expressed container work by their inclusion in the expression, but are rather regarded as foreign or referred to elements.\nF22 Self-Contained Expression can be distinguished from F23 Expression Fragment in that an F23 Expression Fragment was not intended by its creator to make sense by itself. Normally creators would characterise an outcome of a work as finished. In other cases, one could recognise an outcome of a work as complete from the elaboration or logical coherence of its content, or if there is any historical knowledge about the creator deliberately or accidentally never finishing (completing) that particular expression. In all those cases, one would regard an expression as self-contained.\n"
+    },
+    "attributes" : [ "external" ],
+    "id" : "42",
+    "superClasses" : [ "40" ]
+  }, {
+    "iri" : "http://bdovidiana.es/ontology/#Province",
+    "baseIri" : "http://bdovidiana.es/ontology/",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Province"
+    },
+    "id" : "129",
+    "superClasses" : [ "101", "132" ]
+  }, {
+    "iri" : "http://iflastandards.info/ns/fr/frbr/frbroo/F27_Work_Conception",
+    "baseIri" : "http://iflastandards.info/ns/fr/frbr/frbroo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "F27_Work_Conception"
+    },
+    "attributes" : [ "external" ],
+    "id" : "72",
+    "superClasses" : [ "68" ]
+  }, {
+    "iri" : "http://bdovidiana.es/ontology/#Index",
+    "baseIri" : "http://bdovidiana.es/ontology/",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Index"
+    },
+    "id" : "216",
+    "superClasses" : [ "47" ]
+  }, {
+    "iri" : "http://bdovidiana.es/ontology/#Printer",
+    "baseIri" : "http://bdovidiana.es/ontology/",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Printer"
+    },
+    "id" : "88",
+    "superClasses" : [ "81" ]
+  }, {
+    "iri" : "http://www.cidoc-crm.org/cidoc-crm/E21_Person",
+    "baseIri" : "http://www.cidoc-crm.org/cidoc-crm",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "E21_Person"
+    },
+    "subClasses" : [ "98", "104" ],
+    "attributes" : [ "external" ],
+    "id" : "99"
+  }, {
+    "iri" : "http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#Role",
+    "baseIri" : "http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Role",
+      "en" : "Role",
+      "it" : "Ruolo"
+    },
+    "subClasses" : [ "88", "112", "80" ],
+    "comment" : {
+      "undefined" : "A Concept that classifies an Object"
+    },
+    "attributes" : [ "external" ],
+    "id" : "81",
+    "superClasses" : [ "332" ]
+  }, {
+    "iri" : "http://bdovidiana.es/ontology/#EditionFeatures",
+    "baseIri" : "http://bdovidiana.es/ontology/",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "EditionFeatures"
+    },
+    "id" : "11"
+  }, {
+    "iri" : "http://www.cidoc-crm.org/cidoc-crm/E73_Information_Object",
+    "baseIri" : "http://www.cidoc-crm.org/cidoc-crm",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "E73_Information_Object"
+    },
+    "subClasses" : [ "117", "40" ],
+    "attributes" : [ "external" ],
+    "id" : "41"
+  }, {
+    "iri" : "http://iflastandards.info/ns/fr/frbr/frbroo/F21_Recording_Work",
+    "baseIri" : "http://iflastandards.info/ns/fr/frbr/frbroo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "F21_Recording_Work"
+    },
+    "attributes" : [ "external" ],
+    "id" : "55",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://www.cidoc-crm.org/cidoc-crm/E72_Legal_Object",
+    "baseIri" : "http://www.cidoc-crm.org/cidoc-crm",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "E72_Legal_Object"
+    },
+    "subClasses" : [ "58" ],
+    "attributes" : [ "external" ],
+    "id" : "79"
+  }, {
+    "iri" : "http://www.cidoc-crm.org/cidoc-crm/E54_Dimension",
+    "baseIri" : "http://www.cidoc-crm.org/cidoc-crm",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "E54_Dimension"
+    },
+    "attributes" : [ "external" ],
+    "id" : "401"
+  } ],
+  "property" : [ {
+    "id" : "10",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "14",
+    "type" : "rdf:Property"
+  }, {
+    "id" : "22",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "26",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "34",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "45",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "49",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "54",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "56",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "60",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "63",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "65",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "66",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "71",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "73",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "76",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "78",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "87",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "89",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "90",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "92",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "95",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "97",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "103",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "105",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "107",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "108",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "111",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "113",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "114",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "116",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "118",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "119",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "120",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "123",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "124",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "125",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "127",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "128",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "130",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "133",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "136",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "137",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "140",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "141",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "144",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "146",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "147",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "148",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "149",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "150",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "151",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "152",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "153",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "154",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "155",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "159",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "160",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "161",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "162",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "165",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "168",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "171",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "173",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "176",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "179",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "181",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "182",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "183",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "184",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "186",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "187",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "189",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "190",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "191",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "195",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "196",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "197",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "202",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "203",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "204",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "206",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "211",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "212",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "214",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "215",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "217",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "218",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "219",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "220",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "221",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "222",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "223",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "224",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "225",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "226",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "227",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "228",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "229",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "230",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "231",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "232",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "23",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "233",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "234",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "236",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "238",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "239",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "240",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "241",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "242",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "213",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "245",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "247",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "248",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "249",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "251",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "252",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "253",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "254",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "255",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "194",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "256",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "257",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "259",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "260",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "261",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "262",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "263",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "264",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "265",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "266",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "267",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "268",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "269",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "270",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "271",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "272",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "273",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "275",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "276",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "277",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "278",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "279",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "280",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "281",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "282",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "283",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "284",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "285",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "286",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "287",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "288",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "289",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "290",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "291",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "292",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "293",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "294",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "295",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "297",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "298",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "299",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "300",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "301",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "302",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "303",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "304",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "305",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "306",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "307",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "188",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "309",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "310",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "311",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "312",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "313",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "314",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "316",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "319",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "244",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "322",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "323",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "327",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "193",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "317",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "331",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "139",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "335",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "336",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "192",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "243",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "339",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "340",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "341",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "342",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "343",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "344",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "346",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "347",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "348",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "349",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "350",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "351",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "352",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "354",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "355",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "356",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "357",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "358",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "359",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "360",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "361",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "362",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "363",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "364",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "365",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "366",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "367",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "368",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "369",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "370",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "371",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "372",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "373",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "374",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "375",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "376",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "377",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "378",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "379",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "380",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "381",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "382",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "383",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "384",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "385",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "386",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "387",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "388",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "389",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "390",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "391",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "392",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "393",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "394",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "395",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "396",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "397",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "205",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "398",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "399",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "400",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "156",
+    "type" : "owl:objectProperty"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "http://bdovidiana.es/ontology/#text",
+    "baseIri" : "http://bdovidiana.es/ontology/",
+    "range" : "12",
+    "label" : {
+      "IRI-based" : "text"
+    },
+    "domain" : "11",
+    "attributes" : [ "datatype" ],
+    "id" : "10"
+  }, {
+    "domain" : "15",
+    "range" : "16",
+    "id" : "14",
+    "label" : {
+      "IRI-based" : "117",
+      "undefined" : "is a"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#topObjectProperty",
+    "baseIri" : "http://www.w3.org/2002/07/owl",
+    "range" : "17",
+    "label" : {
+      "IRI-based" : "topObjectProperty"
+    },
+    "domain" : "17",
+    "subproperty" : [ "23" ],
+    "attributes" : [ "external", "object" ],
+    "id" : "22"
+  }, {
+    "iri" : "http://bdovidiana.es/ontology/#physicalDescription",
+    "baseIri" : "http://bdovidiana.es/ontology/",
+    "range" : "28",
+    "label" : {
+      "IRI-based" : "physicalDescription"
+    },
+    "domain" : "27",
+    "attributes" : [ "datatype" ],
+    "id" : "26"
+  }, {
+    "iri" : "http://bdovidiana.es/ontology/#historial",
+    "baseIri" : "http://bdovidiana.es/ontology/",
+    "range" : "35",
+    "label" : {
+      "IRI-based" : "historial"
+    },
+    "domain" : "27",
+    "attributes" : [ "datatype" ],
+    "id" : "34"
+  }, {
+    "iri" : "http://bdovidiana.es/ontology/#structure",
+    "baseIri" : "http://bdovidiana.es/ontology/",
+    "range" : "39",
+    "label" : {
+      "IRI-based" : "structure"
+    },
+    "domain" : "11",
+    "attributes" : [ "datatype" ],
+    "id" : "45"
+  }, {
+    "iri" : "http://bdovidiana.es/ontology/#exactDateExpression",
+    "baseIri" : "http://bdovidiana.es/ontology/",
+    "range" : "51",
+    "label" : {
+      "IRI-based" : "exactDateExpression"
+    },
+    "domain" : "50",
+    "attributes" : [ "datatype" ],
+    "id" : "49"
+  }, {
+    "range" : "2",
+    "domain" : "55",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "54"
+  }, {
+    "range" : "2",
+    "domain" : "21",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "56"
+  }, {
+    "iri" : "http://bdovidiana.es/ontology/#bibliography",
+    "baseIri" : "http://bdovidiana.es/ontology/",
+    "range" : "62",
+    "label" : {
+      "IRI-based" : "bibliography"
+    },
+    "domain" : "61",
+    "attributes" : [ "datatype" ],
+    "id" : "60"
+  }, {
+    "range" : "2",
+    "domain" : "64",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "63"
+  }, {
+    "iri" : "http://www.w3.org/2004/02/skos/core#inScheme",
+    "baseIri" : "http://www.w3.org/2004/02/skos/core",
+    "range" : "17",
+    "label" : {
+      "IRI-based" : "inScheme"
+    },
+    "domain" : "17",
+    "attributes" : [ "external", "object" ],
+    "id" : "65"
+  }, {
+    "range" : "68",
+    "domain" : "67",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "66"
+  }, {
+    "range" : "68",
+    "domain" : "72",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "71"
+  }, {
+    "range" : "75",
+    "domain" : "74",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "73"
+  }, {
+    "range" : "75",
+    "domain" : "77",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "76"
+  }, {
+    "range" : "79",
+    "domain" : "58",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "78"
+  }, {
+    "iri" : "http://bdovidiana.es/ontology/#hasImpresor",
+    "baseIri" : "http://bdovidiana.es/ontology/",
+    "range" : "88",
+    "label" : {
+      "IRI-based" : "hasImpresor"
+    },
+    "domain" : "61",
+    "attributes" : [ "object" ],
+    "id" : "87"
+  }, {
+    "range" : "2",
+    "domain" : "20",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "89"
+  }, {
+    "range" : "42",
+    "domain" : "91",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "90"
+  }, {
+    "range" : "94",
+    "domain" : "93",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "92"
+  }, {
+    "range" : "94",
+    "domain" : "96",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "95"
+  }, {
+    "range" : "99",
+    "domain" : "98",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "97"
+  }, {
+    "range" : "99",
+    "domain" : "104",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "103"
+  }, {
+    "iri" : "http://bdovidiana.es/ontology/#originalTitle",
+    "baseIri" : "http://bdovidiana.es/ontology/",
+    "range" : "31",
+    "label" : {
+      "IRI-based" : "originalTitle"
+    },
+    "domain" : "106",
+    "attributes" : [ "datatype" ],
+    "id" : "105"
+  }, {
+    "range" : "81",
+    "domain" : "88",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "107"
+  }, {
+    "iri" : "http://bdovidiana.es/ontology/#correspondsTo",
+    "baseIri" : "http://bdovidiana.es/ontology/",
+    "range" : "110",
+    "label" : {
+      "IRI-based" : "correspondsTo"
+    },
+    "domain" : "109",
+    "attributes" : [ "object" ],
+    "id" : "108"
+  }, {
+    "range" : "81",
+    "domain" : "112",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "111"
+  }, {
+    "range" : "81",
+    "domain" : "80",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "113"
+  }, {
+    "iri" : "http://schema.org/latitude",
+    "baseIri" : "http://schema.org",
+    "range" : "115",
+    "label" : {
+      "IRI-based" : "latitude"
+    },
+    "domain" : "52",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "114"
+  }, {
+    "range" : "41",
+    "domain" : "117",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "116"
+  }, {
+    "range" : "41",
+    "domain" : "40",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "118"
+  }, {
+    "iri" : "http://bdovidiana.es/ontology/#specimenCode",
+    "baseIri" : "http://bdovidiana.es/ontology/",
+    "range" : "37",
+    "label" : {
+      "IRI-based" : "specimenCode"
+    },
+    "domain" : "27",
+    "comment" : {
+      "en" : "In addition to the edition identification code, the BDO has developed a second library-specific copy identification code. The specimen is each of the actual copies in the libraries.\nThe specimen code is composed of the abbreviation of the work, the acronym of the library, the abbreviation of the place of publication, and the date. The acronym of the Biblioteca Xeral Universitaria de la Universidad de Santiago is BXU. Thus, this incunabulum has the code M.BXU.Ven.[1493]."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "119"
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#topDataProperty",
+    "baseIri" : "http://www.w3.org/2002/07/owl",
+    "range" : "121",
+    "label" : {
+      "IRI-based" : "topDataProperty"
+    },
+    "domain" : "17",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "120"
+  }, {
+    "iri" : "http://bdovidiana.es/ontology/#hasEdition",
+    "baseIri" : "http://bdovidiana.es/ontology/",
+    "range" : "61",
+    "label" : {
+      "IRI-based" : "hasEdition"
+    },
+    "domain" : "106",
+    "attributes" : [ "object" ],
+    "id" : "123"
+  }, {
+    "iri" : "http://bdovidiana.es/ontology/#isSpecimenOf",
+    "baseIri" : "http://bdovidiana.es/ontology/",
+    "range" : "61",
+    "label" : {
+      "IRI-based" : "isSpecimenOf"
+    },
+    "domain" : "27",
+    "attributes" : [ "object" ],
+    "id" : "124"
+  }, {
+    "range" : "101",
+    "domain" : "126",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "125"
+  }, {
+    "iri" : "http://bdovidiana.es/ontology/#shortCode",
+    "baseIri" : "http://bdovidiana.es/ontology/",
+    "range" : "33",
+    "label" : {
+      "IRI-based" : "shortCode",
+      "en" : "Short code",
+      "es" : "Código breve"
+    },
+    "domain" : "61",
+    "comment" : {
+      "en" : "Code that includes the abbreviation of the work, the name of the printer, the abbreviated place and the date (M.Benalius.Ven.[1493]). This abridged version serves to give quick and pertinent information on the purely editorial aspect, leaving aside the information on the edited text."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "127"
+  }, {
+    "range" : "101",
+    "domain" : "129",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "128"
+  }, {
+    "range" : "132",
+    "domain" : "131",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "130"
+  }, {
+    "range" : "132",
+    "domain" : "134",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "133"
+  }, {
+    "iri" : "http://bdovidiana.es/ontology/#url",
+    "baseIri" : "http://bdovidiana.es/ontology/",
+    "range" : "29",
+    "label" : {
+      "IRI-based" : "url"
+    },
+    "domain" : "17",
+    "attributes" : [ "datatype" ],
+    "id" : "136"
+  }, {
+    "iri" : "http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#hasRole",
+    "baseIri" : "http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl",
+    "range" : "81",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasRole",
+      "en" : "has role",
+      "it" : "ha ruolo"
+    },
+    "superproperty" : [ "139" ],
+    "domain" : "138",
+    "comment" : {
+      "undefined" : "A relation between an object and a role, e.g. the person 'John' has role 'student'."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "137"
+  }, {
+    "range" : "82",
+    "domain" : "86",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "140"
+  }, {
+    "range" : "143",
+    "domain" : "142",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "141"
+  }, {
+    "range" : "145",
+    "domain" : "70",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "144"
+  }, {
+    "range" : "101",
+    "domain" : "131",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "146"
+  }, {
+    "range" : "101",
+    "domain" : "134",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "147"
+  }, {
+    "range" : "101",
+    "domain" : "135",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "148"
+  }, {
+    "iri" : "http://bdovidiana.es/ontology/#publicationDate",
+    "baseIri" : "http://bdovidiana.es/ontology/",
+    "range" : "70",
+    "label" : {
+      "IRI-based" : "publicationDate"
+    },
+    "domain" : "61",
+    "attributes" : [ "object" ],
+    "id" : "149"
+  }, {
+    "range" : "57",
+    "domain" : "58",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "150"
+  }, {
+    "range" : "57",
+    "domain" : "59",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "151"
+  }, {
+    "range" : "82",
+    "domain" : "83",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "152"
+  }, {
+    "range" : "82",
+    "domain" : "84",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "153"
+  }, {
+    "range" : "82",
+    "domain" : "85",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "154"
+  }, {
+    "iri" : "http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl#isRoleOf",
+    "inverse" : "137",
+    "baseIri" : "http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl",
+    "range" : "138",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.ontologydesignpatterns.org/cp/owl/objectrole.owl",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "isRoleOf",
+      "en" : "is role of",
+      "it" : "è un ruolo di"
+    },
+    "superproperty" : [ "156" ],
+    "domain" : "81",
+    "comment" : {
+      "undefined" : "A relation between an object and a role, e.g. the 'student' is the role of 'John'."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "155"
+  }, {
+    "iri" : "http://bdovidiana.es/ontology/#isEdition",
+    "baseIri" : "http://bdovidiana.es/ontology/",
+    "range" : "106",
+    "label" : {
+      "IRI-based" : "isEdition"
+    },
+    "domain" : "61",
+    "attributes" : [ "object" ],
+    "id" : "159"
+  }, {
+    "iri" : "http://bdovidiana.es/ontology/#city",
+    "baseIri" : "http://bdovidiana.es/ontology/",
+    "range" : "135",
+    "label" : {
+      "IRI-based" : "city"
+    },
+    "domain" : "126",
+    "attributes" : [ "object" ],
+    "id" : "160"
+  }, {
+    "iri" : "http://bdovidiana.es/ontology/#viafCode",
+    "baseIri" : "http://bdovidiana.es/ontology/",
+    "range" : "0",
+    "label" : {
+      "IRI-based" : "viafCode"
+    },
+    "domain" : "17",
+    "attributes" : [ "datatype" ],
+    "id" : "161"
+  }, {
+    "range" : "164",
+    "domain" : "163",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "162"
+  }, {
+    "range" : "167",
+    "domain" : "166",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "165"
+  }, {
+    "range" : "170",
+    "domain" : "169",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "168"
+  }, {
+    "range" : "170",
+    "domain" : "172",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "171"
+  }, {
+    "range" : "175",
+    "domain" : "174",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "173"
+  }, {
+    "range" : "178",
+    "domain" : "177",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "176"
+  }, {
+    "range" : "178",
+    "domain" : "180",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "179"
+  }, {
+    "iri" : "http://bdovidiana.es/ontology/#specimenNumber",
+    "baseIri" : "http://bdovidiana.es/ontology/",
+    "range" : "38",
+    "label" : {
+      "IRI-based" : "specimenNumber"
+    },
+    "domain" : "166",
+    "attributes" : [ "datatype" ],
+    "id" : "181"
+  }, {
+    "range" : "40",
+    "domain" : "42",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "182"
+  }, {
+    "range" : "40",
+    "domain" : "43",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "183"
+  }, {
+    "range" : "138",
+    "domain" : "185",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "184"
+  }, {
+    "range" : "46",
+    "domain" : "48",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "186"
+  }, {
+    "iri" : "http://bdovidiana.es/ontology/#isListIllustrationOfSpecimen",
+    "baseIri" : "http://bdovidiana.es/ontology/",
+    "range" : "27",
+    "label" : {
+      "IRI-based" : "isListIllustrationOfSpecimen"
+    },
+    "superproperty" : [ "188" ],
+    "domain" : "48",
+    "attributes" : [ "object" ],
+    "id" : "187"
+  }, {
+    "iri" : "http://bdovidiana.es/ontology/#community",
+    "baseIri" : "http://bdovidiana.es/ontology/",
+    "range" : "131",
+    "label" : {
+      "IRI-based" : "community"
+    },
+    "domain" : "126",
+    "attributes" : [ "object" ],
+    "id" : "189"
+  }, {
+    "range" : "1",
+    "domain" : "3",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "190"
+  }, {
+    "iri" : "http://purl.org/ontology/olo/core#ordered_list",
+    "baseIri" : "http://purl.org/ontology/olo/core",
+    "range" : "17",
+    "label" : {
+      "IRI-based" : "ordered_list"
+    },
+    "domain" : "17",
+    "subproperty" : [ "192", "193", "194" ],
+    "attributes" : [ "external", "object" ],
+    "id" : "191"
+  }, {
+    "range" : "6",
+    "domain" : "7",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "195"
+  }, {
+    "range" : "6",
+    "domain" : "8",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "196"
+  }, {
+    "range" : "178",
+    "domain" : "198",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "197"
+  }, {
+    "range" : "58",
+    "domain" : "61",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "202"
+  }, {
+    "range" : "1",
+    "domain" : "2",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "203"
+  }, {
+    "iri" : "http://bdovidiana.es/ontology/#areRepresentedIn",
+    "inverse" : "205",
+    "baseIri" : "http://bdovidiana.es/ontology/",
+    "range" : "110",
+    "label" : {
+      "IRI-based" : "areRepresentedIn"
+    },
+    "domain" : "122",
+    "attributes" : [ "object" ],
+    "id" : "204"
+  }, {
+    "iri" : "http://bdovidiana.es/ontology/#editionCode",
+    "baseIri" : "http://bdovidiana.es/ontology/",
+    "range" : "207",
+    "label" : {
+      "IRI-based" : "editionCode",
+      "en" : "Edition Code",
+      "es" : "Cödigo Edición"
+    },
+    "domain" : "61",
+    "comment" : {
+      "en" : "Edition representation code.\nThe code consists of the work, followed by the name of the editor/translator/commentator of the work (if it is an annotated or translated edition), then the name of the printer, the place of printing and the date:\n\n Metamorphosis.Anguillara.Giunta.Venice.1584.\n\ncorresponds to the well-known translation of the Metamorphoses by the Italian humanist Giovanni Andrea dell'Anguillara and printed in Venice in 1584 by Bernardo Giunta."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "206"
+  }, {
+    "range" : "106",
+    "domain" : "70",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "211"
+  }, {
+    "iri" : "http://bdovidiana.es/ontology/#hasRelatedThemes",
+    "baseIri" : "http://bdovidiana.es/ontology/",
+    "range" : "16",
+    "label" : {
+      "IRI-based" : "hasRelatedThemes"
+    },
+    "superproperty" : [ "213" ],
+    "domain" : "122",
+    "attributes" : [ "object" ],
+    "id" : "212"
+  }, {
+    "range" : "166",
+    "domain" : "70",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "214"
+  }, {
+    "range" : "216",
+    "domain" : "70",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "215"
+  }, {
+    "iri" : "http://purl.org/dc/elements/1.1/description",
+    "baseIri" : "http://purl.org/dc/elements/1.1",
+    "range" : "5",
+    "label" : {
+      "IRI-based" : "description"
+    },
+    "domain" : "106",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "217"
+  }, {
+    "range" : "61",
+    "domain" : "70",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "218"
+  }, {
+    "range" : "16",
+    "domain" : "135",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "219"
+  }, {
+    "range" : "80",
+    "domain" : "70",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "220"
+  }, {
+    "range" : "110",
+    "domain" : "70",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "221"
+  }, {
+    "range" : "129",
+    "domain" : "135",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "222"
+  }, {
+    "range" : "88",
+    "domain" : "135",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "223"
+  }, {
+    "range" : "27",
+    "domain" : "135",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "224"
+  }, {
+    "range" : "134",
+    "domain" : "135",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "225"
+  }, {
+    "iri" : "http://schema.org/longitude",
+    "baseIri" : "http://schema.org",
+    "range" : "210",
+    "label" : {
+      "IRI-based" : "longitude"
+    },
+    "domain" : "52",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "226"
+  }, {
+    "range" : "166",
+    "domain" : "135",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "227"
+  }, {
+    "range" : "216",
+    "domain" : "135",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "228"
+  }, {
+    "range" : "106",
+    "domain" : "135",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "229"
+  }, {
+    "range" : "61",
+    "domain" : "135",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "230"
+  }, {
+    "range" : "70",
+    "domain" : "135",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "231"
+  }, {
+    "range" : "80",
+    "domain" : "135",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "232"
+  }, {
+    "iri" : "http://bdovidiana.es/ontology/#hasFeatrures",
+    "baseIri" : "http://bdovidiana.es/ontology/",
+    "range" : "11",
+    "label" : {
+      "IRI-based" : "hasFeatrures"
+    },
+    "superproperty" : [ "22" ],
+    "domain" : "61",
+    "attributes" : [ "object" ],
+    "id" : "23"
+  }, {
+    "range" : "110",
+    "domain" : "135",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "233"
+  }, {
+    "iri" : "http://bdovidiana.es/ontology/#code",
+    "baseIri" : "http://bdovidiana.es/ontology/",
+    "range" : "235",
+    "label" : {
+      "IRI-based" : "code"
+    },
+    "domain" : "17",
+    "attributes" : [ "datatype" ],
+    "id" : "234"
+  }, {
+    "range" : "134",
+    "domain" : "237",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "236"
+  }, {
+    "range" : "16",
+    "domain" : "237",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "238"
+  }, {
+    "range" : "27",
+    "domain" : "237",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "239"
+  }, {
+    "range" : "88",
+    "domain" : "110",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "240"
+  }, {
+    "range" : "134",
+    "domain" : "110",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "241"
+  }, {
+    "range" : "129",
+    "domain" : "110",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "242"
+  }, {
+    "iri" : "http://purl.org/ontology/olo/core#slot",
+    "baseIri" : "http://purl.org/ontology/olo/core",
+    "range" : "17",
+    "label" : {
+      "IRI-based" : "slot"
+    },
+    "domain" : "17",
+    "subproperty" : [ "243", "212", "244" ],
+    "attributes" : [ "external", "object" ],
+    "id" : "213"
+  }, {
+    "iri" : "http://bdovidiana.es/ontology/#descripcionIlustracion",
+    "baseIri" : "http://bdovidiana.es/ontology/",
+    "range" : "246",
+    "label" : {
+      "IRI-based" : "descripcionIlustracion"
+    },
+    "domain" : "11",
+    "attributes" : [ "datatype" ],
+    "id" : "245"
+  }, {
+    "range" : "216",
+    "domain" : "110",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "247"
+  }, {
+    "iri" : "http://schema.org/addressCountry",
+    "baseIri" : "http://schema.org",
+    "range" : "13",
+    "label" : {
+      "IRI-based" : "addressCountry"
+    },
+    "domain" : "52",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "248"
+  }, {
+    "range" : "80",
+    "domain" : "110",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "249"
+  }, {
+    "range" : "106",
+    "domain" : "110",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "251"
+  }, {
+    "range" : "166",
+    "domain" : "110",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "252"
+  }, {
+    "range" : "134",
+    "domain" : "61",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "253"
+  }, {
+    "range" : "129",
+    "domain" : "61",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "254"
+  }, {
+    "range" : "16",
+    "domain" : "61",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "255"
+  }, {
+    "iri" : "http://bdovidiana.es/ontology/#isInSubjectList",
+    "baseIri" : "http://bdovidiana.es/ontology/",
+    "range" : "122",
+    "label" : {
+      "IRI-based" : "isInSubjectList"
+    },
+    "superproperty" : [ "191" ],
+    "domain" : "16",
+    "attributes" : [ "object" ],
+    "id" : "194"
+  }, {
+    "range" : "27",
+    "domain" : "61",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "256"
+  }, {
+    "range" : "88",
+    "domain" : "61",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "257"
+  }, {
+    "range" : "106",
+    "domain" : "61",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "259"
+  }, {
+    "range" : "166",
+    "domain" : "61",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "260"
+  }, {
+    "range" : "110",
+    "domain" : "61",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "261"
+  }, {
+    "range" : "16",
+    "domain" : "70",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "262"
+  }, {
+    "range" : "216",
+    "domain" : "61",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "263"
+  }, {
+    "range" : "80",
+    "domain" : "61",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "264"
+  }, {
+    "range" : "129",
+    "domain" : "70",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "265"
+  }, {
+    "range" : "88",
+    "domain" : "70",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "266"
+  }, {
+    "range" : "27",
+    "domain" : "70",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "267"
+  }, {
+    "range" : "134",
+    "domain" : "70",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "268"
+  }, {
+    "range" : "129",
+    "domain" : "166",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "269"
+  }, {
+    "range" : "88",
+    "domain" : "166",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "270"
+  }, {
+    "range" : "27",
+    "domain" : "166",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "271"
+  }, {
+    "range" : "134",
+    "domain" : "166",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "272"
+  }, {
+    "range" : "106",
+    "domain" : "166",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "273"
+  }, {
+    "range" : "16",
+    "domain" : "216",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "275"
+  }, {
+    "range" : "27",
+    "domain" : "216",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "276"
+  }, {
+    "range" : "88",
+    "domain" : "216",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "277"
+  }, {
+    "range" : "106",
+    "domain" : "216",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "278"
+  }, {
+    "range" : "134",
+    "domain" : "216",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "279"
+  }, {
+    "iri" : "http://bdovidiana.es/ontology/#name",
+    "baseIri" : "http://bdovidiana.es/ontology/",
+    "range" : "199",
+    "label" : {
+      "IRI-based" : "name"
+    },
+    "domain" : "17",
+    "attributes" : [ "datatype" ],
+    "id" : "280"
+  }, {
+    "range" : "129",
+    "domain" : "216",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "281"
+  }, {
+    "range" : "27",
+    "domain" : "80",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "282"
+  }, {
+    "range" : "134",
+    "domain" : "80",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "283"
+  }, {
+    "range" : "166",
+    "domain" : "216",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "284"
+  }, {
+    "range" : "16",
+    "domain" : "80",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "285"
+  }, {
+    "iri" : "http://bdovidiana.es/ontology/#publishedIn",
+    "baseIri" : "http://bdovidiana.es/ontology/",
+    "range" : "134",
+    "label" : {
+      "IRI-based" : "publishedIn"
+    },
+    "domain" : "61",
+    "attributes" : [ "object" ],
+    "id" : "286"
+  }, {
+    "iri" : "http://bdovidiana.es/ontology/#isIllustratorOf",
+    "baseIri" : "http://bdovidiana.es/ontology/",
+    "range" : "61",
+    "label" : {
+      "IRI-based" : "isIllustratorOf"
+    },
+    "domain" : "80",
+    "attributes" : [ "object" ],
+    "id" : "287"
+  }, {
+    "range" : "88",
+    "domain" : "80",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "288"
+  }, {
+    "range" : "106",
+    "domain" : "80",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "289"
+  }, {
+    "range" : "129",
+    "domain" : "80",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "290"
+  }, {
+    "range" : "16",
+    "domain" : "110",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "291"
+  }, {
+    "range" : "27",
+    "domain" : "110",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "292"
+  }, {
+    "range" : "166",
+    "domain" : "80",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "293"
+  }, {
+    "range" : "216",
+    "domain" : "80",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "294"
+  }, {
+    "range" : "16",
+    "domain" : "27",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "295"
+  }, {
+    "range" : "81",
+    "domain" : "185",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "297"
+  }, {
+    "range" : "16",
+    "domain" : "129",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "298"
+  }, {
+    "range" : "27",
+    "domain" : "129",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "299"
+  }, {
+    "range" : "16",
+    "domain" : "134",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "300"
+  }, {
+    "range" : "27",
+    "domain" : "134",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "301"
+  }, {
+    "range" : "27",
+    "domain" : "88",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "302"
+  }, {
+    "range" : "134",
+    "domain" : "88",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "303"
+  }, {
+    "range" : "134",
+    "domain" : "129",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "304"
+  }, {
+    "range" : "16",
+    "domain" : "88",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "305"
+  }, {
+    "range" : "129",
+    "domain" : "88",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "306"
+  }, {
+    "range" : "16",
+    "domain" : "106",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "307"
+  }, {
+    "iri" : "http://bdovidiana.es/ontology/#isListIllustrationsOf",
+    "baseIri" : "http://bdovidiana.es/ontology/",
+    "range" : "61",
+    "label" : {
+      "IRI-based" : "isListIllustrationsOf"
+    },
+    "domain" : "46",
+    "subproperty" : [ "187" ],
+    "attributes" : [ "object" ],
+    "id" : "188"
+  }, {
+    "range" : "27",
+    "domain" : "106",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "309"
+  }, {
+    "range" : "88",
+    "domain" : "106",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "310"
+  }, {
+    "range" : "16",
+    "domain" : "166",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "311"
+  }, {
+    "range" : "134",
+    "domain" : "106",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "312"
+  }, {
+    "range" : "129",
+    "domain" : "106",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "313"
+  }, {
+    "iri" : "http://purl.org/dc/elements/1.1/title",
+    "baseIri" : "http://purl.org/dc/elements/1.1",
+    "range" : "208",
+    "label" : {
+      "IRI-based" : "title",
+      "en" : "Title",
+      "es" : "Título"
+    },
+    "domain" : "17",
+    "comment" : {
+      "es" : "Title of the edition or specimen"
+    },
+    "attributes" : [ "datatype", "external" ],
+    "id" : "314"
+  }, {
+    "iri" : "http://bdovidiana.es/ontology/#hasIllustrations",
+    "baseIri" : "http://bdovidiana.es/ontology/",
+    "range" : "46",
+    "label" : {
+      "IRI-based" : "hasIllustrations"
+    },
+    "domain" : "61",
+    "subproperty" : [ "317" ],
+    "attributes" : [ "object" ],
+    "id" : "316"
+  }, {
+    "iri" : "http://bdovidiana.es/ontology/#locationOfIllustration",
+    "baseIri" : "http://bdovidiana.es/ontology/",
+    "range" : "53",
+    "label" : {
+      "IRI-based" : "locationOfIllustration"
+    },
+    "domain" : "110",
+    "attributes" : [ "datatype" ],
+    "id" : "319"
+  }, {
+    "iri" : "http://bdovidiana.es/ontology/#hasIllustration",
+    "baseIri" : "http://bdovidiana.es/ontology/",
+    "range" : "110",
+    "label" : {
+      "IRI-based" : "hasIllustration"
+    },
+    "superproperty" : [ "213" ],
+    "domain" : "46",
+    "attributes" : [ "object" ],
+    "id" : "244"
+  }, {
+    "iri" : "http://bdovidiana.es/ontology/#hasIndex",
+    "baseIri" : "http://bdovidiana.es/ontology/",
+    "range" : "216",
+    "label" : {
+      "IRI-based" : "hasIndex"
+    },
+    "domain" : "61",
+    "attributes" : [ "object" ],
+    "id" : "322"
+  }, {
+    "iri" : "http://bdovidiana.es/ontology/#geo",
+    "baseIri" : "http://bdovidiana.es/ontology/",
+    "range" : "52",
+    "label" : {
+      "IRI-based" : "geo"
+    },
+    "domain" : "132",
+    "attributes" : [ "object" ],
+    "id" : "323"
+  }, {
+    "iri" : "http://schema.org/address",
+    "baseIri" : "http://schema.org",
+    "range" : "9",
+    "label" : {
+      "IRI-based" : "address"
+    },
+    "domain" : "52",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "327"
+  }, {
+    "iri" : "http://bdovidiana.es/ontology/#isInIllustrationList",
+    "baseIri" : "http://bdovidiana.es/ontology/",
+    "range" : "46",
+    "label" : {
+      "IRI-based" : "isInIllustrationList"
+    },
+    "superproperty" : [ "191" ],
+    "domain" : "110",
+    "attributes" : [ "object" ],
+    "id" : "193"
+  }, {
+    "iri" : "http://bdovidiana.es/ontology/#hasSpecimenIllustration",
+    "baseIri" : "http://bdovidiana.es/ontology/",
+    "range" : "48",
+    "label" : {
+      "IRI-based" : "hasSpecimenIllustration"
+    },
+    "superproperty" : [ "316" ],
+    "domain" : "27",
+    "attributes" : [ "object" ],
+    "id" : "317"
+  }, {
+    "iri" : "http://bdovidiana.es/ontology/#approximateDateExpression",
+    "baseIri" : "http://bdovidiana.es/ontology/",
+    "range" : "296",
+    "label" : {
+      "IRI-based" : "approximateDateExpression",
+      "en" : "Approximation of date if not known exactly."
+    },
+    "domain" : "69",
+    "attributes" : [ "datatype" ],
+    "id" : "331"
+  }, {
+    "iri" : "http://www.ontologydesignpatterns.org/cp/owl/classification.owl#isClassifiedBy",
+    "baseIri" : "http://www.ontologydesignpatterns.org/cp/owl/classification.owl",
+    "range" : "332",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.ontologydesignpatterns.org/cp/owl/classification.owl",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "isClassifiedBy",
+      "en" : "is classified by",
+      "it" : "è classificato da"
+    },
+    "domain" : "200",
+    "subproperty" : [ "137" ],
+    "comment" : {
+      "undefined" : "A relation between a Concept and an Entity, e.g. 'John is considered a typical rude man'; your last concert constitutes the achievement of a lifetime; '20-year-old means she's mature enough'."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "139"
+  }, {
+    "iri" : "http://bdovidiana.es/ontology/#hasIllustrator",
+    "baseIri" : "http://bdovidiana.es/ontology/",
+    "range" : "80",
+    "label" : {
+      "IRI-based" : "hasIllustrator"
+    },
+    "domain" : "61",
+    "attributes" : [ "object" ],
+    "id" : "335"
+  }, {
+    "iri" : "http://bdovidiana.es/ontology/#hasSpecimen",
+    "inverse" : "124",
+    "baseIri" : "http://bdovidiana.es/ontology/",
+    "range" : "27",
+    "label" : {
+      "IRI-based" : "hasSpecimen"
+    },
+    "domain" : "61",
+    "attributes" : [ "object" ],
+    "id" : "336"
+  }, {
+    "iri" : "http://bdovidiana.es/ontology/#isInIndex",
+    "baseIri" : "http://bdovidiana.es/ontology/",
+    "range" : "216",
+    "label" : {
+      "IRI-based" : "isInIndex"
+    },
+    "superproperty" : [ "191" ],
+    "domain" : "258",
+    "attributes" : [ "object" ],
+    "id" : "192"
+  }, {
+    "iri" : "http://bdovidiana.es/ontology/#contains",
+    "baseIri" : "http://bdovidiana.es/ontology/",
+    "range" : "258",
+    "label" : {
+      "IRI-based" : "contains"
+    },
+    "superproperty" : [ "213" ],
+    "domain" : "216",
+    "attributes" : [ "object" ],
+    "id" : "243"
+  }, {
+    "iri" : "http://bdovidiana.es/ontology/#references",
+    "baseIri" : "http://bdovidiana.es/ontology/",
+    "range" : "18",
+    "label" : {
+      "IRI-based" : "references"
+    },
+    "domain" : "17",
+    "attributes" : [ "datatype" ],
+    "id" : "339"
+  }, {
+    "range" : "329",
+    "domain" : "328",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "340"
+  }, {
+    "range" : "47",
+    "domain" : "46",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "341"
+  }, {
+    "range" : "47",
+    "domain" : "216",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "342"
+  }, {
+    "range" : "47",
+    "domain" : "122",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "343"
+  }, {
+    "range" : "250",
+    "domain" : "106",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "344"
+  }, {
+    "range" : "24",
+    "domain" : "110",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "346"
+  }, {
+    "range" : "24",
+    "domain" : "16",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "347"
+  }, {
+    "range" : "24",
+    "domain" : "258",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "348"
+  }, {
+    "range" : "20",
+    "domain" : "19",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "349"
+  }, {
+    "range" : "42",
+    "domain" : "345",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "350"
+  }, {
+    "range" : "329",
+    "domain" : "337",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "351"
+  }, {
+    "iri" : "http://bdovidiana.es/ontology/#dateExpression",
+    "baseIri" : "http://bdovidiana.es/ontology/",
+    "range" : "209",
+    "label" : {
+      "IRI-based" : "dateExpression"
+    },
+    "domain" : "17",
+    "attributes" : [ "datatype" ],
+    "id" : "352"
+  }, {
+    "range" : "70",
+    "domain" : "69",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "354"
+  }, {
+    "range" : "70",
+    "domain" : "50",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "355"
+  }, {
+    "range" : "158",
+    "domain" : "157",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "356"
+  }, {
+    "range" : "158",
+    "domain" : "167",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "357"
+  }, {
+    "range" : "158",
+    "domain" : "333",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "358"
+  }, {
+    "range" : "158",
+    "domain" : "334",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "359"
+  }, {
+    "range" : "337",
+    "domain" : "338",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "360"
+  }, {
+    "range" : "25",
+    "domain" : "16",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "361"
+  }, {
+    "range" : "332",
+    "domain" : "81",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "362"
+  }, {
+    "range" : "21",
+    "domain" : "143",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "363"
+  }, {
+    "range" : "21",
+    "domain" : "44",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "364"
+  }, {
+    "iri" : "http://dbpedia.org/ontology/file",
+    "baseIri" : "http://dbpedia.org/ontology",
+    "range" : "4",
+    "label" : {
+      "IRI-based" : "file",
+      "en" : "Specimen illustration file",
+      "es" : "Archivo imagen ilustración"
+    },
+    "domain" : "109",
+    "comment" : {
+      "en" : "File of specimen illustration"
+    },
+    "attributes" : [ "datatype", "external" ],
+    "id" : "365"
+  }, {
+    "range" : "3",
+    "domain" : "315",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "366"
+  }, {
+    "range" : "3",
+    "domain" : "164",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "367"
+  }, {
+    "range" : "3",
+    "domain" : "106",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "368"
+  }, {
+    "range" : "3",
+    "domain" : "170",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "369"
+  }, {
+    "range" : "3",
+    "domain" : "175",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "370"
+  }, {
+    "range" : "328",
+    "domain" : "27",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "371"
+  }, {
+    "range" : "64",
+    "domain" : "142",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "372"
+  }, {
+    "range" : "21",
+    "domain" : "19",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "373"
+  }, {
+    "range" : "117",
+    "domain" : "326",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "374"
+  }, {
+    "range" : "117",
+    "domain" : "178",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "375"
+  }, {
+    "range" : "110",
+    "domain" : "109",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "376"
+  }, {
+    "iri" : "http://bdovidiana.es/ontology/#province",
+    "baseIri" : "http://bdovidiana.es/ontology/",
+    "range" : "129",
+    "label" : {
+      "IRI-based" : "province"
+    },
+    "domain" : "126",
+    "attributes" : [ "object" ],
+    "id" : "377"
+  }, {
+    "range" : "132",
+    "domain" : "135",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "378"
+  }, {
+    "range" : "132",
+    "domain" : "129",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "379"
+  }, {
+    "range" : "100",
+    "domain" : "101",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "380"
+  }, {
+    "range" : "100",
+    "domain" : "102",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "381"
+  }, {
+    "range" : "117",
+    "domain" : "324",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "382"
+  }, {
+    "range" : "117",
+    "domain" : "325",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "383"
+  }, {
+    "range" : "117",
+    "domain" : "318",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "384"
+  }, {
+    "iri" : "http://bdovidiana.es/ontology/#locatedIn",
+    "baseIri" : "http://bdovidiana.es/ontology/",
+    "range" : "166",
+    "label" : {
+      "IRI-based" : "locatedIn"
+    },
+    "domain" : "27",
+    "attributes" : [ "object" ],
+    "id" : "385"
+  }, {
+    "iri" : "http://bdovidiana.es/ontology/#notes",
+    "baseIri" : "http://bdovidiana.es/ontology/",
+    "range" : "30",
+    "label" : {
+      "IRI-based" : "notes"
+    },
+    "domain" : "27",
+    "attributes" : [ "datatype" ],
+    "id" : "386"
+  }, {
+    "iri" : "http://bdovidiana.es/ontology/#signature",
+    "baseIri" : "http://bdovidiana.es/ontology/",
+    "range" : "36",
+    "label" : {
+      "IRI-based" : "signature"
+    },
+    "domain" : "27",
+    "attributes" : [ "datatype" ],
+    "id" : "387"
+  }, {
+    "range" : "61",
+    "domain" : "237",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "388"
+  }, {
+    "range" : "110",
+    "domain" : "237",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "389"
+  }, {
+    "range" : "80",
+    "domain" : "237",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "390"
+  }, {
+    "range" : "216",
+    "domain" : "237",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "391"
+  }, {
+    "iri" : "http://bdovidiana.es/ontology/#sectionCode",
+    "baseIri" : "http://bdovidiana.es/ontology/",
+    "range" : "32",
+    "label" : {
+      "IRI-based" : "sectionCode"
+    },
+    "domain" : "258",
+    "attributes" : [ "datatype" ],
+    "id" : "392"
+  }, {
+    "range" : "166",
+    "domain" : "237",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "393"
+  }, {
+    "iri" : "http://bdovidiana.es/ontology/#isLocatedIn",
+    "baseIri" : "http://bdovidiana.es/ontology/",
+    "range" : "126",
+    "label" : {
+      "IRI-based" : "isLocatedIn"
+    },
+    "domain" : "166",
+    "attributes" : [ "object" ],
+    "id" : "394"
+  }, {
+    "range" : "106",
+    "domain" : "237",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "395"
+  }, {
+    "range" : "88",
+    "domain" : "237",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "396"
+  }, {
+    "range" : "129",
+    "domain" : "237",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "397"
+  }, {
+    "iri" : "http://bdovidiana.es/ontology/#representsThemes",
+    "baseIri" : "http://bdovidiana.es/ontology/",
+    "range" : "201",
+    "label" : {
+      "IRI-based" : "representsThemes"
+    },
+    "domain" : "110",
+    "attributes" : [ "object" ],
+    "id" : "205"
+  }, {
+    "range" : "135",
+    "domain" : "237",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "398"
+  }, {
+    "range" : "70",
+    "domain" : "237",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "399"
+  }, {
+    "iri" : "http://bdovidiana.es/ontology/#libraryCode",
+    "baseIri" : "http://bdovidiana.es/ontology/",
+    "range" : "320",
+    "label" : {
+      "IRI-based" : "libraryCode",
+      "en" : "Library cide",
+      "es" : "Código biblioteca"
+    },
+    "domain" : "166",
+    "comment" : {
+      "en" : "Library codes are represented by the acronym of their name. The acronym of the Biblioteca Xeral Universitaria de la Universidad de Santiago is BXU."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "400"
+  }, {
+    "iri" : "http://www.ontologydesignpatterns.org/cp/owl/classification.owl#classifies",
+    "inverse" : "139",
+    "baseIri" : "http://www.ontologydesignpatterns.org/cp/owl/classification.owl",
+    "range" : "200",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.ontologydesignpatterns.org/cp/owl/classification.owl",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "classifies",
+      "en" : "classifies",
+      "it" : "classifica"
+    },
+    "domain" : "332",
+    "subproperty" : [ "155" ],
+    "comment" : {
+      "undefined" : "A relation between a Concept and an Entity, e.g. the Role 'student' classifies a Person 'John'."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "156"
+  } ]
+}
